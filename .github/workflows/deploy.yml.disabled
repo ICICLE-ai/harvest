@@ -1,9 +1,9 @@
 name: Deploy Docusaurus to GitHub Pages
 
-on:
-  push:
-    branches:
-      - docusaurus-demo
+# on:
+#   push:
+#     branches:
+#       - docusaurus-demo
 
 permissions:
   contents: read
