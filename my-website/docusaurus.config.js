@@ -20,9 +20,9 @@ const config = {
 
 
   url: 'https://ICICLE-ai.github.io', // Your GitHub Pages root
-  baseUrl: '/training-catalog/', // The repository name, with a trailing slash
+  baseUrl: '/harvest-workshop/', // The repository name, with a trailing slash
   organizationName: 'ICICLE-ai', // Your GitHub organization name
-  projectName: 'training-catalog', // Your GitHub repository name
+  projectName: 'harvest-workshop', // Your GitHub repository name
   deploymentBranch: 'gh-pages', // This is where GitHub Pages will be deployed
   trailingSlash: false, // Helps with correct URL resolution
 
@@ -197,20 +197,20 @@ const config = {
         src: 'img/ICICLE_logo.jpg',
       },
       items: [
-        { to: '/training-catalog/docs/intro', label: 'Documentation', position: 'left' },
-        { to: '/training-catalog/api/intro', label: 'APIs', position: 'left' }, // API Docs
-        { to: '/training-catalog/Education/intro', label: 'Education', position: 'left' }, // Education 
-        { to: '/training-catalog/other_resources/intro', label: 'Resources', position: 'left' }, 
-        { to: '/training-catalog/workshops/intro', label: 'Workshops', position: 'left' },   
-        { to: '/training-catalog/sample_docs/intro', label: 'Sample Documentation', position: 'left' },
+        { to: '/harvest-workshop/docs/intro', label: 'Documentation', position: 'left' },
+        { to: '/harvest-workshop/api/intro', label: 'APIs', position: 'left' }, // API Docs
+        { to: '/harvest-workshop/Education/intro', label: 'Education', position: 'left' }, // Education 
+        { to: '/harvest-workshop/other_resources/intro', label: 'Resources', position: 'left' }, 
+        { to: '/harvest-workshop/workshops/intro', label: 'Workshops', position: 'left' },   
+        { to: '/harvest-workshop/sample_docs/intro', label: 'Sample Documentation', position: 'left' },
         { type: 'dropdown', label: 'Tags',  position: 'left' ,items: [
             {
               label: 'Documentation Tags',
-              to: '/training-catalog/docs/tags',
+              to: '/harvest-workshop/docs/tags',
             },
             {
               label: 'Education Tags',
-              to: '/training-catalog/education/tags',
+              to: '/harvest-workshop/education/tags',
             },
           ],
         },
