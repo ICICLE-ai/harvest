@@ -20,7 +20,7 @@ const config = {
 
 
   url: 'https://ICICLE-ai.github.io', // Your GitHub Pages root
-  baseUrl: '/harvest-workshop/', // The repository name, with a trailing slash
+  baseUrl: '/harvest/', // The repository name, with a trailing slash
   organizationName: 'ICICLE-ai', // Your GitHub organization name
   projectName: 'harvest-workshop', // Your GitHub repository name
   deploymentBranch: 'gh-pages', // This is where GitHub Pages will be deployed
