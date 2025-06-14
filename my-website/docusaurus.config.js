@@ -174,8 +174,8 @@ const config = {
       items: [
         // { to: 'harvest/docs/intro', label: 'Documentation', position: 'left' },
         // { to: 'harvest/api/intro', label: 'APIs', position: 'left' }, // API Docs
-        { to: 'call_for_papers/intro', label: 'Call for Papers', position: 'left' }, // Education 
-        { to: 'agenda/intro', label: 'Agenda', position: 'left' }, 
+        { to: 'call_for_papers', label: 'Call for Papers', position: 'left' }, // Education 
+        { to: 'agenda', label: 'Agenda', position: 'left' }, 
         // { to: 'workshops/intro', label: 'Workshops', position: 'left' },   
         // { to: 'harvest/sample_docs/intro', label: 'Sample Documentation', position: 'left' },
         // { type: 'dropdown', label: 'Tags',  position: 'left' ,items: [
