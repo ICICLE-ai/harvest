@@ -3,13 +3,13 @@ import { themes as prismThemes } from 'prism-react-renderer';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config = {
-  title: 'ICICLE AI Institute - Training Catalog',
+  title: 'Harvest Workshop',
   //tagline: 'Welcome to the Official Documentation Hub for ICICLE AI Institute \nExplore a centralized repository featuring component and API documentation, educational resources for both youth and professionals, workshop materials, ICICLE in a Nutshell videos, and much more.\nEasily filter content by tags or browse freely through our well-organized documentation to find exactly what you need.',
   favicon: 'img/favicon.ico',
   customFields: {
-    heroHeading: 'Welcome to the Official Documentation Hub for ICICLE AI Institute',
+    heroHeading: 'Welcome to the Harvest Workshop',
     heroDescription:
-      'Explore a centralized repository featuring component and API documentation, educational resources for both youth and professionals, workshop materials, ICICLE in a Nutshell videos, and much more. Easily filter content by tags or browse freely through our well-organized documentation to find exactly what you need.',
+      'Harvest Description',
   },
 
   // // Set the production url of your site here
@@ -20,9 +20,9 @@ const config = {
 
 
   url: 'https://ICICLE-ai.github.io', // Your GitHub Pages root
-  baseUrl: '/harvest-workshop/', // The repository name, with a trailing slash
+  baseUrl: '/harvest/', // The repository name, with a trailing slash
   organizationName: 'ICICLE-ai', // Your GitHub organization name
-  projectName: 'harvest-workshop', // Your GitHub repository name
+  projectName: 'harvest', // Your GitHub repository name
   deploymentBranch: 'gh-pages', // This is where GitHub Pages will be deployed
   trailingSlash: false, // Helps with correct URL resolution
 
@@ -67,77 +67,52 @@ const config = {
   ],
 
   plugins: [
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'api',                // plugin ID (must be unique)
+    //     path: 'api-docs',         // folder with .mdx for API docs
+    //     routeBasePath: 'api',     // for the url
+    //     sidebarPath: './sidebars.js',
+    //     docItemComponent: '@theme/ApiItem', 
+    //     showLastUpdateTime: true,
+    //   },
+    // ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'docs',
-        path: 'docs', // this is where all the folder containning .md files are present
-        sidebarPath: './sidebars.js',
-        include: ['**/*.{md,mdx}'],   
-        routeBasePath: 'docs', // this is for the url
-        // docItemComponent: '@theme/ApiItem',  //Not needed for normal docs
-        tagsBasePath: 'tags',
-        showLastUpdateTime: true,
-      },
-  
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'api',                // plugin ID (must be unique)
-        path: 'api-docs',         // folder with .mdx for API docs
-        routeBasePath: 'api',     // for the url
-        sidebarPath: './sidebars.js',
-        docItemComponent: '@theme/ApiItem', 
-        showLastUpdateTime: true,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'Education',
-        path: 'Education', // this is where all the folder containning .md files are present
-        sidebarPath: './sidebars.js',
-        routeBasePath: 'Education', // this is for the url
+        id: 'cfp',
+        path: 'call_for_papers', // this is where all the folder containning .md files are present
+        // sidebarPath: './sidebars.js',
+        sidebarPath: false,
+        routeBasePath: 'call_for_papers', // this is for the url
         tagsBasePath: 'tags',
         showLastUpdateTime: true,
       },
   
     ],
 
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'workshops',
-        path: 'workshops', // this is where all the folder containning .md files are present
-        sidebarPath: './sidebars.js',
-        routeBasePath: 'workshops', // this is for the url
-        tagsBasePath: 'tags',
-        showLastUpdateTime: true,
-      },
+    // [
+    //   '@docusaurus/plugin-content-docs',
+    //   {
+    //     id: 'workshops',
+    //     path: 'workshops', // this is where all the folder containning .md files are present
+    //     sidebarPath: './sidebars.js',
+    //     routeBasePath: 'workshops', // this is for the url
+    //     tagsBasePath: 'tags',
+    //     showLastUpdateTime: true,
+    //   },
   
-    ],
+    // ],
 
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'sample_docs',
-        path: 'sample_docs', // this is where all the folder containning .md files are present
-        sidebarPath: './sidebars.js',
-        routeBasePath: 'sample_docs', // this is for the url
-        tagsBasePath: 'tags',
-        showLastUpdateTime: true,
-      },
-  
-    ],
-
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'other_resources',
-        path: 'other_resources', // this is where all the folder containning .md files are present
-        sidebarPath: './sidebars.js',
-        routeBasePath: 'other_resources', // this is for the url
+        id: 'agenda',
+        path: 'agenda', // this is where all the folder containning .md files are present
+        // sidebarPath: './sidebars.js',
+        sidebarPath: false,
+        routeBasePath: 'agenda', // this is for the url
         tagsBasePath: 'tags',
         showLastUpdateTime: true,
       },
@@ -191,29 +166,29 @@ const config = {
   themeConfig: {
     image: 'img/ICICLE_logo.jpg',
     navbar: {
-      title: 'ICICLE AI Institute Training Catalog',
+      title: 'Harvest Workshop',
       logo: {
         alt: 'My Site Logo',
         src: 'img/ICICLE_logo.jpg',
       },
       items: [
-        { to: '/harvest-workshop/docs/intro', label: 'Documentation', position: 'left' },
-        { to: '/harvest-workshop/api/intro', label: 'APIs', position: 'left' }, // API Docs
-        { to: '/harvest-workshop/Education/intro', label: 'Education', position: 'left' }, // Education 
-        { to: '/harvest-workshop/other_resources/intro', label: 'Resources', position: 'left' }, 
-        { to: '/harvest-workshop/workshops/intro', label: 'Workshops', position: 'left' },   
-        { to: '/harvest-workshop/sample_docs/intro', label: 'Sample Documentation', position: 'left' },
-        { type: 'dropdown', label: 'Tags',  position: 'left' ,items: [
-            {
-              label: 'Documentation Tags',
-              to: '/harvest-workshop/docs/tags',
-            },
-            {
-              label: 'Education Tags',
-              to: '/harvest-workshop/education/tags',
-            },
-          ],
-        },
+        // { to: 'harvest/docs/intro', label: 'Documentation', position: 'left' },
+        // { to: 'harvest/api/intro', label: 'APIs', position: 'left' }, // API Docs
+        { to: 'call_for_papers/intro', label: 'Call for Papers', position: 'left' }, // Education 
+        { to: 'agenda/intro', label: 'Agenda', position: 'left' }, 
+        // { to: 'workshops/intro', label: 'Workshops', position: 'left' },   
+        // { to: 'harvest/sample_docs/intro', label: 'Sample Documentation', position: 'left' },
+        // { type: 'dropdown', label: 'Tags',  position: 'left' ,items: [
+        //     {
+        //       label: 'Documentation Tags',
+        //       to: 'harvest/docs/tags',
+        //     },
+        //     {
+        //       label: 'Education Tags',
+        //       to: 'harvest/education/tags',
+        //     },
+        //   ],
+        // },
         { type: 'search', position: 'right',},
       ],
     },

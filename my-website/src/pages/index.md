@@ -1,8 +1,6 @@
 ---
 id: Home
 hide_title: true
-sidebar_position: 0
-sidebar_label: "Home"
 ---
 
 <div class="workshop-container">
@@ -21,7 +19,7 @@ sidebar_label: "Home"
     <p>The objectives of this workshop will be to share the experiences of the members of this community and to learn the opportunities and challenges in designing HPC-powered AI-enabled systems for agriculture. Through presentations and discussions, participants will gain a comprehensive understanding of the potential for HPC and AI to revolutionize the field of agriculture and the challenges that need to be overcome. The workshop will provide attendees with the opportunity to learn from experts in the field and explore how HPC and AI can be applied to their specific areas of interest within agriculture. The workshop is designed for researchers, practitioners, and developers who are interested in exploring the benefits HPC and AI can bring to agriculture.</p>
   </div>
 
-  <div class="workshop-card">
+  <div class="workshop-highlight-section">
     <h3>Important Dates</h3>
     <ul>
       <li>Paper Submission: TBD</li>
@@ -60,5 +58,10 @@ sidebar_label: "Home"
   <div class="workshop-section">
     <h2 class="section-title">Technical Program Committee</h2>
     <p>TBD</p>
+  </div>
+
+  <div class="workshop-section">
+    <h2 class="section-title">Learn more about ICICLE materials</h2>
+    <p><a href="https://icicle-ai.github.io/training-catalog/">ICICLE Training Catalog</a></p>
   </div>
 </div>
