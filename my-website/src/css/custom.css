@@ -164,10 +164,10 @@ body {
 /* Updated container with gray background */
 .workshop-container {
   background-color: #e0e0e0;  /* Match body background */
-  padding: 2rem 1rem;     /* Add more vertical padding */
+  padding: 2rem 1rem;     
   margin: 0 auto;
   max-width: 1200px;
-  min-height: 100vh;      /* Ensure it covers full viewport height */
+  min-height: 100vh;      
 }
 
 .workshop-container .workshop-header {
@@ -204,8 +204,8 @@ body {
   box-shadow: var(--box-shadow);
   padding: var(--medium-spacing);
   margin: var(--large-spacing) 0;
-  background-color: #ffffff;  /* Ensure sections are white */
-  border: 1px solid rgba(0, 0, 0, 0.05);  /* Subtle border for definition */
+  background-color: #ffffff;  
+  border: 1px solid rgba(0, 0, 0, 0.05);  
 }
 
 .workshop-section h2:not(.section-title) {
@@ -258,7 +258,7 @@ body {
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-} */
+}
 
 .harvest-program .section-title,
 .workshop-section h2.section-title,
@@ -307,9 +307,9 @@ body {
 
 /* Center the main content column */
 .col.docItemCol_VOVn {
-  max-width: 900px;      /* or any width you prefer */
+  max-width: 900px;      
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;    /* optional: some padding */
-  padding-right: 1rem;   /* optional: some padding */
+  padding-left: 1rem;    
+  padding-right: 1rem;
 }

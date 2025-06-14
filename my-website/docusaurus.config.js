@@ -119,47 +119,47 @@ const config = {
   
     ],
 
-    [
-      'docusaurus-plugin-openapi-docs',
-      {
-        id: 'openapi', // Plugin ID
-        docsPluginId: 'api', // Associate it with API docs
-        config: {
-          sample_2: {
-            specPath: 'api_config_files/sample_apis.json', // Path to OpenAPI spec
-            outputDir: 'api-docs/Sample APIs', // API docs location
-            sidebarOptions: {
-              groupPathsBy: "tag",
-            },
-          },
-        },
-      },
-    ],
+    // [
+    //   'docusaurus-plugin-openapi-docs',
+    //   {
+    //     id: 'openapi', // Plugin ID
+    //     docsPluginId: 'api', // Associate it with API docs
+    //     config: {
+    //       sample_2: {
+    //         specPath: 'api_config_files/sample_apis.json', // Path to OpenAPI spec
+    //         outputDir: 'api-docs/Sample APIs', // API docs location
+    //         sidebarOptions: {
+    //           groupPathsBy: "tag",
+    //         },
+    //       },
+    //     },
+    //   },
+    // ],
 
     
-    [
-      "@dipakparmar/docusaurus-plugin-umami",
-        /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
-        ({
-          websiteID: "e1e727a2-edd2-436d-a3f0-3794e11d3718", // Required
-          analyticsDomain: "icicle-ai.github.io", // Required
-          dataHostURL: "https://umami.pods.icicleai.tapis.io", //Required
-          dataAutoTrack: true, // Optional
-          dataDoNotTrack: false, // Optional
-          dataCache: true, // Optional
-          dataDomains: "icicle-ai.github.io", // comma separated list of domains, *Recommended*
-        }),
-    ],
+    // [
+    //   "@dipakparmar/docusaurus-plugin-umami",
+    //     /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+    //     ({
+    //       websiteID: "e1e727a2-edd2-436d-a3f0-3794e11d3718", // Required
+    //       analyticsDomain: "icicle-ai.github.io", // Required
+    //       dataHostURL: "https://umami.pods.icicleai.tapis.io", //Required
+    //       dataAutoTrack: true, // Optional
+    //       dataDoNotTrack: false, // Optional
+    //       dataCache: true, // Optional
+    //       dataDomains: "icicle-ai.github.io", // comma separated list of domains, *Recommended*
+    //     }),
+    // ],
     
-    [
-      require.resolve('docusaurus-lunr-search'),
-      {
-        languages: ['en'],
-        indexBaseUrl: true,
-        highlightResult: true,
-        maxHits: 8,
-      },
-    ],
+    // [
+    //   require.resolve('docusaurus-lunr-search'),
+    //   {
+    //     languages: ['en'],
+    //     indexBaseUrl: true,
+    //     highlightResult: true,
+    //     maxHits: 8,
+    //   },
+    // ],
 
   ],
 
@@ -194,6 +194,7 @@ const config = {
     },
     footer: {
       style: 'dark',
+      links: [],
       copyright: `© ${new Date().getFullYear()} National Science Foundation (NSF) funded AI institute for Intelligent Cyberinfrastructure with Computational Learning in the Environment (ICICLE) (OAC 2112606). Learn more about <a href="https://icicle.ai/" target="_blank" rel="noopener noreferrer">ICICLE AI Institute.</a>`,
     },
     prism: {
