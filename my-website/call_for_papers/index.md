@@ -36,6 +36,26 @@ sidebar_position: 2
     <h4>Kindly note that if you miss the July 31st deadline, your work will not appear in the official proceedings. This is a hard deadline.</h4>
   </div>
 
+  <div class="workshop-section">
+    <h2 class="section-title">Topics</h2>
+    <p>HARVEST 2025 welcomes original submissions in a range of areas, including but not limited to:</p>
+    <ul>
+      <li>Data analytics and decision-making for agriculture.</li>
+      <li>Application of advanced Artificial Intelligence (AI) and Machine Learning (ML) for agriculture.</li>
+      <li>Experiences in collecting and curating data large scale data for agriculture.</li>
+      <li>AI applications to field-scale agriculture use cases.</li>
+      <li>AI solutions enabling smart farm management practices.</li>
+      <li>Applications multi-modal generative models in enabling and accelerating research in plant science and agriculture.</li>
+      <li>Experiences and efforts in creating annotated benchmark datasets for ML in agriculture.</li>
+    </ul>
+    <p>Papers should present original research and should provide sufficient background material to make them accessible to the broader community.</p>
+  </div>
+
+  <div class="workshop-section">
+    <h2 class="section-title">Best Paper Award</h2>
+    <p>A "Best Paper Award" will be given to the author(s) of the paper selected by the Technical Program Committee and the Program Chairs. The award will be determined from viewpoints of the technical and scientific merits, impact on the science and engineering of the research work and the clarity of presentation of the research contents in the paper.</p>
+  </div>
+
   <!-- Themes Section
   <div class="workshop-section">
     <h2 class="section-title">Workshop Themes</h2>
@@ -49,7 +69,7 @@ sidebar_position: 2
     <h2 class="section-title">Submission Information</h2>
     <p>Abstracts and papers need to be submitted via the Linklings conference system (https://ssl.linklings.net/conferences/icpp/). </p>
 
-    <p>After logging in, please select the "Make a New Submission" tab on the top. Click on the "Harvest - First International Workshop on Applications of HPC and AI in Agriculture" link among the available options to submit your work. </p>
+    <p>After logging in, please select the "Make a New Submission" tab on the top. Click on the "<u>First International Workshop on Applications of HPC and AI in Agriculture (HARVEST)</u>" link among the available options to submit your work. </p>
 
     <p>Submissions should not exceed 8 pages using IEEE conference format with 10pt font. Each submission must be a single PDF file (see https://www.ieee.org/conferences/publishing/templates.html)</p>
 
@@ -90,7 +110,7 @@ sidebar_position: 2
     </div>  
     <!-- Technical Program Committee -->
     <div class="workshop-section">
-    <h2 class="section-title">Technical Program Committee</h2>
+    <h2 class="section-title">Technical Program Committee (Confirmed so far)</h2>
     <ul>
       <li>George Kantor, Carnegie Mellon University</li>
     </ul>

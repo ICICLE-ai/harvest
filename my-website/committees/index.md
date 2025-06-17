@@ -21,7 +21,7 @@ hide_title: true
     </div>  
     <!-- Technical Program Committee -->
     <div class="workshop-section">
-    <h2 class="section-title">Technical Program Committee</h2>
+    <h2 class="section-title">Technical Program Committee (Confirmed so far)</h2>
     <ul>
       <li>George Kantor, Carnegie Mellon University</li>
     </ul>
