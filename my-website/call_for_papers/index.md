@@ -66,6 +66,11 @@ sidebar_position: 2
     <p>At least one of the authors of each accepted paper must register as a participant of the workshop and present the paper at the workshop, in order to have the paper published in the proceedings. </p>
     <p>Please contact the Program Chairs for any questions/clarifications.</p>
   </div>
+  <!-- Workshop Registration -->
+  <div class="workshop-section">
+    <h2 class="section-title">Workshop Registration</h2>
+    <p>We do not have a separate workshop registration. Please register for the workshops on the main conference registration page <a href="https://icpp2025.sdsc.edu/registration">here</a>. </p>
+  </div>
   <!-- Submission Guidelines Section
   <div class="workshop-section">
     <h2 class="section-title">Submission Guidelines</h2>
