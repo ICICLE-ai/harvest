@@ -10,7 +10,8 @@ hide_title: true
     <div class="workshop-location-date">
       September 8-9, 2025 | The Catamaran Resort Hotel, San Diego, CA
     </div>
-    <div>In Conjunction with <a href="https://icpp2025.sdsc.edu/">ICPP 2025</a></div>
+    <!-- <div>In Conjunction with <a href="https://icpp2025.sdsc.edu/">ICPP 2025</a></div> -->
+    <div>In Cooperation with <a href="https://icpp2025.sdsc.edu/">The 54th International Conference on Parallel Processing (ICPP), 2025</a></div>
   </div>
 
   <div class="workshop-section">
@@ -22,29 +23,31 @@ hide_title: true
   <div class="workshop-highlight-section">
     <h3>Important Dates</h3>
     <ul>
-      <li>Paper Submission: TBD</li>
-      <li>Author Notification: TBD</li>
-      <li>Poster submission: TBD</li>
-      <li>Poster Author notification: TBD</li>
+      <li><strong>Full Paper Submission Deadline</strong>: July 15, 2025</li>
+      <li><strong>Review Deadline</strong>: July 25, 2025</li>
+      <li><strong>Author Notification</strong>: July 28, 2025</li>
+      <li><strong>Camera-Ready Paper Submission (Hard Deadline)</strong>: July 31, 2025</li>
     </ul>
   </div>
 
   <div class="workshop-section">
     <h2 class="section-title">Keynote Address</h2>
-    <h3>Speaker</h3>
+    <!-- <h3>Speaker</h3>
     <p>(Full Name, University Name, Country)</p>
     <h3>Abstract</h3>
     <p>(Blank Title)</p>
-    <p>(Blank Abstract)</p>
+    <p>(Blank Abstract)</p> -->
+    <h4>Coming Soon!</h4>
   </div>
 
   <div class="workshop-section">
     <h2 class="section-title">Invited Talks</h2>
-    <ul>
+    <!-- <ul>
       <li>Full Name, Organization/Company</li>
       <li>Full Name, Organization/Company</li>
       <li>Full Name, Organization/Company</li>
-    </ul>
+    </ul> -->
+    <h4>Coming Soon!</h4>
   </div>
 
   <div class="workshop-section">
@@ -57,7 +60,9 @@ hide_title: true
 
   <div class="workshop-section">
     <h2 class="section-title">Technical Program Committee</h2>
-    <p>TBD</p>
+    <ul>
+      <li>George Kantor, Carnegie Mellon University</li>
+    </ul>
   </div>
 
   <div class="workshop-section">
