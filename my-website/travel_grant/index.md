@@ -11,7 +11,7 @@ hide_title: true
     <!-- Header Section -->
   <div class="workshop-section">
     <h2 class="section-title">Travel Grant Support</h2>
-    <p>Travel grant support is available for students (Undergraduates, M.S., and Ph.D.), Early Career Researchers (Post Doctoral Scholars, Research Associates, and Research Scientists), and Research Software Engineers from U.S. academic institutions to attend ICICLE Harvest Workshop 2025 through funding grant from <a href="https://aiinstitutes.org/" target="_blank">AI VO.</a></p>
+    <p>Travel grant support is available for students (Undergraduates, M.S., and Ph.D.), Early Career Researchers (Post Doctoral Scholars, Research Associates, and Research Scientists), and Research Software Engineers from U.S. academic institutions to attend ICICLE Harvest Workshop 2025 through funding grant from <a href="https://aiinstitutes.org/" target="_blank">AIVO.</a></p>
 
     <!-- from the U.S. National Science Foundation (NSF) -->
   </div>
