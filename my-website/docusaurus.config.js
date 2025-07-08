@@ -92,19 +92,6 @@ const config = {
   
     ],
 
-    // [
-    //   '@docusaurus/plugin-content-docs',
-    //   {
-    //     id: 'workshops',
-    //     path: 'workshops', // this is where all the folder containning .md files are present
-    //     sidebarPath: './sidebars.js',
-    //     routeBasePath: 'workshops', // this is for the url
-    //     tagsBasePath: 'tags',
-    //     showLastUpdateTime: true,
-    //   },
-  
-    // ],
-
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -128,24 +115,18 @@ const config = {
       },
     ],
 
-    // [
-    //   'docusaurus-plugin-openapi-docs',
-    //   {
-    //     id: 'openapi', // Plugin ID
-    //     docsPluginId: 'api', // Associate it with API docs
-    //     config: {
-    //       sample_2: {
-    //         specPath: 'api_config_files/sample_apis.json', // Path to OpenAPI spec
-    //         outputDir: 'api-docs/Sample APIs', // API docs location
-    //         sidebarOptions: {
-    //           groupPathsBy: "tag",
-    //         },
-    //       },
-    //     },
-    //   },
-    // ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'travel_grant',
+        path: 'travel_grant', 
+        sidebarPath: false, 
+        routeBasePath: 'travel_grant',
+        showLastUpdateTime: true,
+      },
+    ],
 
-    
+  
     // [
     //   "@dipakparmar/docusaurus-plugin-umami",
     //     /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
@@ -186,6 +167,7 @@ const config = {
         { to: 'call_for_papers', label: 'Call for Papers', position: 'left' }, // Education 
         { to: 'agenda', label: 'Agenda', position: 'left' },
         { to: 'committees', label: 'Committees', position: 'left' }, 
+        { to: 'travel_grant', label: 'Travel Grant', position: 'left' },
         // { to: 'workshops/intro', label: 'Workshops', position: 'left' },   
         // { to: 'harvest/sample_docs/intro', label: 'Sample Documentation', position: 'left' },
         // { type: 'dropdown', label: 'Tags',  position: 'left' ,items: [
