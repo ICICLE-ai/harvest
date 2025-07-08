@@ -37,6 +37,7 @@ hide_title: true
     </ol>
   </div>
 
+  <!-- Submission Deadline -->
   <div class="workshop-section">
     <h2 class="section-title">Submission Deadline</h2>
     <p>The applications will be evaluated as they get received and until the amount in the travel grant is completely committed. Thus, please submit your application as early as possible.</p>
