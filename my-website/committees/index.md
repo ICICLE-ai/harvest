@@ -23,7 +23,10 @@ hide_title: true
     <div class="workshop-section">
     <h2 class="section-title">Technical Program Committee (Confirmed so far)</h2>
     <ul>
-      <li>George Kantor, Carnegie Mellon University</li>
+      <li><a href="https://www.cmu.edu/news/experts/georgea.kantor">George A. Kantor</a>, Carnegie Mellon University</li>
+      <li><a href="https://cse.osu.edu/people/stewart.962">Christopher C. Stewart</a>, The Ohio State University</li>
+      <li><a href="https://www.tuskegee.edu/programs-courses/colleges-schools/caens/daes/contact-us/daes-faculty/bernard-gregory">Gregory C. Bernard</a>, Tuskegee University </li>
+      <li><a href="https://paolagpesantezc.wixsite.com/paolapesantezcabrera">Paola Gabriela Pesántez-Cabrera</a>, Washington State University</li>
     </ul>
   </div>
 </div>
