@@ -116,6 +116,7 @@ sidebar_position: 2
       <li><a href="https://cse.osu.edu/people/stewart.962">Christopher C. Stewart</a>, The Ohio State University</li>
       <li><a href="https://www.tuskegee.edu/programs-courses/colleges-schools/caens/daes/contact-us/daes-faculty/bernard-gregory">Gregory C. Bernard</a>, Tuskegee University </li>
       <li><a href="https://paolagpesantezc.wixsite.com/paolapesantezcabrera">Paola Gabriela Pesántez-Cabrera</a>, Washington State University</li>
+      <li><a href="https://www.iasoybeans.com/about/staff-listing/matthew-carroll">Matthew Carroll</a>, Iowa Soybean Association</li>
     </ul>
   </div>
 
