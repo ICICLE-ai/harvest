@@ -18,7 +18,7 @@ hide_title: true
 
   <div class="workshop-section">
     <h2 class="section-title">Submission Procedure</h2>
-    <p>Interested parties are requested to submit the following materials (items 1, 2, and 3 included in a single .pdf file) to <a href="mailto:harvest@cse.ohio-state.edu">harvest@cse.ohio-state.edu</a> via email.</p>
+    <p>Interested parties are requested to submit the following materials (items 1, 2, and 3 included in a single .pdf file) to <a href="mailto:subramoni.1@osu.edu">subramoni.1@osu.edu</a> via email.</p>
     <ol>
       <li><strong>A short (1-2 page) document describing the following:</strong></li>
       <ul>
@@ -33,7 +33,7 @@ hide_title: true
       </ul>
       <li><strong>A copy of your CV</strong></li>
       <li><strong>Requested travel cost</strong> (including hotel and registration) with justification</li>
-      <li><strong>An e-mail approval from the advisor</strong> supporting the travel and indicating that the travel cost will not be reimbursed from any other sources. Please send this email to <a href="mailto:harvest@cse.ohio-state.edu">harvest@cse.ohio-state.edu</a>.</li>
+      <li><strong>An e-mail approval from the advisor</strong> supporting the travel and indicating that the travel cost will not be reimbursed from any other sources. Please send this email to <a href="mailto:subramoni.1@osu.edu">subramoni.1@osu.edu</a>.</li>
     </ol>
   </div>
 
