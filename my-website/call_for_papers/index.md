@@ -104,8 +104,8 @@ sidebar_position: 2
     <div class="workshop-section">
       <h2 class="section-title">Organizing Committee</h2>
       <ul>
-        <li><a href="https://cse.osu.edu/people/subramoni.1">Hari Subramoni</a></li>
-        <li><a href="https://fabe.osu.edu/our-people/scott-shearer">Scott Shearer</a></li>
+        <li><a href="https://cse.osu.edu/people/subramoni.1">Hari Subramoni</a>, The Ohio State University</li>
+        <li><a href="https://fabe.osu.edu/our-people/scott-shearer">Scott Shearer</a>, The Ohio State University</li>
       </ul>
     </div>  
     <!-- Technical Program Committee -->
