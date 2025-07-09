@@ -117,6 +117,7 @@ sidebar_position: 2
       <li><a href="https://www.tuskegee.edu/programs-courses/colleges-schools/caens/daes/contact-us/daes-faculty/bernard-gregory">Gregory C. Bernard</a>, Tuskegee University </li>
       <li><a href="https://paolagpesantezc.wixsite.com/paolapesantezcabrera">Paola Gabriela Pesántez-Cabrera</a>, Washington State University</li>
       <li><a href="https://www.iasoybeans.com/about/staff-listing/matthew-carroll">Matthew Carroll</a>, Iowa Soybean Association</li>
+      <li><a href="https://ag.purdue.edu/directory/kauru">Upinder Kaur</a>, Purdue University</li>
     </ul>
   </div>
 
