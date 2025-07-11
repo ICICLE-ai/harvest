@@ -31,7 +31,7 @@ sidebar_position: 2
       <li><strong>Review Deadline</strong>: July 25, 2025</li>
       <li><strong>Author Notification</strong>: July 28, 2025</li>
       <li><strong>Camera-Ready Paper Submission (Hard Deadline)</strong>: July 31, 2025</li>
-      <li><strong>Workshop Date</strong>: September 8-9, 2025</li>
+      <li><strong>Workshop Date</strong>: September 9-10, 2025</li>
     </ul>
     <h4>Kindly note that if you miss the July 31st deadline, your work will not appear in the official proceedings. This is a hard deadline.</h4>
   </div>
@@ -118,6 +118,7 @@ sidebar_position: 2
       <li><a href="https://paolagpesantezc.wixsite.com/paolapesantezcabrera">Paola Gabriela Pesántez-Cabrera</a>, Washington State University</li>
       <li><a href="https://www.iasoybeans.com/about/staff-listing/matthew-carroll">Matthew Carroll</a>, Iowa Soybean Association</li>
       <li><a href="https://ag.purdue.edu/directory/kauru">Upinder Kaur</a>, Purdue University</li>
+      <li><a href="https://dpla.wisc.edu/staff/alfonso-morales/">Alfonso Morales</a>, University of Wisconsin-Madison</li>
     </ul>
   </div>
 

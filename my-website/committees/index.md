@@ -29,6 +29,7 @@ hide_title: true
       <li><a href="https://paolagpesantezc.wixsite.com/paolapesantezcabrera">Paola Gabriela Pesántez-Cabrera</a>, Washington State University</li>
       <li><a href="https://www.iasoybeans.com/about/staff-listing/matthew-carroll">Matthew Carroll</a>, Iowa Soybean Association</li>
       <li><a href="https://ag.purdue.edu/directory/kauru">Upinder Kaur</a>, Purdue University</li>
+      <li><a href="https://dpla.wisc.edu/staff/alfonso-morales/">Alfonso Morales</a>, University of Wisconsin-Madison</li>
     </ul>
   </div>
 </div>

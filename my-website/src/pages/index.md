@@ -8,7 +8,7 @@ hide_title: true
     <div class="workshop-title">HARVEST 2025</div>
     <div class="workshop-subtitle">First International Workshop on Applications of HPC and AI in Agriculture</div>
     <div class="workshop-location-date">
-      September 8-9, 2025 | The Catamaran Resort Hotel, San Diego, CA
+      September 9-10, 2025 | The Catamaran Resort Hotel, San Diego, CA
     </div>
     <!-- <div>In Conjunction with <a href="https://icpp2025.sdsc.edu/">ICPP 2025</a></div> -->
     <div>In Cooperation with <a href="https://icpp2025.sdsc.edu/">The 54th International Conference on Parallel Processing (ICPP), 2025</a></div>
@@ -67,6 +67,7 @@ hide_title: true
       <li><a href="https://paolagpesantezc.wixsite.com/paolapesantezcabrera">Paola Gabriela Pesántez-Cabrera</a>, Washington State University</li>
       <li><a href="https://www.iasoybeans.com/about/staff-listing/matthew-carroll">Matthew Carroll</a>, Iowa Soybean Association</li>
       <li><a href="https://ag.purdue.edu/directory/kauru">Upinder Kaur</a>, Purdue University</li>
+      <li><a href="https://dpla.wisc.edu/staff/alfonso-morales/">Alfonso Morales</a>, University of Wisconsin-Madison</li>
     </ul>
   </div>
 
