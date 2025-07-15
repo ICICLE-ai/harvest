@@ -27,9 +27,8 @@ sidebar_position: 2
   <div class="workshop-section">
     <h2 class="section-title">Important Dates</h2>
     <ul>
-      <li><strong>Full Paper Submission Deadline</strong>: July 15, 2025</li>
-      <li><strong>Review Deadline</strong>: July 25, 2025</li>
-      <li><strong>Author Notification</strong>: July 28, 2025</li>
+      <li><strong>Full Paper Submission Deadline</strong>: July 20, 2025</li>
+      <li><strong>Author Notification</strong>: July 30, 2025</li>
       <li><strong>Camera-Ready Paper Submission (Hard Deadline)</strong>: July 31, 2025</li>
       <li><strong>Workshop Date</strong>: September 9-10, 2025</li>
     </ul>
