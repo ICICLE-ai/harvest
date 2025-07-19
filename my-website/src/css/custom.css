@@ -274,6 +274,9 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0;
+  min-width: 100%;
+  display: table;
+  table-layout: fixed;
 }
 
 .harvest-program .workshop-agenda th {
@@ -281,15 +284,25 @@ body {
   color: white;
   padding: 12px;
   text-align: left;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.harvest-program .workshop-agenda th:last-child {
+  width: 80%;
 }
 
 .harvest-program .workshop-agenda td {
   padding: 10px 12px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.25);
+  box-sizing: border-box;
+  width: 20%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.harvest-program .workshop-agenda tr:last-child td {
-  border-bottom: none;
+.harvest-program .workshop-agenda td:last-child {
+  width: 80%;
 }
 
 .harvest-program .workshop-agenda tr:hover {
