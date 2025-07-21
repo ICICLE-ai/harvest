@@ -30,6 +30,7 @@ hide_title: true
       <li><a href="https://www.iasoybeans.com/about/staff-listing/matthew-carroll">Matthew Carroll</a>, Iowa Soybean Association</li>
       <li><a href="https://ag.purdue.edu/directory/kauru">Upinder Kaur</a>, Purdue University</li>
       <li><a href="https://dpla.wisc.edu/staff/alfonso-morales/">Alfonso Morales</a>, University of Wisconsin-Madison</li>
+      <li><a href="https://www.linkedin.com/in/anirudh-potlapally-30659a1ab">Anirudh Potlapally</a>, The Ohio State University</li>
     </ul>
   </div>
 </div>
