@@ -30,10 +30,14 @@ hide_title: true
   </div>
 
   <div class="workshop-section">
-    <h2 class="section-title">Keynote Address</h2>
-    <p><strong>Speaker: </strong>Nicholas Butts, John Deere, USA</p>
+    <h2 class="section-title">Keynote Speakers</h2>
+    <ul>
+      <li>Nicholas Butts, John Deere, USA</li>
+      <li>Arthur "Barney" Maccabe, ASU, USA</li>
+    </ul>
+    <!-- <p><strong>Speaker: </strong>Nicholas Butts, John Deere, USA</p>
     <p><strong>Title: </strong>Plows to Neurons: The Role of HPC and AI in Agriculture</p>
-    <p><strong>Abstract: </strong>The convergence of High-Performance Computing (HPC) and Artificial Intelligence (AI) is revolutionizing the landscape of autonomy and automation in agriculture. In this keynote, we explore how HPC serves as the backbone for advancing AI-driven systems, unlocking new capabilities in decision-making, real-time processing, and adaptive control. We emphasize the critical importance of performance per watt, highlighting the need to optimize energy efficiency as AI adoption scales in resource-constrained environments. Furthermore, we argue that while larger AI models have garnered significant attention, there is a pressing demand for more efficient and specialized AI architectures that deliver superior performance without compromising computational resources. Lastly, we discuss the necessity of innovative sensor fusion methods to enhance situational awareness and decision-making in complex, dynamic environments. By addressing these challenges, we pave the way for smarter, more sustainable, and scalable autonomous systems that will shape the future of technology.</p>
+    <p><strong>Abstract: </strong>The convergence of High-Performance Computing (HPC) and Artificial Intelligence (AI) is revolutionizing the landscape of autonomy and automation in agriculture. In this keynote, we explore how HPC serves as the backbone for advancing AI-driven systems, unlocking new capabilities in decision-making, real-time processing, and adaptive control. We emphasize the critical importance of performance per watt, highlighting the need to optimize energy efficiency as AI adoption scales in resource-constrained environments. Furthermore, we argue that while larger AI models have garnered significant attention, there is a pressing demand for more efficient and specialized AI architectures that deliver superior performance without compromising computational resources. Lastly, we discuss the necessity of innovative sensor fusion methods to enhance situational awareness and decision-making in complex, dynamic environments. By addressing these challenges, we pave the way for smarter, more sustainable, and scalable autonomous systems that will shape the future of technology.</p> -->
   </div>
 
   <div class="workshop-section">
