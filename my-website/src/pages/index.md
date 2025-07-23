@@ -33,7 +33,7 @@ hide_title: true
     <h2 class="section-title">Keynote Speakers</h2>
     <ul>
       <li><a href="https://www.linkedin.com/in/nicholas-butts-1a456569/">Nicholas Butts, John Deere, USA</a></li>
-      <li><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe, ASU, USA</a></li>
+      <li><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe, University of Arizona, USA</a></li>
     </ul>
     <!-- <p><strong>Speaker: </strong>Nicholas Butts, John Deere, USA</p>
     <p><strong>Title: </strong>Plows to Neurons: The Role of HPC and AI in Agriculture</p>
@@ -80,6 +80,7 @@ hide_title: true
       <li><a href="https://dpla.wisc.edu/staff/alfonso-morales/">Alfonso Morales</a>, University of Wisconsin-Madison</li>
       <li><a href="https://paolagpesantezc.wixsite.com/paolapesantezcabrera">Paola Gabriela Pesántez-Cabrera</a>, Washington State University</li>
       <li><a href="https://www.linkedin.com/in/anirudh-potlapally-30659a1ab">Anirudh Potlapally</a>, The Ohio State University</li>
+      <li><a href="https://www.linkedin.com/in/radhakrishnan97/">Aswathnarayan Radhakrishnan</a>, The Ohio State University</li>
       <li><a href="https://cse.osu.edu/people/stewart.962">Christopher C. Stewart</a>, The Ohio State University</li>
     </ul>
   </div>

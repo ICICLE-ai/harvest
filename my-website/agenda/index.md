@@ -99,7 +99,7 @@ hide_title: true
           <td>11:05-12:00</td>
           <td>
             <strong>Keynote</strong><br />
-            <strong>Speaker: </strong><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe</a>, ASU, USA<br />
+            <strong>Speaker: </strong><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe</a>, University of Arizona, USA<br />
             <strong>Session Chair: </strong><a href="https://cse.osu.edu/people/subramoni.1">Hari Subramoni</a><br />
             <!-- <strong>Title: </strong>Plows to Neurons: The Role of HPC and AI in Agriculture<br />
             <strong>Abstract: </strong>The convergence of High-Performance Computing (HPC) and Artificial Intelligence (AI) is revolutionizing the landscape of autonomy and automation in agriculture. In this keynote, we explore how HPC serves as the backbone for advancing AI-driven systems, unlocking new capabilities in decision-making, real-time processing, and adaptive control. We emphasize the critical importance of performance per watt, highlighting the need to optimize energy efficiency as AI adoption scales in resource-constrained environments. Furthermore, we argue that while larger AI models have garnered significant attention, there is a pressing demand for more efficient and specialized AI architectures that deliver superior performance without compromising computational resources. Lastly, we discuss the necessity of innovative sensor fusion methods to enhance situational awareness and decision-making in complex, dynamic environments. By addressing these challenges, we pave the way for smarter, more sustainable, and scalable autonomous systems that will shape the future of technology.<br />

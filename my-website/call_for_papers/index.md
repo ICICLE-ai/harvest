@@ -120,6 +120,7 @@ sidebar_position: 2
       <li><a href="https://dpla.wisc.edu/staff/alfonso-morales/">Alfonso Morales</a>, University of Wisconsin-Madison</li>
       <li><a href="https://paolagpesantezc.wixsite.com/paolapesantezcabrera">Paola Gabriela Pesántez-Cabrera</a>, Washington State University</li>
       <li><a href="https://www.linkedin.com/in/anirudh-potlapally-30659a1ab">Anirudh Potlapally</a>, The Ohio State University</li>
+      <li><a href="https://www.linkedin.com/in/radhakrishnan97/">Aswathnarayan Radhakrishnan</a>, The Ohio State University</li>
       <li><a href="https://cse.osu.edu/people/stewart.962">Christopher C. Stewart</a>, The Ohio State University</li>
     </ul>
   </div>
