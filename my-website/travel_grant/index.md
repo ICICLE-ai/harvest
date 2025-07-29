@@ -24,7 +24,6 @@ hide_title: true
       <ul>
         <li>Contact details (University, Department, Institutional E-mail address, Phone Number, and Address)</li>
         <li>Brief overview of current research</li>
-        <li>Experience with HPC systems (hardware, software, and applications), high-performance virtualization, MPI/PGAS, and Deep Learning middleware</li>
         <li>What you would like to learn from attending Harvest '25?</li>
         <li>Each awardee is expected to present a poster about his/her work. Include a title and short abstract of the poster you would like to present.</li>
         <ul>
