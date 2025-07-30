@@ -33,7 +33,7 @@ hide_title: true
     <h2 class="section-title">Keynote Speakers</h2>
     <ul>
       <li><a href="https://www.linkedin.com/in/nicholas-butts-1a456569/">Nicholas Butts, John Deere, USA</a></li>
-      <li><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe, University of Arizona, USA</a></li>
+      <li><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" McCabe, University of Arizona, USA</a></li>
     </ul>
     <!-- <p><strong>Speaker: </strong>Nicholas Butts, John Deere, USA</p>
     <p><strong>Title: </strong>Plows to Neurons: The Role of HPC and AI in Agriculture</p>
@@ -42,12 +42,10 @@ hide_title: true
 
   <div class="workshop-section">
     <h2 class="section-title">Invited Talks</h2>
-    <!-- <ul>
-      <li>Full Name, Organization/Company</li>
-      <li>Full Name, Organization/Company</li>
-      <li>Full Name, Organization/Company</li>
-    </ul> -->
-    <h4>Coming Soon!</h4>
+    <ul>
+      <li><a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA</li>
+    </ul>
+    <h4>More coming Soon!</h4>
   </div>
 
   <div class="workshop-section">
