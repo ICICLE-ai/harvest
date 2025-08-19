@@ -43,7 +43,11 @@ hide_title: true
   <div class="workshop-section">
     <h2 class="section-title">Invited Talks</h2>
     <ul>
+      <li><a href="https://www.linkedin.com/in/crakerb/">Ben Craker</a>, AgGateway, USA</li>
       <li><a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA</li>
+      <li><a href="https://www.nifa.usda.gov/contact-us/steven-j-thomson">Steven Thomson</a>, USDA National Institute of Food and Agriculture, USA</li>
+      <li><a href="https://sites.tntech.edu/sghafoor/">Sheikh Ghafoor</a>, National Science Foundation, USA</li>
+      <li><a href="https://www.linkedin.com/in/richard-swanson/">Richard Swanson</a>, Precision Planting, USA</li>
     </ul>
     <h4>More coming Soon!</h4>
   </div>
@@ -53,7 +57,7 @@ hide_title: true
     <h3>Title</h3>
     <p>Coming Soon!</p>
     <h3>Moderator</h3>
-    <p>Coming Soon!</p>
+    <p><a href="https://fabe.osu.edu/our-people/scott-shearer">Scott Shearer</a>, The Ohio State University</p>
     <h3>Members</h3>
     <p>Coming Soon!</p>
   </div>

@@ -1,6 +1,6 @@
 ---
 id: intro
-title: Links to the ICICLE Resources
+title: Agenda
 sidebar: apiSidebar
 position: 0
 hide_title: true
@@ -37,34 +37,41 @@ hide_title: true
         </tr>
         <tr>
           <td>12:00-12:30</td>
-          <td><strong>Invited Talk 1</strong></td>
+          <td>
+          <strong>Invited Talk 1</strong><br />
+          <strong>Speaker:</strong> <a href="https://www.linkedin.com/in/crakerb/">Ben Craker</a>, AgGateway, USA<br />
+          </td>
         </tr>
         <tr>
           <td>12:30-2:00</td>
           <td><strong>Lunch</strong></td>
         </tr>
         <tr>
-          <td>2:00-2:30</td>
-          <td><strong>Invited Talk 2</strong></td>
-        </tr>
-        <tr>
-          <td>2:30-3:00</td>
-          <td><strong>Invited Talk 3</strong></td>
-        </tr>
-        <tr>
-          <td>3:00-3:30</td>
-          <td><strong>Invited Talk 4</strong></td>
+          <td>2:00-3:30</td>
+          <td>
+          <strong>Panel Discussion</strong> <br />
+          </td>
         </tr>
         <tr>
           <td>3:30-4:00</td>
           <td><strong>Coffee Break</strong></td>
         </tr>
         <tr>
-          <td>4:00-4:55</td>
-          <td><strong>Introduction to the ICICLE DA Pipeline</strong></td>
+          <td>4:00-4:30</td>
+          <td>
+          <strong>Invited Talk 2</strong> <br />
+          <strong>Speaker:</strong> <a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA<br />
+          </td>
+        </tr>
+         <tr>
+          <td>4:30-5:00</td>
+          <td>
+          <strong>Invited Talk 3</strong> <br />
+          <strong>Speaker:</strong> <a href="https://www.nifa.usda.gov/contact-us/steven-j-thomson">Steven Thomson</a>, USDA National Institute of Food and Agriculture, USA<br />
+          </td>
         </tr>
         <tr>
-          <td>4:55-5:00</td>
+          <td>5:00-5:05</td>
           <td>
             <strong>Closing Remarks</strong><br />
             Hari Subramoni, The Ohio State University<br />
@@ -72,7 +79,7 @@ hide_title: true
           </td>
         </tr>
         <tr>
-          <td>5:00-7:00</td>
+          <td>5:10-7:00</td>
           <td><strong>Visit to SDSC Computing Facilities</strong></td>
         </tr>
       </tbody>
@@ -103,38 +110,35 @@ hide_title: true
             <strong>Session Chair: </strong><a href="https://cse.osu.edu/people/subramoni.1">Hari Subramoni</a><br />
             <strong>Title: </strong> Building a Data Infrastructure for Agriculture in Arizona<br />
             <strong>Abstract: </strong>While Arizona is not likely to be one of the first states that comes to mind when thinking about agricultural production in the US, agriculture in Arizona supports over 130,000 jobs, has a $23.3B economic impact, with exports to over 70 countries.  The Yuma Valley in southwestern Arizona produces 90% of the leafy greens consumed in North America between November and March.  Given the limited water supply, this kind of productivity could only be achieved by embracing technology.  Today, this means embracing AI which means embracing the collection of data.  Arizona has several resources, including Biosphere 2 and an outdoor phenotying facility , that will be essential for collecting the data needed to build new models needed for agriculture.<br />
-            <strong>Speaker Bio: </strong>Arthur B. (Barney) Maccabe is a professor in the College of Information Science at The University of Arizona.  From 2009 to 2022, Dr Maccabe served as the Director of the Computer Science and Mathematics Division (CSMD) at the Department of Energy’s Oak Ridge National Laboratory (ORNL) and as the ORNL Point of Contact for the research portion of the Advanced Scientific Computing Research (ASCR) program in the Department of Energy, Office of Science.  Prior to his appointment at ORNL, Dr. Maccabe spent over twenty-five years as a professor in the Computer Science Department at the University of New Mexico (UNM) where he graduated eleven PhD students and nine MS students.  While at UNM, Dr. Maccabe also served as the director of the Center for High Performance Computing and as the Interim Chief Information Officer for the university. 
-            
+            <strong>Speaker Bio: </strong>Arthur B. (Barney) Maccabe is a professor in the College of Information Science at The University of Arizona.  From 2009 to 2022, Dr Maccabe served as the Director of the Computer Science and Mathematics Division (CSMD) at the Department of Energy’s Oak Ridge National Laboratory (ORNL) and as the ORNL Point of Contact for the research portion of the Advanced Scientific Computing Research (ASCR) program in the Department of Energy, Office of Science.  Prior to his appointment at ORNL, Dr. Maccabe spent over twenty-five years as a professor in the Computer Science Department at the University of New Mexico (UNM) where he graduated eleven PhD students and nine MS students.  While at UNM, Dr. Maccabe also served as the director of the Center for High Performance Computing and as the Interim Chief Information Officer for the university.<br />
             Professor Maccabe’s current research is focused on mechanisms and policies to ensure that the creators of data are able to realize value for the information they provide. His previous research focused on the design and development of system software for massively parallel systems. He was an architect for a series of lightweight operating systems for massively parallel computing systems. Dr. Maccabe has also conducted sponsored research in a wide- range of areas, including: dependence representation for compilers, network intrusion detection, network protocol offload, lightweight file and I/O systems, system software for sensor networks, and virtualization in high end computing systems.<br />
           </td>
         </tr>
         <tr>
           <td>12:00-12:30</td>
-          <td><strong>Bring your own Data Hackathon</strong></td>
+          <td>
+          <strong>Invited Talk 4</strong> <br />
+          <strong>Speaker:</strong> <a href="https://sites.tntech.edu/sghafoor/">Sheikh Ghafoor</a>, National Science Foundation, USA<br />
+          </td>
         </tr>
         <tr>
           <td>12:30-2:00</td>
           <td><strong>Lunch</strong></td>
         </tr>
         <tr>
-          <td>2:00-2:30</td>
-          <td><strong>Bring your own Data Hackathon</strong></td>
-        </tr>
-        <tr>
-          <td>2:30-3:00</td>
-          <td><strong>Research Paper #1</strong></td>
-        </tr>
-        <tr>
-          <td>3:00-3:30</td>
-          <td><strong>Research Paper #2</strong></td>
+          <td>2:00-3:30</td>
+          <td><strong>Research Paper Session</strong></td>
         </tr>
         <tr>
           <td>3:30-4:00</td>
           <td><strong>Coffee Break</strong></td>
         </tr>
         <tr>
-          <td>4:00-4:55</td>
-          <td><strong>Invited Panel</strong></td>
+          <td>4:00-4:30</td>
+          <td>
+          <strong>Invited Talk 5</strong><br />
+          <strong>Speaker:</strong> <a href="https://www.linkedin.com/in/richard-swanson/">Richard Swanson</a>, Precision Planting, USA<br />
+          </td>
         </tr>
         <tr>
           <td>4:55-5:00</td>
