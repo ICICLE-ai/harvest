@@ -49,6 +49,24 @@ hide_title: true
           <td>
           <strong>Invited Talk 1</strong><br />
           <strong>Speaker:</strong> <a href="https://www.linkedin.com/in/crakerb/">Ben Craker</a>, AgGateway, USA<br />
+            <!-- <img 
+              src={require("/img/Rich-Wolski-Headshot.jpg").default}
+              alt="Rich Wolski Headshot" 
+              style={{
+                width: '100px', 
+                height: 'auto', 
+                marginTop: '10px'
+              }} 
+            /> -->
+          <strong>Title:</strong><br />
+            <p>AI – Agricultural Interoperability: Evolving Data Standards in the Era of Artificial Intelligence</p>
+          <strong>Abstract:</strong><br />
+          <p>For over two decades, AgGateway has addressed data interoperability challenges across the agricultural value chain, from standardized B2B messaging in the input supply chain to open-source tools that unlock high-resolution geospatial data from precision equipment. Throughout this journey, waves of technological innovation have shaped the member-led work, but few have shown as much transformative potential as the current surge in artificial intelligence.</p>
+          <p>This session will explore historical parallels between past tech disruptions and today’s AI moment, highlighting how tools like chatbots and generative models are beginning to influence interoperability efforts. We’ll examine how agricultural data standards work is shifting and what new priorities are emerging among AgGateway members.</p>
+          <strong>Bio:</strong><br />
+            <p>Ben Craker is the Portfolio Manager at AgGateway, a global nonprofit organization whose members develop digital resources to address interoperability issues across agricultural industry sectors by providing a unique forum where companies can meet to solve digital challenges. In this role Ben helps facilitate working groups as they address pain points identified by the member organizations.</p>
+            <p>He is also the president of the Ag Data Coalition (ADC), serving in that role since its founding in 2016. The ADC is a non-profit organization that promotes farmer control of data and operates an independent data repository farmers, researchers, and industry can use to store and permission access to data. The ultimate ADC goal is to make data storage a pre-competitive space in the agricultural industry.</p>
+            <p>Prior to joining AgGateway staff he spent eighteen years in the farm equipment manufacturing industry at AGCO and Kuhn North America. He held both positions in marketing, sales, global partnering, and product management. He grew up on a farm in south central Wisconsin and graduated from the University of Wisconsin-Platteville with a BS in agricultural business with an engineering technology emphasis. He is still actively involved in the family farm, living in south-central Wisconsin with his wife and three children.</p>
           </td>
         </tr>
         <tr>
@@ -151,6 +169,15 @@ hide_title: true
           <td>
             <strong>Keynote</strong><br />
             <strong>Speaker: </strong><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe</a>, University of Arizona, USA<br />
+            <img 
+            src={require("/img/Arthur-(Barney)-Maccabe-Headshot.jpg").default}
+            alt="Arthur 'Barney' Maccabe Headshot" 
+            style={{
+              width: '100px', 
+              height: 'auto', 
+              marginTop: '10px'
+            }}
+            />
             <strong>Session Chair: </strong><a href="https://cse.osu.edu/people/subramoni.1">Hari Subramoni</a><br />
             <strong>Title: </strong> Building a Data Infrastructure for Agriculture in Arizona<br />
             <strong>Abstract: </strong>While Arizona is not likely to be one of the first states that comes to mind when thinking about agricultural production in the US, agriculture in Arizona supports over 130,000 jobs, has a $23.3B economic impact, with exports to over 70 countries.  The Yuma Valley in southwestern Arizona produces 90% of the leafy greens consumed in North America between November and March.  Given the limited water supply, this kind of productivity could only be achieved by embracing technology.  Today, this means embracing AI which means embracing the collection of data.  Arizona has several resources, including Biosphere 2 and an outdoor phenotying facility , that will be essential for collecting the data needed to build new models needed for agriculture.<br />
