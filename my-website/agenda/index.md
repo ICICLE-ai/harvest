@@ -61,6 +61,16 @@ hide_title: true
           <td>
           <strong>Invited Talk 2</strong> <br />
           <strong>Speaker:</strong> <a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA<br />
+            <img 
+              src="/my-website/static/img/Rich-Wolski-Headshot.jpg" 
+              alt="Rich Wolski Headshot" 
+              style={{
+                width: '100px', 
+                height: 'auto', 
+                borderRadius: '50%', 
+                marginTop: '10px'
+              }} 
+            />
           <p>Professor of Computer Science, Duval Presidential Chair in Energy Efficiency</p>
           <strong>Title:</strong><br />
             <p>xGFabric: Coupling Sensor Networks and High-performance Computing
