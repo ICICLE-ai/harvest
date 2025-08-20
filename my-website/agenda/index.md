@@ -141,6 +141,18 @@ hide_title: true
           </td>
         </tr>
         <tr>
+          <td>4:30-4:55</td>
+          <td>
+          <strong>Research Posters and Demo Session</strong><br />
+          <ul>
+            <li>Matt Lieber, OSU</li>
+            <li>Anirudh Potlapally, OSU</li>
+            <li>Tinggang Wang, OSU</li>
+            <li>Aswathnarayanan Radhakrishnan, OSU</li>
+          </ul>
+          </td>
+        </tr>
+        <tr>
           <td>4:55-5:00</td>
           <td>
             <strong>Closing Remarks</strong><br />
