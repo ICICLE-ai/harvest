@@ -35,7 +35,6 @@ hide_title: true
               style={{
                 width: '100px', 
                 height: 'auto', 
-                borderRadius: '50%', 
                 marginTop: '10px'
               }} 
             />
@@ -77,7 +76,6 @@ hide_title: true
               style={{
                 width: '100px', 
                 height: 'auto', 
-                borderRadius: '50%', 
                 marginTop: '10px'
               }} 
             />
@@ -171,7 +169,6 @@ hide_title: true
             style={{
               width: '100px', 
               height: 'auto', 
-              borderRadius: '50%', 
               marginTop: '10px'
             }} 
           /><br />
