@@ -49,7 +49,6 @@ hide_title: true
       <li><a href="https://sites.tntech.edu/sghafoor/">Sheikh Ghafoor</a>, National Science Foundation, USA</li>
       <li><a href="https://www.linkedin.com/in/richard-swanson/">Richard Swanson</a>, Precision Planting, USA</li>
     </ul>
-    <h4>More coming Soon!</h4>
   </div>
 
   <div class="workshop-section">
