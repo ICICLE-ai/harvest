@@ -61,6 +61,32 @@ hide_title: true
           <td>
           <strong>Invited Talk 2</strong> <br />
           <strong>Speaker:</strong> <a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA<br />
+          <p>Professor of Computer Science, Duval Presidential Chair in Energy Efficiency</p>
+          <strong>Title:</strong><br />
+            <p>xGFabric: Coupling Sensor Networks and High-performance Computing
+            Facilities with Advanced Wireless Networks for Near 
+            Real-Time Simulation of Digital Agriculture</p>
+          <strong>Abstract:</strong><br />
+            <p>Modern agriculture faces urgent challenges from climate variability and
+            increasing global demands that require rapid, real-time decision support.
+            Traditional High-performance computing systems, remotely sited sensor networks
+            fail to provide the unified, adaptive insights needed for optimal crop
+            management and biosecurity. Emerging 5G/6G technologies—with adaptive
+            low-latency and high-throughput capabilities—offer a transformative
+            opportunity to bridge this gap by creating a resilient, unified, and secure
+            digital-physical fabric, enabling innovative scientific applications in
+            digital agriculture.</p>
+            <p>In this talk, we will present xGFabric -- and end-to-end system for coupling
+            IoT devices and actuators with HPC systems to implement
+            "modeling-in-the-loop" applications. xGFabric takes advantage of
+            innovations in 5G/6G network infrastructure and a full-stack distributed
+            runtime system to unify computing, network, and storage devices at all device
+            scales.  We will discuss the xGFabric architecture and discuss a working
+            prototype that uses in-the-loop Computational Fluid Dynamics to generates
+            real-time predictions of growing conditions for citrus in a specialized
+            facility located in the California Central Valley.</p>
+            <strong>Bio:</strong><br />
+              <p>Dr. Rich Wolski is a Professor of Computer Science at the University of California, Santa Barbara (UCSB) where he holds the Duval Presidential Chair in Energy Efficiency.  Having received his M.S. and Ph.D.  degrees from the University of California at Davis (while a research scientist at Lawrence Livermore National Laboratory) he has also held positions at the University of California, San Diego, and the University of Tennessee, the the San Diego Supercomputer Center and Lawrence Berkeley National Laboratory.  Rich has led several national scale research efforts in the area of distributed systems and is the progenitor of the Eucalyptus open source cloud project.</p>
           </td>
         </tr>
          <tr>
@@ -127,7 +153,17 @@ hide_title: true
         </tr>
         <tr>
           <td>2:00-3:30</td>
-          <td><strong>Research Paper Session</strong></td>
+          <td>
+          <strong>Research Paper Session</strong><br />
+          <strong>Session Chair:</strong> Hari Subramoni<br />
+          <ol>
+            <li>Ortho-Fuse: Orthomosaic Generation for Sparse High-Resolution Crop Health Datasets Through Intermediate Optical Flow Estimation<br />Rugved Katole OSU, Christopher Stewart, OSU</li>
+            <li>HARVEST Inference: Characterizing Digital Agriculture Workloads across Compute Continuum<br />Tian Chen, OSU, Quentin Anthony, OSU, Dhabaleswar K. Panda, OSU</li>
+            <li>An HPC Framework for Multi-Modal Plant Phenotyping Integrating Controlled Environment and Open Field Studies<br /> Sungchan Oh, Purdue University, Libo Zhang, Purdue University, Yang Yang, Purdue University, Mitch Tuinstra, Purdue University</li>
+            <li>PhenoTracker: A machine learning model to track grape phenology<br />Nathan Balcarcel, Washington State University, Paola Pesantez-Cabrera, Washington State University, Kristen Goebel, Oregon State University, Markus Keller, Washington State University, Lav Khot, Washington State University, Alan Fern, Oregon State University, Ananth Kalyanaraman, Washington State University</li>
+            <li>XAIPath: Temporal-Environmental Explainable AI Framework for Co-Contaminated Food Pathogen Detection in Microscopic Imaging<br />Anas AlSobeh, Southern Illinois University, Amer AbuGhazaleh, Southern Illinois University, Namariq Dhahir, Southern Illinois University, Malek Rababa, Southern Illinois University</li>
+          </ol>
+          </td>
         </tr>
         <tr>
           <td>3:30-4:00</td>
