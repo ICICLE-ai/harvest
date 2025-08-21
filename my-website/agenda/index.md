@@ -49,15 +49,16 @@ hide_title: true
           <td>
           <strong>Invited Talk 1</strong><br />
           <strong>Speaker:</strong> <a href="https://www.linkedin.com/in/crakerb/">Ben Craker</a>, AgGateway, USA<br />
-            <!-- <img 
-              src={require("/img/Rich-Wolski-Headshot.jpg").default}
-              alt="Rich Wolski Headshot" 
+            <img 
+              src={require("/img/Ben-Craker-Headshot.jpg").default}
+              alt="Ben Craker Headshot" 
               style={{
-                width: '100px', 
-                height: 'auto', 
-                marginTop: '10px'
-              }} 
-            /> -->
+              width: '100px', 
+              height: 'auto', 
+              marginTop: '10px'
+            }} 
+            />
+            <br />
           <strong>Title:</strong><br />
             <p>AI – Agricultural Interoperability: Evolving Data Standards in the Era of Artificial Intelligence</p>
           <strong>Abstract:</strong><br />
