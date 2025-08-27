@@ -50,10 +50,10 @@ sidebar_position: 2
     <p>Papers should present original research and should provide sufficient background material to make them accessible to the broader community.</p>
   </div>
 
-  <div class="workshop-section">
+  <!-- <div class="workshop-section">
     <h2 class="section-title">Best Paper Award</h2>
     <p>A "Best Paper Award" will be given to the author(s) of the paper selected by the Technical Program Committee and the Program Chairs. The award will be determined from viewpoints of the technical and scientific merits, impact on the science and engineering of the research work and the clarity of presentation of the research contents in the paper.</p>
-  </div>
+  </div> -->
 
   <!-- Themes Section
   <div class="workshop-section">
@@ -109,7 +109,7 @@ sidebar_position: 2
     </div>  
     <!-- Technical Program Committee -->
     <div class="workshop-section">
-    <h2 class="section-title">Technical Program Committee (Confirmed so far)</h2>
+    <h2 class="section-title">Technical Program Committee</h2>
     <ul>
       <li><a href="https://www.tuskegee.edu/programs-courses/colleges-schools/caens/daes/contact-us/daes-faculty/bernard-gregory">Gregory C. Bernard</a>, Tuskegee University</li>
       <li><a href="https://www.iasoybeans.com/about/staff-listing/matthew-carroll">Matthew Carroll</a>, Iowa Soybean Association</li>

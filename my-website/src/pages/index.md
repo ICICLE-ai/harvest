@@ -70,7 +70,7 @@ hide_title: true
   </div>
 
   <div class="workshop-section">
-    <h2 class="section-title">Technical Program Committee (Confirmed so far)</h2>
+    <h2 class="section-title">Technical Program Committee</h2>
     <ul>
       <li><a href="https://www.tuskegee.edu/programs-courses/colleges-schools/caens/daes/contact-us/daes-faculty/bernard-gregory">Gregory C. Bernard</a>, Tuskegee University</li>
       <li><a href="https://www.iasoybeans.com/about/staff-listing/matthew-carroll">Matthew Carroll</a>, Iowa Soybean Association</li>
