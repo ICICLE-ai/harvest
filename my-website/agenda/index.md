@@ -126,11 +126,27 @@ hide_title: true
               <p>Dr. Rich Wolski is a Professor of Computer Science at the University of California, Santa Barbara (UCSB) where he holds the Duval Presidential Chair in Energy Efficiency.  Having received his M.S. and Ph.D.  degrees from the University of California at Davis (while a research scientist at Lawrence Livermore National Laboratory) he has also held positions at the University of California, San Diego, and the University of Tennessee, the the San Diego Supercomputer Center and Lawrence Berkeley National Laboratory.  Rich has led several national scale research efforts in the area of distributed systems and is the progenitor of the Eucalyptus open source cloud project.</p>
           </td>
         </tr>
-         <tr>
+        <tr>
           <td>4:30-5:00</td>
           <td>
           <strong>Invited Talk 3</strong> <br />
-          <strong>Speaker:</strong> <a href="https://www.nifa.usda.gov/contact-us/steven-j-thomson">Steven Thomson</a>, USDA National Institute of Food and Agriculture, USA<br />
+          <strong>Speaker:</strong> <a href="https://www.nifa.usda.gov/contact-us/steven-j-thomson">Steven J. Thomson</a>, USDA National Institute of Food and Agriculture, USA<br />
+            <img 
+              src={require("/img/Steven-Thomson-Headshot.png").default}
+              alt="Steven Thomson Headshot" 
+              style={{
+                width: '100px', 
+                height: 'auto', 
+                marginTop: '10px'
+              }} 
+            />
+            <br />
+          <strong>Title:</strong><br />
+            <p> Funding Opportunities at the Intersection of Agricultural and  Computer Science at the USDA-NIFA</p>
+          <strong>Abstract:</strong><br />
+            <p>The USDA-NIFA funds projects involving sensing, mechanization, modeling, water, nutrient, and general crop and animal management that involve Machine Learning and AI.  A broad MOU has been in place since 2023 between NIFA and NSF that also allows great flexibility in NSF program collaboration.  Pertinent grant programs will be outlined, and example funded projects will be highlighted.</p>
+            <strong>Bio:</strong><br />
+              <p>Dr. Steven J. Thomson is National Program Leader (NPL) with the USDA National Institute of Food and Agriculture (NIFA) and Fellow with the American Society of Agricultural and Biological Engineers (ASABE). He engages Universities, other federal agencies, and industry to provide national leadership in Capacity and Competitive Grant programs. Grant programs he manages or co-manages at NIFA include Data Science, Engineering and Precision Agriculture, and SBIR Engineering programs. NSF-collaborative programs he manages Include Foundational Research in Robotics, Cyber-Physical Systems, and AI Institutes. He was a Lead Scientist with the USDA ARS before joining USDA-NIFA in 2016 and served seven years on faculty in the Engineering Fundamentals and Biological Systems Engineering (BSE) Departments at Virginia Tech, where he received the Alpha Epsilon (Research/Extension) and Outstanding Faculty awards. He has authored or co-authored over 100 journal articles, two book chapters, and several Extension publications and software.</p>
           </td>
         </tr>
         <tr>
