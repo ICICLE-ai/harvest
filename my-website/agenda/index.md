@@ -150,7 +150,13 @@ hide_title: true
           </td>
         </tr>
         <tr>
-          <td>5:00-5:05</td>
+        <td>5:00-5:25</td>
+        <td>
+        <strong>HARVEST Demo</strong>
+        </td>
+        </tr>
+        <tr>
+          <td>5:25-5:30</td>
           <td>
             <strong>Closing Remarks</strong><br />
             Hari Subramoni, The Ohio State University<br />
@@ -254,7 +260,7 @@ hide_title: true
           </td>
         </tr>
         <tr>
-          <td>4:30-4:55</td>
+          <td>4:30-5:25</td>
           <td>
           <strong>Research Posters and Demo Session</strong><br />
           <ul>
@@ -266,7 +272,7 @@ hide_title: true
           </td>
         </tr>
         <tr>
-          <td>4:55-5:00</td>
+          <td>5:25-5:30</td>
           <td>
             <strong>Closing Remarks</strong><br />
             Hari Subramoni, The Ohio State University<br />
