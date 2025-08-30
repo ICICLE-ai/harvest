@@ -164,7 +164,7 @@ hide_title: true
           </td>
         </tr>
         <tr>
-          <td>5:10-7:00</td>
+          <td>5:35-7:00</td>
           <td><strong>Visit to SDSC Computing Facilities</strong></td>
         </tr>
       </tbody>
