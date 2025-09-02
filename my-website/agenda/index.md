@@ -255,8 +255,24 @@ hide_title: true
         <tr>
           <td>4:00-4:30</td>
           <td>
-          <strong>Invited Talk 5</strong><br />
+          <strong>Invited Talk 5</strong> <br />
           <strong>Speaker:</strong> <a href="https://www.linkedin.com/in/richard-swanson/">Richard Swanson</a>, Precision Planting, USA<br />
+          <img 
+            src={require("/img/Richard-Swanson-Headshot.png").default}
+            alt="Richard Swanson Headshot" 
+            style={{
+              width: '100px', 
+              height: 'auto', 
+              marginTop: '10px'
+            }} 
+          /><br />
+          <strong>Title:</strong><br />
+            <p>From Hype to Harvest: A Discussion on Productionizing AgTech Products</p>
+          <strong>Abstract:</strong><br />
+          <p>Computing has already reshaped agriculture. We’ll trace planter gains—from near-perfect singulation to active downforce—and why those wins stuck: clear ROI, season-long reliability, and strong support. We then contrast those wins with hype that fizzled. Finally, we make the case for why AI may stick in 2025: cheaper edge compute, stronger vision models, and proven benefits.</p>
+          <strong>Bio:</strong><br />
+              <p>Richard Swanson leads the data-science team behind the computer-vision models that drive Symphony Vision. He earned a B.S. in Mechanical Engineering from Bradley University and began his career in hydraulic-controls. Richard moved into ag-tech in 2017, working on auto-guidance systems at CNH Industrial. <br />
+In 2020 he joined Precision Planting, first working on the Gen 3 20|20 system, then managing the firmware group responsible for nearly thirty embedded devices. Along the way he completed an M.S. in Computer Science from Georgia Tech. Today, Richard blends mechanical know-how with data science to turn edge-AI insights into tangible ROI for row-crop growers.</p>
           </td>
         </tr>
         <tr>
