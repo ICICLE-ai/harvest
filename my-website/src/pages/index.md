@@ -54,11 +54,16 @@ hide_title: true
   <div class="workshop-section">
     <h2 class="section-title">Panel</h2>
     <h3>Title</h3>
-    <p>Coming Soon!</p>
+    <p>Current and Future Deployment of AI in Agriculture</p>
     <h3>Moderator</h3>
     <p><a href="https://fabe.osu.edu/our-people/scott-shearer">Scott Shearer</a>, The Ohio State University</p>
     <h3>Members</h3>
-    <p>Coming Soon!</p>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/nicholas-butts/">Nicholas Butts</a>, John Deere, USA</li>
+      <li><a href="https://www.linkedin.com/in/crakerb/">Ben Craker</a>, AgGateway, USA</li>
+      <li><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe</a>, University of Arizona, USA</li>
+      <li><a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA</li>
+    </ul>
   </div>
 
   <div class="workshop-section">
