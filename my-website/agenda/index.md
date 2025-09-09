@@ -78,6 +78,15 @@ hide_title: true
           <td>2:00-3:30</td>
           <td>
           <strong>Panel Discussion</strong> <br />
+          <strong>Panel Title: Current and Future Deployment of AI in Agriculture</strong> <br />
+          <strong>Panel Moderator:</strong> <a href="https://fabe.osu.edu/our-people/scott-shearer"> Scott Shearer</a><br />
+          <strong>Panelists:</strong> <br />
+          <ul>
+            <li><a href="https://www.linkedin.com/in/nicholas-butts/">Nicholas Butts</a>, John Deere, USA</li>
+            <li><a href="https://www.linkedin.com/in/crakerb/">Ben Craker</a>, AgGateway, USA</li>
+            <li><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe</a>, University of Arizona, USA</li>
+            <li><a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA</li>
+          </ul>
           </td>
         </tr>
         <tr>
