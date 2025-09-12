@@ -61,6 +61,7 @@ hide_title: true
             <br />
           <strong>Title:</strong><br />
             <p>AI – Agricultural Interoperability: Evolving Data Standards in the Era of Artificial Intelligence</p>
+            <a href="/harvest/presentations/Ben_Craker_Invited_Talk_1.pdf" target="_blank" rel="noopener noreferrer">View Slides</a><br />
           <strong>Abstract:</strong><br />
           <p>For over two decades, AgGateway has addressed data interoperability challenges across the agricultural value chain, from standardized B2B messaging in the input supply chain to open-source tools that unlock high-resolution geospatial data from precision equipment. Throughout this journey, waves of technological innovation have shaped the member-led work, but few have shown as much transformative potential as the current surge in artificial intelligence.</p>
           <p>This session will explore historical parallels between past tech disruptions and today’s AI moment, highlighting how tools like chatbots and generative models are beginning to influence interoperability efforts. We’ll examine how agricultural data standards work is shifting and what new priorities are emerging among AgGateway members.</p>
@@ -86,6 +87,7 @@ hide_title: true
             <li><a href="https://www.linkedin.com/in/crakerb/">Ben Craker</a>, AgGateway, USA</li>
             <li><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe</a>, University of Arizona, USA</li>
             <li><a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA</li>
+            <li><a href="https://www.nifa.usda.gov/contact-us/steven-j-thomson">Steven J. Thomson</a>, USDA National Institute of Food and Agriculture, USA</li>
           </ul>
           </td>
         </tr>
@@ -112,6 +114,7 @@ hide_title: true
             <p>xGFabric: Coupling Sensor Networks and High-performance Computing
             Facilities with Advanced Wireless Networks for Near 
             Real-Time Simulation of Digital Agriculture</p>
+            <a href="/harvest/presentations/Rich_Wolski_Invited_Talk_2.pdf" target="_blank" rel="noopener noreferrer">View Slides</a><br />
           <strong>Abstract:</strong><br />
             <p>Modern agriculture faces urgent challenges from climate variability and
             increasing global demands that require rapid, real-time decision support.
@@ -212,6 +215,7 @@ hide_title: true
             />
             <strong>Session Chair: </strong><a href="https://cse.osu.edu/people/subramoni.1">Hari Subramoni</a><br />
             <strong>Title: </strong> Building a Data Infrastructure for Agriculture in Arizona<br />
+            <a href="/harvest/presentations/Arthur_Maccabe_Keynote_2.pdf" target="_blank" rel="noopener noreferrer">View Slides</a><br />
             <strong>Abstract: </strong>While Arizona is not likely to be one of the first states that comes to mind when thinking about agricultural production in the US, agriculture in Arizona supports over 130,000 jobs, has a $23.3B economic impact, with exports to over 70 countries.  The Yuma Valley in southwestern Arizona produces 90% of the leafy greens consumed in North America between November and March.  Given the limited water supply, this kind of productivity could only be achieved by embracing technology.  Today, this means embracing AI which means embracing the collection of data.  Arizona has several resources, including Biosphere 2 and an outdoor phenotying facility , that will be essential for collecting the data needed to build new models needed for agriculture.<br />
             <strong>Speaker Bio: </strong>Arthur B. (Barney) Maccabe is a professor in the College of Information Science at The University of Arizona.  From 2009 to 2022, Dr Maccabe served as the Director of the Computer Science and Mathematics Division (CSMD) at the Department of Energy’s Oak Ridge National Laboratory (ORNL) and as the ORNL Point of Contact for the research portion of the Advanced Scientific Computing Research (ASCR) program in the Department of Energy, Office of Science.  Prior to his appointment at ORNL, Dr. Maccabe spent over twenty-five years as a professor in the Computer Science Department at the University of New Mexico (UNM) where he graduated eleven PhD students and nine MS students.  While at UNM, Dr. Maccabe also served as the director of the Center for High Performance Computing and as the Interim Chief Information Officer for the university.<br />
             Professor Maccabe’s current research is focused on mechanisms and policies to ensure that the creators of data are able to realize value for the information they provide. His previous research focused on the design and development of system software for massively parallel systems. He was an architect for a series of lightweight operating systems for massively parallel computing systems. Dr. Maccabe has also conducted sponsored research in a wide- range of areas, including: dependence representation for compilers, network intrusion detection, network protocol offload, lightweight file and I/O systems, system software for sensor networks, and virtualization in high end computing systems.<br />
@@ -261,7 +265,7 @@ hide_title: true
           <td>3:30-4:00</td>
           <td><strong>Coffee Break</strong></td>
         </tr>
-        <tr>
+        <!-- <tr>
           <td>4:00-4:30</td>
           <td>
           <strong>Invited Talk 5</strong> <br />
@@ -283,9 +287,13 @@ hide_title: true
               <p>Richard Swanson leads the data-science team behind the computer-vision models that drive Symphony Vision. He earned a B.S. in Mechanical Engineering from Bradley University and began his career in hydraulic-controls. Richard moved into ag-tech in 2017, working on auto-guidance systems at CNH Industrial. <br />
 In 2020 he joined Precision Planting, first working on the Gen 3 20|20 system, then managing the firmware group responsible for nearly thirty embedded devices. Along the way he completed an M.S. in Computer Science from Georgia Tech. Today, Richard blends mechanical know-how with data science to turn edge-AI insights into tangible ROI for row-crop growers.</p>
           </td>
+        </tr> -->
+        <tr>
+          <td>4:00-5:00</td>
+          <td><strong>Paper Presentation Session</strong></td>
         </tr>
         <tr>
-          <td>4:30-5:25</td>
+          <td>5:00-5:25</td>
           <td>
           <strong>Research Posters and Demo Session</strong><br />
           <ul>
