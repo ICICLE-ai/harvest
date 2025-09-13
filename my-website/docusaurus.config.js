@@ -130,10 +130,10 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'images',
-        path: 'images', 
+        id: 'photos',
+        path: 'photos', 
         sidebarPath: false, 
-        routeBasePath: 'images',
+        routeBasePath: 'photos',
         showLastUpdateTime: true,
       },
     ],
@@ -178,7 +178,7 @@ const config = {
         { to: 'agenda', label: 'Agenda', position: 'left' },
         { to: 'committees', label: 'Committees', position: 'left' }, 
         { to: 'travel_grant', label: 'Travel Grant', position: 'left' },
-        { to: 'images', label: 'Images', position: 'left' },
+        { to: 'photos', label: 'Photos', position: 'left' },
         // { type: 'dropdown', label: 'Tags',  position: 'left' ,items: [
         //     {
         //       label: 'Documentation Tags',
