@@ -259,7 +259,8 @@ hide_title: true
             </li>
             <li>
               <strong>HARVEST Inference: Characterizing Digital Agriculture Workloads across Compute Continuum</strong><br />
-              Tian Chen, OSU, Quentin Anthony, OSU, Dhabaleswar K. Panda, OSU
+              Tian Chen, OSU, Quentin Anthony, OSU, Dhabaleswar K. Panda, OSU <br />
+              <a href="/harvest/presentations/Tian_Harvest_Poster.pdf" target="_blank" rel="noopener noreferrer">View Slides</a>
             </li>
             <li>
               <strong>An HPC Framework for Multi-Modal Plant Phenotyping Integrating Controlled Environment and Open Field Studies</strong><br />
