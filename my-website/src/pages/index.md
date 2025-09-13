@@ -68,6 +68,11 @@ hide_title: true
   </div>
 
   <div class="workshop-section">
+    <h2 class="section-title">Travel Awards</h2>
+    <p>Through a partnership with <a href="https://aiinstitutes.org/" target="_blank">NSF AI Institutes Virtual Organization</a>, we were able to provide travel awards to 12 candidates.</p>
+  </div>
+
+  <div class="workshop-section">
     <h2 class="section-title">Organizing Committee</h2>
     <ul>
       <li><a href="https://cse.osu.edu/people/subramoni.1">Hari Subramoni</a>, The Ohio State University</li>

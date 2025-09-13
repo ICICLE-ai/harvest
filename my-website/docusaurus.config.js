@@ -104,6 +104,7 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
+
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -122,6 +123,17 @@ const config = {
         path: 'travel_grant', 
         sidebarPath: false, 
         routeBasePath: 'travel_grant',
+        showLastUpdateTime: true,
+      },
+    ],
+
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'images',
+        path: 'images', 
+        sidebarPath: false, 
+        routeBasePath: 'images',
         showLastUpdateTime: true,
       },
     ],
@@ -166,6 +178,7 @@ const config = {
         { to: 'agenda', label: 'Agenda', position: 'left' },
         { to: 'committees', label: 'Committees', position: 'left' }, 
         { to: 'travel_grant', label: 'Travel Grant', position: 'left' },
+        { to: 'images', label: 'Images', position: 'left' },
         // { type: 'dropdown', label: 'Tags',  position: 'left' ,items: [
         //     {
         //       label: 'Documentation Tags',
