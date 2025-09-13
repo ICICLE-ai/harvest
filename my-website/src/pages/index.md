@@ -63,6 +63,7 @@ hide_title: true
       <li><a href="https://www.linkedin.com/in/crakerb/">Ben Craker</a>, AgGateway, USA</li>
       <li><a href="https://infosci.arizona.edu/person/barney-maccabe">Arthur "Barney" Maccabe</a>, University of Arizona, USA</li>
       <li><a href="https://cs.ucsb.edu/people/faculty/rich-wolski">Rich Wolski</a>, University of California Santa Barbara, USA</li>
+      <li><a href="https://www.nifa.usda.gov/contact-us/steven-j-thomson">Steven Thomson</a>, USDA National Institute of Food and Agriculture, USA</li>
     </ul>
   </div>
 
