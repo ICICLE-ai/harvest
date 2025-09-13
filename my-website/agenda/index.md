@@ -253,11 +253,29 @@ hide_title: true
           <strong>Research Paper Session</strong><br />
           <strong>Session Chair:</strong> Hari Subramoni<br />
           <ol>
-            <li>Ortho-Fuse: Orthomosaic Generation for Sparse High-Resolution Crop Health Datasets Through Intermediate Optical Flow Estimation<br />Rugved Katole OSU, Christopher Stewart, OSU</li>
-            <li>HARVEST Inference: Characterizing Digital Agriculture Workloads across Compute Continuum<br />Tian Chen, OSU, Quentin Anthony, OSU, Dhabaleswar K. Panda, OSU</li>
-            <li>An HPC Framework for Multi-Modal Plant Phenotyping Integrating Controlled Environment and Open Field Studies<br /> Sungchan Oh, Purdue University, Libo Zhang, Purdue University, Yang Yang, Purdue University, Mitch Tuinstra, Purdue University</li>
-            <li>PhenoTracker: A machine learning model to track grape phenology<br />Nathan Balcarcel, Washington State University, Paola Pesantez-Cabrera, Washington State University, Kristen Goebel, Oregon State University, Markus Keller, Washington State University, Lav Khot, Washington State University, Alan Fern, Oregon State University, Ananth Kalyanaraman, Washington State University</li>
-            <li>XAIPath: Temporal-Environmental Explainable AI Framework for Co-Contaminated Food Pathogen Detection in Microscopic Imaging<br />Anas AlSobeh, Southern Illinois University, Amer AbuGhazaleh, Southern Illinois University, Namariq Dhahir, Southern Illinois University, Malek Rababa, Southern Illinois University</li>
+            <li>  
+              <strong>Ortho-Fuse: Orthomosaic Generation for Sparse High-Resolution Crop Health Datasets Through Intermediate Optical Flow Estimation</strong><br />
+              Rugved Katole OSU, Christopher Stewart, OSU
+            </li>
+            <li>
+              <strong>HARVEST Inference: Characterizing Digital Agriculture Workloads across Compute Continuum</strong><br />
+              Tian Chen, OSU, Quentin Anthony, OSU, Dhabaleswar K. Panda, OSU
+            </li>
+            <li>
+              <strong>An HPC Framework for Multi-Modal Plant Phenotyping Integrating Controlled Environment and Open Field Studies</strong><br />
+              Sungchan Oh, Purdue University, Libo Zhang, Purdue University, Yang Yang, Purdue University, Mitch Tuinstra, Purdue University <br />
+              <a href="/harvest/presentations/Research_Paper_3.pdf" target="_blank" rel="noopener noreferrer">View Slides</a>
+            </li>
+            <li>
+              <strong>PhenoTracker: A machine learning model to track grape phenology</strong><br />
+              Nathan Balcarcel, Washington State University, Paola Pesantez-Cabrera, Washington State University, Kristen Goebel, Oregon State University, Markus Keller, Washington State University, Lav Khot, Washington State University, Alan Fern, Oregon State University, Ananth Kalyanaraman, Washington State University <br />
+              <a href="/harvest/presentations/Research_Paper_4.pdf" target="_blank" rel="noopener noreferrer">View Slides</a>
+            </li>
+            <li>
+              <strong>XAIPath: Temporal-Environmental Explainable AI Framework for Co-Contaminated Food Pathogen Detection in Microscopic Imaging</strong><br />
+              Anas AlSobeh, Southern Illinois University, Amer AbuGhazaleh, Southern Illinois University, Namariq Dhahir, Southern Illinois University, Malek Rababa, Southern Illinois University<br />
+              <a href="/harvest/presentations/Research_Paper_5.pdf" target="_blank" rel="noopener noreferrer">View Slides</a>
+            </li>
           </ol>
           </td>
         </tr>
@@ -297,10 +315,13 @@ In 2020 he joined Precision Planting, first working on the Gen 3 20|20 system, t
           <td>
           <strong>Research Posters and Demo Session</strong><br />
           <ul>
-            <li>Matt Lieber, OSU</li>
             <li>Anirudh Potlapally, OSU</li>
-            <li>Tinggang Wang, OSU</li>
-            <li>Aswathnarayanan Radhakrishnan, OSU</li>
+            <li><strong>ArrayMorph: Efficient Edge-to-Cloud Data Management for Machine Learning</strong><br />
+            Tinggang Wang, OSU <br />
+            <a href="/harvest/presentations/Tinggang_Harvest_Poster.pdf" target="_blank" rel="noopener noreferrer">View Slides</a></li>
+            <li><strong>Mining Earth's Digital Strata for Geospatial AI: Bridging Data Collection, Synthesis, and Self-Training for Intelligent Earth Observation</strong><br />
+            Aswathnarayanan Radhakrishnan, OSU <br />
+            <a href="/harvest/presentations/Ash_Harvest_Poster.pdf" target="_blank" rel="noopener noreferrer">View Slides</a></li>
           </ul>
           </td>
         </tr>
