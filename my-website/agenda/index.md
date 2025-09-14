@@ -165,6 +165,10 @@ hide_title: true
         <td>5:00-5:25</td>
         <td>
         <strong>HARVEST Demo</strong>
+        <br />
+        <br />
+        <p>Matt Lieber, The Ohio State University <br />
+        Anirudh Potlapally, The Ohio State University</p>
         </td>
         </tr>
         <tr>
@@ -316,7 +320,12 @@ In 2020 he joined Precision Planting, first working on the Gen 3 20|20 system, t
           <td>
           <strong>Research Posters and Demo Session</strong><br />
           <ul>
-            <li>Anirudh Potlapally, OSU</li>
+            <li>
+              <strong>WILD-OV: Weakly-supervised Inference for Localization and Detection in Ecological and Agricultural Visual Scenes Using Open Vocabulary Models</strong><br />
+              Anirudh Potlapally, OSU<br />
+            <a href="/harvest/presentations/Anirudh_Presentation.pdf" target="_blank" rel="noopener noreferrer">View Slides</a>
+            <a href="/harvest/presentations/Anirudh_Poster.pdf" target="_blank" rel="noopener noreferrer">View Poster</a>
+            </li>
             <li><strong>ArrayMorph: Efficient Edge-to-Cloud Data Management for Machine Learning</strong><br />
             Tinggang Wang, OSU <br />
             <a href="/harvest/presentations/Tinggang_Harvest_Poster.pdf" target="_blank" rel="noopener noreferrer">View Slides</a></li>
