@@ -1,0 +1,328 @@
+.theme-doc-markdown {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Original Theme (Commented Out)
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  */
+  
+  /* OSU Color Scheme */
+  --osu-scarlet: #BB0000;
+  --osu-scarlet-dark: #990000;
+  --osu-scarlet-darker: #770000;
+  --osu-gray: #666666;
+  --osu-dark-gray: #333333;
+  --osu-light-gray: #D6D6D6;
+  
+  /* Theme Colors */
+  --ifm-color-primary: var(--osu-scarlet);
+  --ifm-color-primary-dark: var(--osu-scarlet-dark);
+  --ifm-color-primary-darker: var(--osu-scarlet-darker);
+  --ifm-color-primary-darkest: #550000;
+  --ifm-color-primary-light: #DD3333;
+  --ifm-color-primary-lighter: #EE6666;
+  --ifm-color-primary-lightest: #FF9999;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(187, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+[data-theme='dark'] {
+  /* Original Dark Mode
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  */
+  
+  --ifm-color-primary: #FF4C4C;
+  --ifm-color-primary-dark: #FF3333;
+  --ifm-color-primary-darker: #FF1A1A;
+  --ifm-color-primary-darkest: #E60000;
+  --ifm-color-primary-light: #FF6666;
+  --ifm-color-primary-lighter: #FF8080;
+  --ifm-color-primary-lightest: #FFB3B3;
+  --ifm-background-color: var(--osu-dark-gray);
+  --ifm-background-surface-color: var(--osu-gray);
+  --ifm-card-background-color: #444444;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Use the hide classes when you want a table of contents
+link different than the text it links to */
+
+/* Don't show content in this class on the page */
+.markdown h1.hide-on-page,
+.markdown h2.hide-on-page,
+.markdown h3.hide-on-page,
+.markdown h4.hide-on-page{
+  display: none;
+}
+
+/* Don't show content in this class on the table of contents */
+.table-of-contents .hide-on-toc {
+  display: none;
+}
+
+/* Workshop Styling */
+
+/* Scoping to workshop-container */
+.workshop-container {
+  /* Original Colors
+  --primary-green: #2e8555;
+  --section-bg-color: #f8f9fa;
+  --text-main-color: #333;
+  --workshop-header-bg-color: #d1e3e1;
+  --workshop-title-color: #2c3e50;
+  --workshop-subtitle-color: #4b636b;
+  --workshop-location-date-color: #3a4d4f;
+  --link-color: #2e8555;
+  */
+  
+  /* OSU Color Variables */
+  --primary-scarlet: var(--osu-scarlet);
+  --section-bg-color: #f8f9fa;
+  --text-main-color: var(--osu-dark-gray);
+  --border-color: var(--osu-light-gray);
+
+  --workshop-header-bg-color: #f2f2f2;  /* Light gray background for header */
+  --workshop-title-color: var(--osu-scarlet);  /* Scarlet for titles */
+  --workshop-subtitle-color: var(--osu-gray);  /* Gray for subtitles */
+  --workshop-location-date-color: var(--osu-dark-gray);
+  --link-color: var(--osu-scarlet);  /* Scarlet for links */
+  --link-hover-color: var(--osu-scarlet-dark);  /* Darker scarlet on hover */
+  
+  /* Spacing variables*/
+  --large-spacing: 2rem;
+  --medium-spacing: 1.5rem;
+  --small-spacing: 1rem; 
+
+  /* Text */
+  --font-family-sans: 'Arial', sans-serif;
+  --font-family-serif: 'Georgia', serif;
+  line-height: 1.6;
+  color: var(--text-main-color);
+  
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Original body styles
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-sans);
+  line-height: 1.6;
+  color: var(--text-main-color);
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+*/
+
+/* Body with darker gray background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-sans);
+  line-height: 1.6;
+  color: var(--text-main-color);
+  background-color: #e0e0e0;  
+  min-height: 100vh;
+}
+
+/* Original container styles
+.workshop-container {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+*/
+
+/* Updated container with gray background */
+.workshop-container {
+  background-color: #e0e0e0;  /* Match body background */
+  padding: 2rem 1rem;     
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;      
+}
+
+.workshop-container .workshop-header {
+  text-align: center;
+  margin: var(--large-spacing) 0;
+  padding: var(--large-spacing);
+  background: var(--workshop-header-bg-color);
+  border-radius: 8px;
+}
+
+.workshop-container .workshop-title {
+  font-size: 3rem;
+  color: var(--workshop-title-color);
+  margin-bottom: var(--small-spacing);
+  font-weight: bold;
+}
+
+.workshop-container .workshop-subtitle {
+  font-size: 1.4rem;
+  color: var(--workshop-subtitle-color);
+  margin-bottom: var(--small-spacing);
+}
+
+.workshop-container .workshop-location-date {
+  margin: var(--small-spacing) 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--workshop-location-date-color);
+}
+
+/* Content Sections */
+.workshop-section {
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: var(--medium-spacing);
+  margin: var(--large-spacing) 0;
+  background-color: #ffffff;  
+  border: 1px solid rgba(0, 0, 0, 0.05);  
+}
+
+.workshop-section h2:not(.section-title) {
+  font-size: 1.8rem;
+  color: var(--osu-scarlet);
+  border-bottom: 2px solid var(--osu-scarlet);
+  padding-bottom: var(--small-spacing);
+  margin: var(--large-spacing) 0 var(--medium-spacing);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: var(--osu-scarlet);
+  border-bottom: 2px solid var(--osu-scarlet);
+  padding-bottom: var(--small-spacing);
+  margin-bottom: var(--medium-spacing);
+}
+
+/* Different type of section, highlighted / banner */
+/* Original highlight section
+.workshop-highlight-section {
+  background: var(--section-bg-color);
+  border-left: 4px solid var(--primary-green);
+  border-right: 4px solid var(--primary-green);
+  padding: var(--medium-spacing);
+  margin: var(--medium-spacing) 0;
+}
+*/
+
+/* Updated with OSU colors */
+.workshop-highlight-section {
+  background: #fff0f0;  /* Very light red background */
+  border-left: 4px solid var(--osu-scarlet);
+  border-right: 4px solid var(--osu-scarlet);
+  padding: var(--medium-spacing);
+  margin: var(--medium-spacing) 0;
+}
+
+/* Harvest Workshop Agenda Styling */
+
+.harvest-program {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+.harvest-program .workshop-section {
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.harvest-program .section-title,
+.workshop-section h2.section-title,
+.workshop-section h3.section-title,
+.workshop-section h4.section-title {
+  color: var(--ifm-color-primary);
+  border-bottom: 2px solid var(--ifm-color-primary-lightest);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.harvest-program .workshop-agenda {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  min-width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.harvest-program .workshop-agenda th {
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 12px;
+  text-align: left;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.harvest-program .workshop-agenda th:last-child {
+  width: 80%;
+}
+
+.harvest-program .workshop-agenda td {
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.25);
+  box-sizing: border-box;
+  width: 20%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.harvest-program .workshop-agenda td:last-child {
+  width: 80%;
+}
+
+.harvest-program .workshop-agenda tr:hover {
+  background: var(--ifm-color-primary-lightest);
+  opacity: 0.9;
+}
+
+
+
+.centered-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Center the main content column */
+.col.docItemCol_VOVn {
+  max-width: 900px;      
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;    
+  padding-right: 1rem;
+}
