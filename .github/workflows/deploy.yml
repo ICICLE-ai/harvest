@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3  # Latest version
         with:
-          path: my-website/build  # Ensure correct build path
+          path: my-website/dist  # Ensure correct build path
 
   deploy:
     needs: build
