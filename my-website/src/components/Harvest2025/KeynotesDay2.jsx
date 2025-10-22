@@ -3,16 +3,22 @@ import '../../assets/css/WorkshopProgram.css';
 import data from '../../assets/json/workshop_schedule2025Day2.json';
 import { Youtube, FileEarmarkPdfFill } from 'react-bootstrap-icons';
 
-// ✅ Dynamically import all speaker headshots
+// 🖼️ Dynamically import all speaker headshots
 const speakerImages = import.meta.glob(
   '../../assets/img/Harvest2025/HeadShots/*.{png,jpg,jpeg,svg,avif}',
+  { eager: true }
+);
+
+// 📄 Dynamically import ALL PDFs (talks + posters)
+const allPDFs = import.meta.glob(
+  '../../assets/pdfs/Harvest2025/Presentations/*.pdf',
   { eager: true }
 );
 
 const KeynotesDay2 = () => {
   const [open, setOpen] = useState(null);
 
-  // ✅ Helper to check if the session has details beyond time & title
+  // Helper to check if the session has details beyond time & title
   const hasDetails = (session) => {
     const keys = Object.keys(session);
     const detailKeys = keys.filter((key) => key !== 'time' && key !== 'title');
@@ -41,11 +47,10 @@ const KeynotesDay2 = () => {
               >
                 <div className="program-time">{session.time}</div>
                 <div className="program-title">{session.title}</div>
-                {/* Only show dropdown arrow if details exist */}
                 {showDetails && <div className="program-arrow">&#9660;</div>}
               </div>
 
-              {/* Expanded content (only renders if details exist) */}
+              {/* Expanded content */}
               {showDetails && (
                 <div
                   className="program-data"
@@ -55,9 +60,7 @@ const KeynotesDay2 = () => {
                     {/* Speaker Info + Image */}
                     {session.speaker && (
                       <div className="speaker-info">
-                        <p>
-                          <b>Speaker:</b> {session.speaker}
-                        </p>
+                        <p><b>Speaker:</b> {session.speaker}</p>
                         {session.image && (() => {
                           const match = Object.keys(speakerImages).find((path) =>
                             path.includes(session.image)
@@ -80,31 +83,49 @@ const KeynotesDay2 = () => {
 
                     {/* Multiple speakers */}
                     {session.speakers && (
-                      <p>
-                        <b>Speakers:</b> {session.speakers.join(', ')}
-                      </p>
+                      <p><b>Speakers:</b> {session.speakers.join(', ')}</p>
                     )}
 
                     {/* Chair */}
                     {session.chair && (
-                      <p>
-                        <b>Session Chair:</b> {session.chair}
-                      </p>
+                      <p><b>Session Chair:</b> {session.chair}</p>
                     )}
 
                     {/* Abstract */}
                     {session.abstract && (
-                      <p>
-                        <b>Abstract:</b> {session.abstract}
-                      </p>
+                      <p><b>Abstract:</b> {session.abstract}</p>
                     )}
 
                     {/* Bio */}
                     {session.bio && (
-                      <p>
-                        <b>Speaker Bio:</b> {session.bio}
-                      </p>
+                      <p><b>Speaker Bio:</b> {session.bio}</p>
                     )}
+
+                    {/* 📄 Speaker Talk PDF */}
+                    {session.pdf && (() => {
+                      const match = Object.keys(allPDFs).find((path) =>
+                        path.includes(session.pdf)
+                      );
+                      if (match) {
+                        return (
+                          <div className="attachments">
+                            <b>Talk Slides:</b>
+                            <div className="attachment-links">
+                              <a
+                                href={allPDFs[match].default}
+                                download
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="attachment-btn pdf-btn"
+                              >
+                                <FileEarmarkPdfFill className="attachment-icon" /> Download Talk (PDF)
+                              </a>
+                            </div>
+                          </div>
+                        );
+                      }
+                      return null;
+                    })()}
 
                     {/* Papers Section */}
                     {session.papers && (
@@ -121,22 +142,41 @@ const KeynotesDay2 = () => {
                       </div>
                     )}
 
-                    {/* Projects Section */}
+                    {/* Projects / Posters Section */}
                     {session.projects && (
                       <div className="projects-section">
-                        <b>Projects:</b>
+                        <b>Projects and Posters:</b>
                         <ul>
-                          {session.projects.map((project, i) => (
-                            <li key={i}>
-                              <p><b>{project.title}</b></p>
-                              <p><i>{project.authors.join(', ')}</i></p>
-                            </li>
-                          ))}
+                          {session.projects.map((project, i) => {
+                            const pdfMatch = project.pdf
+                              ? Object.keys(allPDFs).find((path) =>
+                                  path.includes(project.pdf)
+                                )
+                              : null;
+
+                            return (
+                              <li key={i}>
+                                <p><b>{project.title}</b></p>
+                                <p><i>{project.authors.join(', ')}</i></p>
+                                {pdfMatch && (
+                                  <a
+                                    href={allPDFs[pdfMatch].default}
+                                    download
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="attachment-btn pdf-btn"
+                                  >
+                                    <FileEarmarkPdfFill className="attachment-icon" /> View Poster (PDF)
+                                  </a>
+                                )}
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     )}
 
-                    {/* Attachments */}
+                    {/* Optional Attachments */}
                     {session.attachments &&
                       (session.attachments.youtube || session.attachments.pdf) && (
                         <div className="attachments">
