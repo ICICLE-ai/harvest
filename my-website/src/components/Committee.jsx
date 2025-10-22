@@ -12,32 +12,40 @@ const speakers = [
     { name: "Paola Gabriela", link: "https://www.linkedin.com/in/paolapesantezc/?originalSubdomain=ec", affiliation: "Washington State University" }
   ],
   [
-    { name: "Rajveer Dhillon", link: "https://www.centralstate.edu/profiles/rajveer-dhillon", affiliation: "Central State University" },
-    { name: "", link: "https://www.linkedin.com/in/paolapesantezc/?originalSubdomain=ec", affiliation: "" }
+    { name: "Rajveer Dhillon", link: "https://www.centralstate.edu/profiles/rajveer-dhillon", affiliation: "Central State University" }
   ],
 ];
 
 const Committee = () => {
   return (
     <section className="committee" id="committee">
-      <h2>Technical Program Committee (TBD)</h2>
+      <h2>Technical Program Committee (Confirmed so far)</h2>
 
       <table className="committee-table">
         <tbody>
-          {speakers.map(([left, right], i) => (
-            <tr key={i}>
-              <td>
-                <a href={left.link} target="_blank" rel="noopener noreferrer">
-                  {left.name}
-                </a>, {left.affiliation}
-              </td>
-              <td>
-                <a href={right.link} target="_blank" rel="noopener noreferrer">
-                  {right.name}
-                </a>, {right.affiliation}
-              </td>
-            </tr>
-          ))}
+          {speakers.map((pair, i) => {
+            const [left, right] = pair;
+            return (
+              <tr key={i}>
+                <td>
+                  <a href={left.link} target="_blank" rel="noopener noreferrer">
+                    {left.name}
+                  </a>, {left.affiliation}
+                </td>
+                <td>
+                  {right ? (
+                    <>
+                      <a href={right.link} target="_blank" rel="noopener noreferrer">
+                        {right.name}
+                      </a>, {right.affiliation}
+                    </>
+                  ) : (
+                    ''
+                  )}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </section>

@@ -72,7 +72,7 @@ const SocialImpact = () => {
 //       </Row>
 //     </section>
 <section className="about" id="about">
-  <h2>About</h2>
+  
 
   <ul className="left-align">
     <li>By 2050, the global population is projected to reach <strong>9.8 billion</strong>, with accelerating climate extremes and a halving of arable land per capita (vs. 1985), making food security and sustainability urgent.</li>

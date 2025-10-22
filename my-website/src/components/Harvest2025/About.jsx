@@ -6,7 +6,6 @@ const About = () => {
 
   return (
     <section className="about" id="about">
-      <h3>About</h3>
       <Row className="left-align">
         <Col xs={12} lg={12}>
             <p>The emergence of modern AI systems powered by high-performance computing (HPC) has revolutionized how we interact with technology, and their combined impact on various science domains like agriculture has yet to be fully explored. Over the past decades, computer scientists, computational scientists, agronomists, and researchers in agriculture have dedicated their efforts towards empowering farmers by ensuring the latest advances in technology are made available to them. However, given the breathtakingly rapid advances, the scientific community is still struggling to see how this can be achieved while benefitting end users. Further, democratizing all this knowledge in combination with AI and HPC presents its own challenges. This workshop aims to bring together researchers and software/hardware designers from academia, industry, and national laboratories who are involved in designing HPC-powered AI-enabled systems for agriculture, and how it can be leveraged to improve efficiency, accuracy, and accessibility for end-users.</p>
