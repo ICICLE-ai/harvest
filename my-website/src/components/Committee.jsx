@@ -12,7 +12,8 @@ const speakers = [
     { name: "Paola Gabriela", link: "https://www.linkedin.com/in/paolapesantezc/?originalSubdomain=ec", affiliation: "Washington State University" }
   ],
   [
-    { name: "Rajveer Dhillon", link: "https://www.centralstate.edu/profiles/rajveer-dhillon", affiliation: "Central State University" }
+    { name: "Rajveer Dhillon", link: "https://www.centralstate.edu/profiles/rajveer-dhillon", affiliation: "Central State University" },
+    { name: "Rich Wolski", link: "https://cs.ucsb.edu/people/faculty/rich-wolski", affiliation: "University of California, Santa Barbara" }
   ],
 ];
 
