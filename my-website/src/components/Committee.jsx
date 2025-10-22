@@ -1,37 +1,39 @@
 import React from 'react';
 import '../assets/css/Committee.css';
 
+// 🧩 Each entry: [ { name, link, affiliation }, { name, link, affiliation } ]
 const speakers = [
-  ["Christopher Stewart, Ohio State University", "Wei-Lun Chao, Ohio State University"],
-  ["Ben Craker, AgGateway", "Chuk Stewart, RPI"],
-  ["Ananth Kalyanaraman, Washington State University", "Barney Maccabe, The University of Arizona"],
-  ["Margaret Burnett, Oregon State University", "Madhav Marathe, University of Virginia"],
-  ["Katie Driggs-Campbell, UIUC", "Girish Chowdhary, UIUC"],
-  ["Roser Matamala, Argonne National Laboratory", "George A. Kantor, CMU"],
-  ["Nirav Merchant, University of Arizona", "Michelle S. Segovia, University of Delaware"],
-  ["Arti Singh, Iowa State University", "Isabella Condotta, UIUC"],
-  ["Georgine Yorgey, Washington State University", "Sandhya Saisubramanian, Oregon State University"],
-  ["Bernard Gregory, Tuskegee University", "Christine Diepenbrock, UC Davis"],
-  ["Stephanie Russo Carroll, The University of Arizona", "Nicholas Butts, John Deere"],
+  [
+    { name: "Daniel Rubenstein", link: "https://eeb.princeton.edu/people/daniel-rubenstein", affiliation: "Princeton University" },
+    { name: "Upinder Kaur", link: "https://engineering.purdue.edu/ABE/people/ptProfile?resource_id=287656", affiliation: "Purdue University" }
+  ],
+  
+  
 ];
 
 const Committee = () => {
   return (
     <section className="committee" id="committee">
-      <h2>Technical Program Committee</h2>
+      <h2>Technical Program Committee (TBD)</h2>
 
-      <p>More details will be available soon.</p>
-
-      {/* <table className="committee-table">
+      <table className="committee-table">
         <tbody>
           {speakers.map(([left, right], i) => (
             <tr key={i}>
-              <td>{left}</td>
-              <td>{right}</td>
+              <td>
+                <a href={left.link} target="_blank" rel="noopener noreferrer">
+                  {left.name}
+                </a>, {left.affiliation}
+              </td>
+              <td>
+                <a href={right.link} target="_blank" rel="noopener noreferrer">
+                  {right.name}
+                </a>, {right.affiliation}
+              </td>
             </tr>
           ))}
         </tbody>
-      </table> */}
+      </table>
     </section>
   );
 };

@@ -127,22 +127,41 @@ const KeynotesDay2 = () => {
                       return null;
                     })()}
 
-                    {/* Papers Section */}
+                    {/* 🧩 Papers Section (with optional PDFs) */}
                     {session.papers && (
                       <div className="papers-section">
                         <b>Papers:</b>
                         <ul>
-                          {session.papers.map((paper, i) => (
-                            <li key={i}>
-                              <p><b>{paper.title}</b></p>
-                              <p><i>{paper.authors.join(', ')}</i></p>
-                            </li>
-                          ))}
+                          {session.papers.map((paper, i) => {
+                            const pdfMatch = paper.pdf
+                              ? Object.keys(allPDFs).find((path) =>
+                                  path.includes(paper.pdf)
+                                )
+                              : null;
+
+                            return (
+                              <li key={i}>
+                                <p><b>{paper.title}</b></p>
+                                <p><i>{paper.authors.join(', ')}</i></p>
+                                {pdfMatch && (
+                                  <a
+                                    href={allPDFs[pdfMatch].default}
+                                    download
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="attachment-btn pdf-btn"
+                                  >
+                                    <FileEarmarkPdfFill className="attachment-icon" /> View Slides (PDF)
+                                  </a>
+                                )}
+                              </li>
+                            );
+                          })}
                         </ul>
                       </div>
                     )}
 
-                    {/* Projects / Posters Section */}
+                    {/* 🧾 Projects / Posters Section */}
                     {session.projects && (
                       <div className="projects-section">
                         <b>Projects and Posters:</b>
@@ -176,7 +195,7 @@ const KeynotesDay2 = () => {
                       </div>
                     )}
 
-                    {/* Optional Attachments */}
+                    {/* 🎥 Optional Attachments */}
                     {session.attachments &&
                       (session.attachments.youtube || session.attachments.pdf) && (
                         <div className="attachments">

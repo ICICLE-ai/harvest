@@ -7,6 +7,7 @@ import Images from "./Images.jsx";
 import Footer from "../Footer.jsx";
 import KeynotesDay1 from "./KeynotesDay1.jsx";
 import KeynotesDay2 from "./KeynotesDay2.jsx";
+import Committee from "./Committee.jsx";
 
 export default function Harvest2025Page() {
   return (
@@ -17,6 +18,7 @@ export default function Harvest2025Page() {
           <About/>
           <KeynotesDay1/>
           <KeynotesDay2/>
+          <Committee/>
           <Images/>
         </Container>
       </section>

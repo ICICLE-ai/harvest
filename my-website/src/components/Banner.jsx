@@ -20,6 +20,7 @@ const Banner = () => {
                             {`HARVEST-Vision: Second International Workshop on Applications of CV and HPC in Agriculture`}
                         </h2>
                         <h3>Workshop Date: To be decided | JW Marriott Starpass in Tucson, Arizona</h3>
+                        <p>In Cooperation with <a href='https://wacv.thecvf.com/'>The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026</a></p>
                     </Col>
                 </Row>
             </Container>

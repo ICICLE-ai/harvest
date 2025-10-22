@@ -65,3 +65,15 @@
     }
   }
   
+
+  .committee a {
+    color: #00b0ff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .committee a:hover {
+    text-decoration: underline;
+    color: #007acc;
+  }
+  

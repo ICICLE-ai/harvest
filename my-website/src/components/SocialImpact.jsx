@@ -84,30 +84,30 @@ const SocialImpact = () => {
         <li>Underrepresented communities</li>
       </ul>
     </li>
-    <li>The workshop strengthens the agricultural workforce by training future engineers, computer scientists, and data scientists through:
+    {/* <li>The workshop strengthens the agricultural workforce by training future engineers, computer scientists, and data scientists through:
       <ul>
         <li>Inclusive posters and demos</li>
         <li>Lightning talks</li>
         <li>ICICLE-backed travel awards for students and early-career researchers</li>
       </ul>
-    </li>
-    <li>Ethical safeguards include:
+    </li> */}
+    {/* <li>Ethical safeguards include:
       <ul>
         <li>Privacy-preserving data governance</li>
         <li>Fairness across geographies and crop types</li>
         <li>Explainable decision support for safety-critical settings</li>
       </ul>
-    </li>
-    <li>Tangible outcomes:
+    </li> */}
+    {/* <li>Tangible outcomes:
       <ul>
         <li>Public reference pipelines</li>
         <li>Datasets and benchmarks for domain shift and rare events</li>
         <li>Deployment templates that reduce inputs, improve yields, and advance sustainable, equitable agriculture</li>
       </ul>
-    </li>
+    </li> */}
   </ul>
 
-  <ul className="left-align">
+  {/* <ul className="left-align">
     <li>The rapid growth of <strong>computer vision (CV)</strong> and <strong>artificial intelligence (AI)</strong> is transforming agriculture, tackling challenges in:
       <ul>
         <li>Food security</li>
@@ -125,7 +125,7 @@ const SocialImpact = () => {
       </ul>
     </li>
     <li>Major challenges include heterogeneous field data, limited labeled datasets (especially on the edge), and the need for scalable, interpretable models.</li>
-  </ul>
+  </ul> */}
 
   <ul className="left-align">
     <li>The <strong>HARVEST Workshop Series</strong> was launched to build community and cyberinfrastructure at the intersection of AI, HPC, and agriculture.</li>
@@ -140,7 +140,7 @@ const SocialImpact = () => {
     <li>Through collaboration with the NSF AI Institutes Virtual Organization, travel awards were secured for 12 rising academic researchers — many now part of a growing expert network connecting computer scientists and agricultural specialists.</li>
   </ul>
 
-  <ul className="left-align">
+  {/* <ul className="left-align">
     <li>Building on this momentum, the <strong>HARVEST-Vision Workshop at WACV</strong> aligns with the community’s focus on impactful real-world CV applications.</li>
     <li>Agricultural cyberinfrastructure offers a high-impact space for advances in:
       <ul>
@@ -151,7 +151,7 @@ const SocialImpact = () => {
       </ul>
     </li>
     <li>By fostering interdisciplinary collaborations, creating new datasets and benchmarks, and supporting diversity through travel awards, the workshop expands WACV’s reach — accelerating knowledge transfer and enabling impactful CV research for agriculture and beyond.</li>
-  </ul>
+  </ul> */}
 </section>
 
   );
