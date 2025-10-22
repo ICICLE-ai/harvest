@@ -91,13 +91,13 @@ peer-reviewed by our program committee for technical quality and relevance.
       <Row className="section-box">
       <h3>Proceedings Information</h3>
         <Col xs={12} lg={12} className='column-item'>
-          The workshop proceedings will be published through IEEE and included in the IEEE Xplore digital library.
+        <b>The accepted papers will be published in the WACV 2026 proceedings.</b>
         </Col>
         <Col xs={12} lg={12} className='column-item'>
         Each research paper will be taken through a comprehensive peer review process by an internationally recognized group of experts in the field. Papers will be evaluated along the metrics of a) Quality of Presentation; b) Novelty / Originality; c) Relation to State of the Art; d) Technical Strength; e) Significance of Work; f) Relevance to Workshop; and g) Availability and quality of the "Artifact Description Appendix". Every effort will be made to ensure that each paper receives multiple reviews.
         </Col>
         <Col xs={12} lg={12} className='column-item'>
-        At least one of the authors of each accepted paper must register as a participant of the workshop and present the paper at the workshop, in order to have the paper published in the proceedings.
+        At least one of the authors of each accepted paper must register as a participant of the workshop and present the paper <b>in-person</b> at the workshop, in order to have the paper published in the proceedings.
         </Col>
         <Col xs={12} lg={12} className='column-item'>
         Please contact the Program Chairs for any questions/clarifications.

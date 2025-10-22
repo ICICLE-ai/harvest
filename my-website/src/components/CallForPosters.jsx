@@ -88,7 +88,7 @@ official WACV template and be submitted via OpenReview on the workshop website. 
 peer-reviewed by our program committee for technical quality and relevance.
         </Col>
       </Row>
-      <Row className="section-box">
+      {/* <Row className="section-box">
       <h3>Proceedings Information</h3>
         <Col xs={12} lg={12} className='column-item'>
           The workshop proceedings will be published through IEEE and included in the IEEE Xplore digital library.
@@ -102,7 +102,7 @@ peer-reviewed by our program committee for technical quality and relevance.
         <Col xs={12} lg={12} className='column-item'>
         Please contact the Program Chairs for any questions/clarifications.
         </Col>
-      </Row>
+      </Row> */}
       <Row className="section-box">
         <Col xs={12} lg={12}>
           <h3>Workshop Registration</h3>

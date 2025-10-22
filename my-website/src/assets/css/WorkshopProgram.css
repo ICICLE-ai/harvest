@@ -136,3 +136,24 @@
     }
   }
   
+
+  /* Speaker image styling */
+.speaker-image {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.speaker-photo {
+  width: 140px;          /* smaller size (was 180px before) */
+  height: auto;
+  border-radius: 10px;   /* softer corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;     /* ensures the image scales nicely */
+}
+
+/* Optionally, make it even smaller on mobile */
+@media screen and (max-width: 768px) {
+  .speaker-photo {
+    width: 110px;
+  }
+}

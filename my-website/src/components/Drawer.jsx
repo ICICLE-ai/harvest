@@ -122,7 +122,7 @@ export default function DrawerComp({ links }) {
             })}
 
             {/* External Submit button */}
-            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
+            {/* <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
               <Button
                 onClick={() => {
                   window.open(
@@ -143,7 +143,7 @@ export default function DrawerComp({ links }) {
               >
                 Submit
               </Button>
-            </Box>
+            </Box> */}
           </List>
         </Box>
       </Drawer>

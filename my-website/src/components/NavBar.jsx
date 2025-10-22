@@ -106,7 +106,7 @@ export default function NavBar({ links }) {
             </Menu>
 
             {/* Submit button (desktop) */}
-            <Button
+            {/* <Button
               sx={{ marginLeft: 5, background: 'rgba(2,0,36,1)' }}
               variant="contained"
               onClick={() =>
@@ -117,7 +117,7 @@ export default function NavBar({ links }) {
               }
             >
               Submit
-            </Button>
+            </Button> */}
           </Box>
         )}
       </Toolbar>

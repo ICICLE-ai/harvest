@@ -3,6 +3,12 @@ import '../../assets/css/WorkshopProgram.css';
 import data from '../../assets/json/workshop_schedule2025Day2.json';
 import { Youtube, FileEarmarkPdfFill } from 'react-bootstrap-icons';
 
+// ✅ Dynamically import all speaker headshots
+const speakerImages = import.meta.glob(
+  '../../assets/img/Harvest2025/HeadShots/*.{png,jpg,jpeg,svg,avif}',
+  { eager: true }
+);
+
 const KeynotesDay2 = () => {
   const [open, setOpen] = useState(null);
 
@@ -46,27 +52,54 @@ const KeynotesDay2 = () => {
                   aria-expanded={open === index ? 'true' : 'false'}
                 >
                   <div className="program-details">
-                    {/* Speaker Info */}
+                    {/* Speaker Info + Image */}
                     {session.speaker && (
-                      <p>
-                        <b>Speaker:</b> {session.speaker}
-                      </p>
+                      <div className="speaker-info">
+                        <p>
+                          <b>Speaker:</b> {session.speaker}
+                        </p>
+                        {session.image && (() => {
+                          const match = Object.keys(speakerImages).find((path) =>
+                            path.includes(session.image)
+                          );
+                          if (match) {
+                            return (
+                              <div className="speaker-image">
+                                <img
+                                  src={speakerImages[match].default}
+                                  alt={session.speaker || 'Speaker'}
+                                  className="speaker-photo"
+                                />
+                              </div>
+                            );
+                          }
+                          return null;
+                        })()}
+                      </div>
                     )}
+
+                    {/* Multiple speakers */}
                     {session.speakers && (
                       <p>
                         <b>Speakers:</b> {session.speakers.join(', ')}
                       </p>
                     )}
+
+                    {/* Chair */}
                     {session.chair && (
                       <p>
                         <b>Session Chair:</b> {session.chair}
                       </p>
                     )}
+
+                    {/* Abstract */}
                     {session.abstract && (
                       <p>
                         <b>Abstract:</b> {session.abstract}
                       </p>
                     )}
+
+                    {/* Bio */}
                     {session.bio && (
                       <p>
                         <b>Speaker Bio:</b> {session.bio}
