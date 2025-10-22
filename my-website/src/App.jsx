@@ -116,7 +116,7 @@ function App() {
                 <Container>
                   <MiniBanner/>
                   <OrganizersTab />
-                  <CommitteeTab />
+                  <Committee />
                 </Container>
               </section>
             }

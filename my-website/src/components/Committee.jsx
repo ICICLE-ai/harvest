@@ -7,8 +7,14 @@ const speakers = [
     { name: "Daniel Rubenstein", link: "https://eeb.princeton.edu/people/daniel-rubenstein", affiliation: "Princeton University" },
     { name: "Upinder Kaur", link: "https://engineering.purdue.edu/ABE/people/ptProfile?resource_id=287656", affiliation: "Purdue University" }
   ],
-  
-  
+  [
+    { name: "Gregory Bernard", link: "https://www.linkedin.com/in/gregory-c-bernard-958879a2/", affiliation: "Tuskegee University" },
+    { name: "Paola Gabriela", link: "https://www.linkedin.com/in/paolapesantezc/?originalSubdomain=ec", affiliation: "Washington State University" }
+  ],
+  [
+    { name: "Rajveer Dhillon", link: "https://www.centralstate.edu/profiles/rajveer-dhillon", affiliation: "Central State University" },
+    { name: "", link: "https://www.linkedin.com/in/paolapesantezc/?originalSubdomain=ec", affiliation: "" }
+  ],
 ];
 
 const Committee = () => {
