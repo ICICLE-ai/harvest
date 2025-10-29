@@ -15,6 +15,9 @@ const speakers = [
     { name: "Rajveer Dhillon", link: "https://www.centralstate.edu/profiles/rajveer-dhillon", affiliation: "Central State University" },
     { name: "Rich Wolski", link: "https://cs.ucsb.edu/people/faculty/rich-wolski", affiliation: "University of California, Santa Barbara" }
   ],
+  [
+    { name: "Arapan Jain", link: "https://www.linkedin.com/in/aj-prime/", affiliation: "Microsoft" }
+  ],
 ];
 
 const Committee = () => {

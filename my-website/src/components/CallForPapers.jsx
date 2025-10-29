@@ -85,7 +85,7 @@ const CallForPapers = () => {
           <h3>Submission Information</h3>
           We accept full-length papers (5-8 pages, WACV template, intended for publication in WACV’s workshop proceedings). Accepted contributions will be presented as orals or posters. All submissions should use the
 official WACV template and be submitted via the OpenReview link on the workshop website. Submissions will be
-peer-reviewed by our program committee for technical quality and relevance.
+peer-reviewed by our program committee for technical quality and relevance. Submit papers <a href='https://openreview.net/group?id=thecvf.com/WACV/2026/Workshop/HARVEST-Vision#tab-recent-activity'>here</a>.
         </Col>
       </Row>
       <Row className="section-box">
