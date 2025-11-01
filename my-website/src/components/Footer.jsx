@@ -23,9 +23,9 @@ export default function Footer() {
     >
      
       {/* Copyright */}
-      <Typography variant="body2" sx={{ mt: 2 }}>
-        © {new Date().getFullYear()} Naveen Kamath. All rights reserved.
-      </Typography>
+      {/* <Typography variant="body2" sx={{ mt: 2 }}>
+        © {new Date().getFullYear()} Hari Subramoni. All rights reserved.
+      </Typography> */}
     </Grid>
   );
 }
