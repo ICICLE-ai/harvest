@@ -16,7 +16,7 @@ const speakers = [
     { name: "Rich Wolski", link: "https://cs.ucsb.edu/people/faculty/rich-wolski", affiliation: "University of California, Santa Barbara" }
   ],
   [
-    { name: "Arapan Jain", link: "https://www.linkedin.com/in/aj-prime/", affiliation: "Microsoft" }
+    { name: "Arpan Jain", link: "https://www.linkedin.com/in/aj-prime/", affiliation: "Microsoft" }
   ],
 ];
 
