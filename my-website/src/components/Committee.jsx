@@ -23,7 +23,7 @@ const speakers = [
 const Committee = () => {
   return (
     <section className="committee" id="committee">
-      <h2>Technical Program Committee (Confirmed so far)</h2>
+      <h2>Technical Program Committee</h2>
 
       <table className="committee-table">
         <tbody>
