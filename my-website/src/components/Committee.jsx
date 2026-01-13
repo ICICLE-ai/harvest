@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/Committee.css';
-
+// comment
 // 🧩 Each entry: [ { name, link, affiliation }, { name, link, affiliation } ]
 const speakers = [
   [
