@@ -3,6 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import '../assets/css/CallForPosters.css';
 import '../assets/css/App.css'
 import data from '../assets/json/chunk-text.json';
+import Committee from './Committee';
 const images = import.meta.glob('../assets/img/lab/*.{png,jpg,jpeg,svg,avif}', { eager: true });
 
 const CallForPosters = () => {
@@ -118,12 +119,7 @@ peer-reviewed by our program committee for technical quality and relevance.
           </ul>
         </Col>
       </Row>
-      <Row className="section-box">
-        <Col xs={12} lg={12}>
-          <h3>Technical Program Committee</h3>
-          More details will be available soon.
-        </Col>
-      </Row>
+      <Committee/>
 
 
       {/* <Row className='about-section text-center'>

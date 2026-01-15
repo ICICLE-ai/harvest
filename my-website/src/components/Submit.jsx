@@ -85,7 +85,7 @@ const Contact = () => {
                         <form ref={form} onSubmit={sendEmail}>
                             <Row>
                                 <Col size={12} sm={12} className="column">
-                                    <b>Workshop Date:</b> To be decided
+                                    <b>Workshop Date:</b> March 6th
                                 </Col> 
                             </Row>
                             <Row>

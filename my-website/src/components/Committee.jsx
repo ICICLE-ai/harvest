@@ -8,15 +8,24 @@ const speakers = [
     { name: "Upinder Kaur", link: "https://engineering.purdue.edu/ABE/people/ptProfile?resource_id=287656", affiliation: "Purdue University" }
   ],
   [
-    { name: "Gregory Bernard", link: "https://www.linkedin.com/in/gregory-c-bernard-958879a2/", affiliation: "Tuskegee University" },
-    { name: "Paola Gabriela", link: "https://www.linkedin.com/in/paolapesantezc/?originalSubdomain=ec", affiliation: "Washington State University" }
+    { name: "Gregory C Bernard", link: "https://www.linkedin.com/in/gregory-c-bernard-958879a2/", affiliation: "Tuskegee University" },
+    { name: "Paola Pesantez-Gabriela", link: "https://www.linkedin.com/in/paolapesantezc/?originalSubdomain=ec", affiliation: "Washington State University" }
   ],
   [
     { name: "Rajveer Dhillon", link: "https://www.centralstate.edu/profiles/rajveer-dhillon", affiliation: "Central State University" },
     { name: "Rich Wolski", link: "https://cs.ucsb.edu/people/faculty/rich-wolski", affiliation: "University of California, Santa Barbara" }
   ],
   [
-    { name: "Arpan Jain", link: "https://www.linkedin.com/in/aj-prime/", affiliation: "Microsoft" }
+    { name: "Arpan Jain", link: "https://www.linkedin.com/in/aj-prime/", affiliation: "Microsoft" },
+    { name: "Anirudh Patlapally", link: "https://www.linkedin.com/in/anirudh-potlapally-30659a1ab/", affiliation: "The Ohio State University" }
+  ],
+  [
+    { name: "Jianyang Gu", link: "https://vimar-gu.github.io/", affiliation: "The Ohio State University" },
+    { name: "Remi Megret", link: "", affiliation: "--" }
+  ],
+  [
+    { name: "Aswathnarayan Radhakrishnan", link: "https://www.linkedin.com/in/radhakrishnan97/", affiliation: "The Ohio State University" },
+    { name: "Rodrigo Verschae", link: "", affiliation: "--" }
   ],
 ];
 

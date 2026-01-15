@@ -20,6 +20,7 @@ const Banner = () => {
                         </h2>
                         <h3>September 9-10, 2025 | The Catamaran Resort Hotel, San Diego, CA</h3>
                         <p>In Cooperation with <a href='https://icpp2025.sdsc.edu/'>The 54th International Conference on Parallel Processing (ICPP), 2025</a></p>
+                        <p>Travel was funded through <a href='https://aiinstitutes.org/about-aivo/'>AIVO</a>.</p>
                     </Col>
                 </Row>
             </Container>
