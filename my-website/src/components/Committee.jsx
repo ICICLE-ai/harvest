@@ -17,15 +17,15 @@ const speakers = [
   ],
   [
     { name: "Arpan Jain", link: "https://www.linkedin.com/in/aj-prime/", affiliation: "Microsoft" },
-    { name: "Anirudh Patlapally", link: "https://www.linkedin.com/in/anirudh-potlapally-30659a1ab/", affiliation: "The Ohio State University" }
+    { name: "Anirudh Potlapally", link: "https://www.linkedin.com/in/anirudh-potlapally-30659a1ab/", affiliation: "The Ohio State University" }
   ],
   [
     { name: "Jianyang Gu", link: "https://vimar-gu.github.io/", affiliation: "The Ohio State University" },
-    { name: "Remi Megret", link: "", affiliation: "--" }
+    { name: "Remi Megret", link: "https://cahsi.utep.edu/expert/remi-megret/", affiliation: "University of Puerto Rico, Río Piedras" }
   ],
   [
     { name: "Aswathnarayan Radhakrishnan", link: "https://www.linkedin.com/in/radhakrishnan97/", affiliation: "The Ohio State University" },
-    { name: "Rodrigo Verschae", link: "", affiliation: "--" }
+    { name: "Rodrigo Verschae", link: "https://rodrigo.verschae.org/", affiliation: "Universidad de O’Higgins" }
   ],
 ];
 
