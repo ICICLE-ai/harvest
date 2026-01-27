@@ -84,7 +84,7 @@ const CallForPosters = () => {
       <Row className="section-box">
         <Col xs={12} lg={12}>
           <h3>Submission Information</h3>
-          We require a short 1 to 2 page extended abstract about the poster and a 3'x4' poster that is oriented vertically. Accepted contributions will be presented as orals or posters. All submissions should use the
+          We require a 1 to 2 page extended abstract describing the poster, as well as a 24" high by 48" wide poster prepared using <a href='https://docs.google.com/presentation/d/1CCPhfC5LPnAB2XSyw2CGfJzpDm2HIAjikaxwTwCLw8w/edit?slide=id.p1&pli=1#slide=id.p1'>this template</a>. Accepted contributions will be presented as orals or posters. All submissions should use the
 official WACV template and be submitted via OpenReview on the workshop website. Submissions will be
 peer-reviewed by our program committee for technical quality and relevance.
         </Col>
