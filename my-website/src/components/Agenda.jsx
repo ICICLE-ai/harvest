@@ -3,6 +3,45 @@ import { MortarboardFill, BriefcaseFill, CalendarEvent, PeopleFill } from 'react
 import data from '../assets/json/schedule.json';
 import '../assets/css/Experience.css';
 
+const papers = [
+  {
+    title: 'On the Evaluation of Multimodal Large Language Models for Agricultural Image Classification across Diverse Tasks',
+    contactAuthor: 'Anindya Bijoy Das',
+    contactEmail: 'adas@uakron.edu',
+    authors: 'Anindya Bijoy Das · Shibbir Ahmed · Shahnewaz Karim Sakib',
+  },
+  {
+    title: 'Supporting Ultra-High-Resolution Digital Agriculture Tasks with Fully Synthetic Curriculum Learning',
+    contactAuthor: 'Jacob Hatef',
+    contactEmail: 'hatef.4@osu.edu',
+    authors: 'Jacob Hatef · Quentin Gregory Anthony · Nawras Alnaasan · Dhabaleswar Panda',
+  },
+  {
+    title: 'Cott-ADNet: Lightweight Real-Time Cotton Boll and Flower Detection Under Field Conditions',
+    contactAuthor: 'Rui-Feng Wang',
+    contactEmail: 'sweefongreggiewong@gmail.com',
+    authors: 'Rui-Feng Wang · Mingrui Xu · Matthew C Bauer · Iago Beffart Schardong · Xiaowen Ma · Peng Chee · Kangning Cui',
+  },
+  {
+    title: 'FUME: Fused Unified Multi-Gas Emission Network for Livestock Rumen Acidosis Detection',
+    contactAuthor: 'Taminul Islam',
+    contactEmail: 'taminul.islam@siu.edu',
+    authors: 'Taminul Islam · Toqi Tahamid Sarker · Mohamed Embaby · Khaled R. Ahmed · Amer Abughazaleh',
+  },
+  {
+    title: 'A Multi-View Photometric Stereo Pipeline for Specular 3D Fruit Reconstruction',
+    contactAuthor: 'Ariel Zuñiga-Santana',
+    contactEmail: 'ariel.zuniga@postgrado.uoh.cl',
+    authors: 'Ariel Zuñiga-Santana · Gabriele Facciolo · Shohei Nobuhara · Rodrigo Verschae',
+  },
+  {
+    title: 'Advancing Precision Livestock Farming: Robust Country Chicken Detection via FeatherNet Fusion-YOLO and HenSense',
+    contactAuthor: 'Maneesh Reddy Bhavanam',
+    contactEmail: 'maneeshreddy_bhavanam@srmap.edu.in',
+    authors: 'Maneesh Reddy Bhavanam · Pavan Suraj Kanna · Tamma Tarun Sai Reddy · Chaitanya Alapati',
+  },
+];
+
 const tabs = [
   { id: 'schedule', label: 'Schedule', icon: <BriefcaseFill className="experience-icon" /> },
 ];
@@ -99,7 +138,23 @@ const Agenda = () => {
         {/* Experience Sections */}
         <div className="experience-sections">{experienceContent}</div>
       </div>
+      <div className="papers">
+  <h3 className="papers-heading">Papers</h3>
+  <ul className="papers-list">
+    {papers.map((paper) => (
+      <li key={paper.title} className="papers-item">
+  <span className="papers-title">{paper.title}</span>
+  <span className="papers-authors">{paper.authors}</span>
+  <span className="papers-contact">
+    Contact: <a href={`mailto:${paper.contactEmail}`}>{paper.contactAuthor}</a>
+  </span>
+</li>
+    ))}
+  </ul>
+</div>
     </section>
+
+    
   );
 };
 
