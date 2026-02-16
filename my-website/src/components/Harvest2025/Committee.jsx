@@ -152,7 +152,7 @@ const speakers = [
     affiliation: "The Ohio State University" 
   },
   { 
-    name: "Anirudh Patlapally", 
+    name: "Anirudh Potlapally", 
     link: "https://www.linkedin.com/in/anirudh-potlapally-30659a1ab/", 
     affiliation: "The Ohio State University" 
   },
