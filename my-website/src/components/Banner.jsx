@@ -21,6 +21,7 @@ const Banner = () => {
                         </h2>
                         <h3>Workshop Date: March 6th | JW Marriott Starpass in Tucson, Arizona</h3>
                         <p>In Cooperation with <a href='https://wacv.thecvf.com/'>The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2026</a></p>
+                    
                     </Col>
                 </Row>
             </Container>
