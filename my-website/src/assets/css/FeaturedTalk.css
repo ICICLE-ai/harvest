@@ -1,0 +1,107 @@
+.featured-talks {
+  margin: 40px 0;
+}
+
+.featured-talks-heading {
+  color: #6c757d;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.featured-talk {
+  margin: 20px 0;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.featured-talk:hover {
+  background: #e9ecef;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.featured-talk-title {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-talk-title::after {
+  content: '▼';
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+  color: #6c757d;
+}
+
+.featured-talk.expanded .featured-talk-title::after {
+  transform: rotate(180deg);
+}
+
+.featured-talk-speaker {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.featured-talk-content {
+  max-width: 800px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.featured-talk.collapsed .featured-talk-content {
+  max-height: 0;
+  opacity: 0;
+}
+
+.featured-talk-abstract,
+.featured-talk-acknowledgements,
+.featured-talk-bio {
+  margin-bottom: 25px;
+}
+
+.featured-talk-abstract h5,
+.featured-talk-acknowledgements h5,
+.featured-talk-bio h5 {
+  color: #495057;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.featured-talk-text {
+  color: #6c757d;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .featured-talks {
+    margin: 20px 0;
+  }
+  
+  .featured-talks-heading {
+    font-size: 1.5rem;
+  }
+  
+  .featured-talk {
+    margin: 15px 0;
+    padding: 20px;
+  }
+  
+  .featured-talk-title {
+    font-size: 1.2rem;
+  }
+}
