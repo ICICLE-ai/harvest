@@ -250,7 +250,7 @@ const Agenda = () => {
                               {paper.authors}
                             </p>
                             <p className="paper-contact">
-                              Contact:{' '}
+                            Presenter:{' '}
                               <a href={`mailto:${paper.contactEmail}`}>{paper.contactAuthor}</a>
                             </p>
                             <hr />
