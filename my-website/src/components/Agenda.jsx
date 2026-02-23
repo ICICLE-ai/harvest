@@ -226,7 +226,7 @@ const Agenda = () => {
                               {!!(poster.contactEmail || '').trim() &&
                               !!(poster.contactAuthor || '').trim() ? (
                                 <p className="paper-contact">
-                                  Contact:{' '}
+                                  Presenter:{' '}
                                   <a href={`mailto:${poster.contactEmail}`}>
                                     {poster.contactAuthor}
                                   </a>
