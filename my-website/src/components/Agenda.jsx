@@ -107,12 +107,12 @@ const Agenda = () => {
     { time: '08:00 - 08:05', title: 'Opening Remarks' },
     {
       time: '08:05 - 09:00',
-      title: 'Invited Talk 1: Vision Based Spraying',
+      title: 'Keynote Talk: Vision Based Spraying',
       details: featuredTalks.find((t) => t.id === 'caleb')
     },
     {
       time: '09:00 - 09:30',
-      title: 'Invited Talk 2: Computer Vision and AI tools for automated pollinator monitoring',
+      title: 'Invited Talk: Computer Vision and AI tools for automated pollinator monitoring',
       details: featuredTalks.find((t) => t.id === 'remi')
     },
     { time: '09:30 - 10:15', title: 'Coffee Break' },
