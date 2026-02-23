@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/css/Agenda.css'
+import '../assets/css/Agenda.css';
 
 // Headshot Import
 import calebHeadshot from '../assets/img/Agenda/CalebHeadshot.jpg';
@@ -80,6 +80,29 @@ const Agenda = () => {
     }
   ];
 
+  const posters = [
+    {
+      title:
+        'Spatio-Temporal Latent Manifold Adaption for Early Stress Detection in Precision Agriculture',
+      contactAuthor: '',
+      contactEmail: '',
+      authors: ''
+    },
+    {
+      title:
+        'Deep Learning in the Field: Lightweight CNN/ViT Soybean LAI Estimation from UAV Point Cloud Heatmaps',
+      contactAuthor: '',
+      contactEmail: '',
+      authors: ''
+    },
+    {
+      title: '',
+      contactAuthor: '',
+      contactEmail: '',
+      authors: ''
+    }
+  ];
+
   const schedule = [
     { time: '08:00 - 08:05', title: 'Opening Remarks' },
     {
@@ -89,11 +112,18 @@ const Agenda = () => {
     },
     {
       time: '09:00 - 09:30',
-      title: "Invited Talk 2: Computer Vision and AI tools for automated pollinator monitoring",
+      title: 'Invited Talk 2: Computer Vision and AI tools for automated pollinator monitoring',
       details: featuredTalks.find((t) => t.id === 'remi')
     },
     { time: '09:30 - 10:15', title: 'Coffee Break' },
-    { time: '10:15 - 10:30', title: 'Lightning Talks for Posters (5 min per poster)' },
+
+    // ✅ NOW EXPANDABLE (shows posters)
+    {
+      time: '10:15 - 10:30',
+      title: 'Lightning Talks for Posters (5 min per poster)',
+      posterList: posters
+    },
+
     {
       time: '10:30 - 12:00',
       title: 'Paper Presentations (15 min per paper)',
@@ -111,14 +141,12 @@ const Agenda = () => {
 
       <div className="program-container">
         {schedule.map((item, index) => {
-          const isExpandable = Boolean(item.details || item.paperList);
+          // ✅ include posterList in expandable logic
+          const isExpandable = Boolean(item.details || item.paperList || item.posterList);
           const isOpen = openIndex === index;
 
           return (
-            <div
-              key={index}
-              className={`program-content ${isOpen ? 'program-open' : ''}`}
-            >
+            <div key={index} className={`program-content ${isOpen ? 'program-open' : ''}`}>
               <div
                 className={`program-header ${isExpandable ? 'is-expandable' : ''}`}
                 onClick={() => isExpandable && toggleOpen(index)}
@@ -179,20 +207,53 @@ const Agenda = () => {
                       </>
                     )}
 
+                    {/* ✅ Poster List (new, expandable like papers) */}
+                    {item.posterList && (
+                      <div className="papers-container">
+                        {item.posterList
+                          .filter((p) => (p.title || '').trim().length > 0)
+                          .map((poster, pIdx) => (
+                            <div key={pIdx} className="paper-card">
+                              <h4 className="paper-title">{poster.title}</h4>
+
+                              {!!(poster.authors || '').trim() && (
+                                <p className="paper-authors">
+                                  <b>Authors: </b>
+                                  {poster.authors}
+                                </p>
+                              )}
+
+                              {!!(poster.contactEmail || '').trim() &&
+                              !!(poster.contactAuthor || '').trim() ? (
+                                <p className="paper-contact">
+                                  Contact:{' '}
+                                  <a href={`mailto:${poster.contactEmail}`}>
+                                    {poster.contactAuthor}
+                                  </a>
+                                </p>
+                              ) : null}
+
+                              <hr />
+                            </div>
+                          ))}
+                      </div>
+                    )}
+
                     {/* Paper List */}
                     {item.paperList && (
                       <div className="papers-container">
                         {item.paperList.map((paper, pIdx) => (
                           <div key={pIdx} className="paper-card">
                             <h4 className="paper-title">{paper.title}</h4>
-                            <p className="paper-authors"><b>Authors: </b>{paper.authors}</p>
+                            <p className="paper-authors">
+                              <b>Authors: </b>
+                              {paper.authors}
+                            </p>
                             <p className="paper-contact">
                               Contact:{' '}
-                              <a href={`mailto:${paper.contactEmail}`}>
-                                {paper.contactAuthor}
-                              </a>
+                              <a href={`mailto:${paper.contactEmail}`}>{paper.contactAuthor}</a>
                             </p>
-                            <hr/>
+                            <hr />
                           </div>
                         ))}
                       </div>
