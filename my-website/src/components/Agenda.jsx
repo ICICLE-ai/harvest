@@ -246,10 +246,12 @@
 // export default Agenda;
 
 import React, { useState } from 'react';
-import '../assets/css/Agenda.css';
+import '../assets/css/WorkshopProgram.css';
+import '../assets/css/Agenda.css'
 
 // Headshot Import
-import calebHeadshot from '../assets/img/Agenda/Headshot.jpg';
+import calebHeadshot from '../assets/img/Agenda/CalebHeadshot.jpg';
+import remiHeadshot from '../assets/img/Agenda/RemiHeadshot.jpeg';
 
 const Agenda = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -260,6 +262,7 @@ const Agenda = () => {
       time: '09:00 - 09:30',
       title: 'Computer Vision and AI tools for automated pollinator monitoring',
       speaker: 'Dr Rémi Mégret, University of Puerto Rico, Río Piedras campus',
+      headshot: remiHeadshot,
       abstract: `Pollinators and honey bees are critical for crop production worldwide, yet face accelerating threats from climate extremes and habitat loss. In this presentation, I will showcase recent developments in artificial intelligence for fine-grained and scalable pollinator monitoring. These systems generate quantitative indicators of pollinator activity and colony dynamics at both individual and colony scales, supporting biodiversity monitoring, climate resilience studies, integrative biological research, and data-informed agricultural management...`,
       acknowledgements:
         'This research is supported by NSF awards 2318597, 2321760, USDA/NIFA award 2021-67014-34999. This work uses the UPR High-Performance Computing facility, supported by NIH/NIGMS award 5P20GM103475.',
@@ -329,12 +332,12 @@ const Agenda = () => {
     { time: '08:00 - 08:05', title: 'Opening Remarks' },
     {
       time: '08:05 - 09:00',
-      title: 'Keynote Talk: Vision Based Spraying',
+      title: 'Invited Talk 1: Vision Based Spraying',
       details: featuredTalks.find((t) => t.id === 'caleb')
     },
     {
       time: '09:00 - 09:30',
-      title: "Remi Megret's Talk",
+      title: "Invited Talk 2: Computer Vision and AI tools for automated pollinator monitoring",
       details: featuredTalks.find((t) => t.id === 'remi')
     },
     { time: '09:30 - 10:15', title: 'Coffee Break' },
