@@ -100,12 +100,6 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
       contactAuthor: '',
       contactEmail: '',
       authors: ''
-    },
-    {
-      title: '',
-      contactAuthor: '',
-      contactEmail: '',
-      authors: ''
     }
   ];
 
@@ -122,14 +116,11 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
       details: featuredTalks.find((t) => t.id === 'remi')
     },
     { time: '09:30 - 10:15', title: 'Coffee Break' },
-
-    // ✅ NOW EXPANDABLE (shows posters)
     {
       time: '10:15 - 10:30',
       title: 'Lightning Talks for Posters (5 min per poster)',
       posterList: posters
     },
-
     {
       time: '10:30 - 12:00',
       title: 'Paper Presentations (15 min per paper)',
@@ -142,19 +133,18 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
   };
 
   return (
-    <section className="agenda" id="program">
-      <h2 className="agenda">Agenda</h2>
+    <section className="schedule-section" id="program">
+      <h2 className="schedule-main-heading">Agenda</h2>
 
-      <div className="program-container">
+      <div className="schedule-wrapper">
         {schedule.map((item, index) => {
-          // ✅ include posterList in expandable logic
           const isExpandable = Boolean(item.details || item.paperList || item.posterList);
           const isOpen = openIndex === index;
 
           return (
-            <div key={index} className={`program-content ${isOpen ? 'program-open' : ''}`}>
+            <div key={index} className={`schedule-item-row ${isOpen ? 'schedule-row-active' : ''}`}>
               <div
-                className={`program-header ${isExpandable ? 'is-expandable' : ''}`}
+                className={`schedule-row-trigger ${isExpandable ? 'can-expand' : ''}`}
                 onClick={() => isExpandable && toggleOpen(index)}
                 role={isExpandable ? 'button' : undefined}
                 tabIndex={isExpandable ? 0 : undefined}
@@ -163,37 +153,38 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
                   if (e.key === 'Enter' || e.key === ' ') toggleOpen(index);
                 }}
               >
-                <div className="program-time">{item.time}</div>
-                <div className="program-title">{item.title}</div>
+                <div className="schedule-time-badge">{item.time}</div>
+                <div className="schedule-entry-title">{item.title}</div>
 
                 {isExpandable && (
-                  <div className="program-arrow" aria-hidden="true">
+                  <div className="schedule-chevron" aria-hidden="true">
                     {isOpen ? '▲' : '▼'}
                   </div>
                 )}
               </div>
 
               {isOpen && isExpandable && (
-                <div className="program-data" aria-expanded={isOpen}>
-                  <div className="program-details">
+                <div className="schedule-expanded-content" aria-expanded={isOpen}>
+                  <div className="schedule-inner-details">
                     {/* Talk Details */}
                     {item.details && (
                       <>
-                        <div className="speaker-info">
-                          <p>
-                            <b>Speaker:</b> {item.details.speaker}
-                          </p>
+                        <div className="speaker-profile-box">
+            {item.details.headshot && (
+              <div className="speaker-avatar-wrap">
+                <img
+                  src={item.details.headshot}
+                  alt="Speaker headshot"
+                  className="speaker-avatar-img"
+                />
+              </div>
+            )}
 
-                          {item.details.headshot && (
-                            <div className="speaker-image">
-                              <img
-                                src={item.details.headshot}
-                                alt="Speaker headshot"
-                                className="speaker-photo"
-                              />
-                            </div>
-                          )}
-                        </div>
+            <p>
+              <b>Speaker:</b> {item.details.speaker}
+            </p>
+          </div>
+
 
                         <p>
                           <b>Abstract:</b> {item.details.abstract}
@@ -213,17 +204,17 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
                       </>
                     )}
 
-                    {/* ✅ Poster List (new, expandable like papers) */}
+                    {/* Poster List */}
                     {item.posterList && (
-                      <div className="papers-container">
+                      <div className="submission-list">
                         {item.posterList
                           .filter((p) => (p.title || '').trim().length > 0)
                           .map((poster, pIdx) => (
-                            <div key={pIdx} className="paper-card">
-                              <h4 className="paper-title">{poster.title}</h4>
+                            <div key={pIdx} className="submission-card">
+                              <h4 className="submission-title">{poster.title}</h4>
 
                               {!!(poster.authors || '').trim() && (
-                                <p className="paper-authors">
+                                <p className="submission-authors">
                                   <b>Authors: </b>
                                   {poster.authors}
                                 </p>
@@ -231,7 +222,7 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
 
                               {!!(poster.contactEmail || '').trim() &&
                               !!(poster.contactAuthor || '').trim() ? (
-                                <p className="paper-contact">
+                                <p className="submission-contact">
                                   Presenter:{' '}
                                   <a href={`mailto:${poster.contactEmail}`}>
                                     {poster.contactAuthor}
@@ -239,7 +230,7 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
                                 </p>
                               ) : null}
 
-                              <hr />
+                              <hr/>
                             </div>
                           ))}
                       </div>
@@ -247,19 +238,19 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
 
                     {/* Paper List */}
                     {item.paperList && (
-                      <div className="papers-container">
+                      <div className="submission-list">
                         {item.paperList.map((paper, pIdx) => (
-                          <div key={pIdx} className="paper-card">
-                            <h4 className="paper-title">{paper.title}</h4>
-                            <p className="paper-authors">
+                          <div key={pIdx} className="submission-card">
+                            <h4 className="submission-title">{paper.title}</h4>
+                            <p className="submission-authors">
                               <b>Authors: </b>
                               {paper.authors}
                             </p>
-                            <p className="paper-contact">
+                            <p className="submission-contact">
                               Presenter:{' '}
                               <a href={`mailto:${paper.contactEmail}`}>{paper.contactAuthor}</a>
                             </p>
-                            <hr />
+                            <hr/>
                           </div>
                         ))}
                       </div>

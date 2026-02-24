@@ -1,13 +1,17 @@
-.paper-card h4 {
+.submission-card h4 {
   font-size: 16px;
   font-weight: 500;
 }
 
-.agenda h2 {
+.schedule-main-heading {
   padding-top: 10%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 700;
 }
 
-.program-container {
+.schedule-wrapper {
   max-width: 800px;
   width: 90%;
   margin: 0 auto 70px auto;
@@ -17,21 +21,16 @@
   padding: 40px 30px;
 }
 
-/* Section title */
-.agenda h2,
-.agenda h3 {
+/* Reusing alignment for headings if needed */
+.schedule-section h3 {
   text-align: center;
   margin-bottom: 30px;
   color: white;
   font-weight: 700;
 }
 
-.attachment-links a {
-  color: white;
-}
-
 /* Each session container */
-.program-content {
+.schedule-item-row {
   margin-bottom: 10px;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -39,7 +38,7 @@
 }
 
 /* Header (always visible row) */
-.program-header {
+.schedule-row-trigger {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -49,12 +48,12 @@
   transition: 0.4s;
 }
 
-.program-header:hover {
+.schedule-row-trigger.can-expand:hover {
   letter-spacing: 1px;
 }
 
 /* TIME styling */
-.program-time {
+.schedule-time-badge {
   font-weight: 500;
   font-size: 16px;
   color: white;
@@ -67,7 +66,7 @@
 }
 
 /* TITLE styling */
-.program-title {
+.schedule-entry-title {
   flex: 1;
   text-align: left;
   font-weight: 600;
@@ -78,14 +77,14 @@
 }
 
 /* Arrow icon */
-.program-arrow {
+.schedule-chevron {
   font-size: 22px;
   margin-left: auto;
   transition: transform 0.4s ease;
   color: white;
 }
 
-.program-open .program-arrow {
+.schedule-row-active .schedule-chevron {
   transform: rotate(180deg);
 }
 
@@ -94,7 +93,7 @@
 ========================= */
 
 /* closed */
-.program-data {
+.schedule-expanded-content {
   width: 100%;
   margin-top: 10px;
   overflow: hidden;
@@ -103,17 +102,44 @@
 }
 
 /* open */
-.program-data[aria-expanded='true'] {
-  max-height: 5000px; /* large enough to never clip */
+.schedule-expanded-content[aria-expanded='true'] {
+  max-height: 5000px; 
   padding-bottom: 20px;
 }
 
 /* Inner details */
-.program-details p {
+.schedule-inner-details p {
   margin-bottom: 10px;
   font-size: 15px;
   line-height: 1.5em;
   color: white;
+}
+
+.submission-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+}
+
+/* Speaker Info Layout */
+.speaker-profile-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.speaker-avatar-wrap {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.speaker-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* =========================
@@ -121,89 +147,38 @@
 ========================= */
 
 @media screen and (max-width: 768px) {
-
-  /* container spacing + iPhone safe area */
-  .program-container {
+  .schedule-wrapper {
     width: 100%;
     margin-bottom: 40px;
     padding: 25px 20px;
-    padding-bottom: calc(80px + env(safe-area-inset-bottom));
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
   }
 
-  .program-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
+  .schedule-expanded-content {
+    width: 100%;
+    overflow: hidden; 
+    transition: max-height 0.5s ease-in-out; 
   }
 
-  .program-time {
-    font-size: 14px;
-    min-width: auto;
-    text-align: left;
+  .schedule-expanded-content[aria-expanded='false'] {
+    max-height: 0;
+    display: none; 
   }
 
-  .program-title {
-    font-size: 16px;
-  }
-
-  .program-details p {
-    font-size: 14px;
-  }
-
-  .agenda h2 {
-    padding-top: 20%;
-  }
-
-  /* MOBILE DROPDOWN — allow full expansion */
-  .program-data {
-    overflow: visible;
-    max-height: none;
-    transition: none;
-    padding-bottom: 50px;
-  }
-
-  .program-data[aria-expanded='false'] {
-    display: none;
-  }
-
-  .program-data[aria-expanded='true'] {
+  .schedule-expanded-content[aria-expanded='true'] {
     display: block;
-    max-height: none; /* Keep this */
-    overflow: visible; /* Ensure content isn't clipped */
-    padding-bottom: 60px; /* Increase this padding specifically for the expanded content */
+    max-height: max-content; 
+    height: auto; 
+    padding-bottom: 30px; 
   }
 
-  /* ensure last paper never gets cut */
-  .paper-card:last-child {
-    margin-bottom: 40px;
+  .schedule-inner-details {
+    height: auto;
+    display: block;
   }
 
-  /* fix mobile scroll clipping (Safari/iOS/Chrome mobile) */
-  body, .agenda {
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-}
-
-/* =========================
-   SPEAKER IMAGE
-========================= */
-
-.speaker-image {
-  text-align: left;
-  margin: 15px 0;
-}
-
-.speaker-photo {
-  width: 140px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  object-fit: cover;
-}
-
-@media screen and (max-width: 768px) {
-  .speaker-photo {
-    width: 110px;
+  .schedule-item-row:last-of-type {
+    margin-bottom: 20px;
+    border-bottom: none;
   }
 }
