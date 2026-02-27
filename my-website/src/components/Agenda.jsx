@@ -56,8 +56,8 @@ Acknowledgements: This research is supported by NSF awards 2318597, 2321760, USD
     {
       title:
         'Cott-ADNet: Lightweight Real-Time Cotton Boll and Flower Detection Under Field Conditions',
-      contactAuthor: 'Rui-Feng Wang',
-      contactEmail: 'sweefongreggiewong@gmail.com',
+      contactAuthor: 'Mingrui Xu',
+      contactEmail: 'Mingrui.Xu@uga.edu',
       authors:
         'Rui-Feng Wang · Mingrui Xu · Matthew C Bauer · Iago Beffart Schardong · Xiaowen Ma · Peng Chee · Kangning Cui'
     },
