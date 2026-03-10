@@ -34,6 +34,7 @@ import MiniBanner from './components/MiniBanner.jsx';
 import CommitteeTab from './components/CommitteeTab.jsx';
 import OrganizersTab from './components/OrganizersTab.jsx';
 import CallForPosters from './components/CallForPosters.jsx';
+import ImageCarousel from './components/Imagecarousel.jsx';
 
 
 
@@ -105,6 +106,7 @@ function App() {
               <section className="body">
                 <Container>
                   <Agenda />
+                  <ImageCarousel/>
                 </Container>
               </section>
             }
