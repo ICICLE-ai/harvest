@@ -223,5 +223,3 @@ const ImageCarousel = () => {
 };
 
 export default ImageCarousel;
-
-//redeploy
