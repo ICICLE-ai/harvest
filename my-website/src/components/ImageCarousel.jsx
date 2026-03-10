@@ -23,9 +23,11 @@ import tour2172 from '../assets/img/Harvest2026/Tour/IMG_2172.jpg';
 import tour2180 from '../assets/img/Harvest2026/Tour/IMG_2180.jpg';
 import tour2187 from '../assets/img/Harvest2026/Tour/IMG_2187.jpg';
 import tour2192 from '../assets/img/Harvest2026/Tour/IMG_2192.jpg';
-import tour2208 from '../assets/img/Harvest2026/Tour/IMG_2208.jpg';
-import tour2226 from '../assets/img/Harvest2026/Tour/IMG_2226.jpg';
 import tour2229 from '../assets/img/Harvest2026/Tour/IMG_2229.jpg';
+import tour2144 from '../assets/img/Harvest2026/Tour/IMG_2144.jpg';
+import tour2195 from '../assets/img/Harvest2026/Tour/IMG_2195.jpg';
+import tour2207 from '../assets/img/Harvest2026/Tour/IMG_2207.jpg';
+
 
 const conferenceImages = [
   conf1798, conf1806, conf1810, conf2127, conf2132, conf2135,
@@ -34,7 +36,7 @@ const conferenceImages = [
 
 const tourImages = [
   tour2136, tour2148, tour2149, tour2172, tour2180,
-  tour2187, tour2192, tour2208, tour2226, tour2229,
+  tour2187, tour2192, tour2229, tour2144, tour2195, tour2207
 ];
 
 /* ── Single Carousel ── */
