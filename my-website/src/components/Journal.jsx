@@ -55,4 +55,3 @@ const Journal = () => {
 };
 
 export default Journal;
-//comment
