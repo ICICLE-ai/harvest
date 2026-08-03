@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import data from '../assets/json/chunk-text.json'
+import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { ArrowRightCircle } from 'react-bootstrap-icons'
-import headerImg from '../assets/img/lab/stock_image.png'
-import '../assets/css/MiniBanner.css'
+import '../../assets/css/MiniBanner.css'
 
 const MiniBanner = () => {
-    
 
     return (
         <section className="banner" id="home">
@@ -14,9 +10,8 @@ const MiniBanner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={12} xl={12} className="column">
                         <h2>
-                            {`HARVEST 2026`}
+                            {`HARVEST-India 2026`}
                         </h2>
-                        
                     </Col>
                 </Row>
             </Container>

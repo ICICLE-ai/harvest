@@ -49,7 +49,7 @@ export default function DrawerComp({ links }) {
           }}
         >
           <Typography variant="h6" sx={{ color: 'white', mb: 2 }}>
-            Harvest 2026
+            HARVEST-India 2026
           </Typography>
 
           <List>
@@ -76,29 +76,38 @@ export default function DrawerComp({ links }) {
                         <ListItemButton
                           sx={{ pl: 4 }}
                           component={RouterLink}
-                          to="/past-events/2025"
+                          to="/past-events"
                           onClick={handleCloseAfterNav}
                         >
                           <ListItemText
-                            primary="Harvest 2025"
+                            primary="All Past Events"
                             sx={{ color: 'white', textAlign: 'center' }}
                           />
                         </ListItemButton>
 
-                        {/* Add more years here as needed */}
-                        {/* 
                         <ListItemButton
                           sx={{ pl: 4 }}
                           component={RouterLink}
-                          to="/past-events/2024"
+                          to="/past-events/harvest-vision-2026"
                           onClick={handleCloseAfterNav}
                         >
                           <ListItemText
-                            primary="Harvest 2024"
+                            primary="HARVEST-Vision 2026 (2nd Edition)"
                             sx={{ color: 'white', textAlign: 'center' }}
                           />
                         </ListItemButton>
-                        */}
+
+                        <ListItemButton
+                          sx={{ pl: 4 }}
+                          component={RouterLink}
+                          to="/past-events/2025"
+                          onClick={handleCloseAfterNav}
+                        >
+                          <ListItemText
+                            primary="HARVEST 2025 (1st Edition)"
+                            sx={{ color: 'white', textAlign: 'center' }}
+                          />
+                        </ListItemButton>
                       </List>
                     </Collapse>
                   </Box>

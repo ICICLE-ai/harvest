@@ -128,6 +128,19 @@
       position: relative;
       justify-content: center;
   }
+
+  /* Pages that lead with a .banner get their navbar clearance from the
+     banner's own 150px top padding. Pages without one (Past Events, Call for
+     Papers, Agenda) would otherwise start underneath the fixed AppBar. */
+  .body:not(:has(.banner)) {
+    padding-top: 100px;
+  }
+
+  /* ...but on the home and archive pages the banner is a preceding sibling of
+     .body rather than a child, so clearance is already handled. */
+  .banner + .body {
+    padding-top: 0;
+  }
   
   p.success {
       color: green;
@@ -194,3 +207,17 @@
       margin-top: 15px !important;
     }
   }
+/* Placeholder marker for content that is not yet finalized.
+   Grep for "tbd" to find every unresolved item across the site. */
+.tbd {
+  display: inline-block;
+  padding: 1px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffd166;
+  white-space: nowrap;
+}

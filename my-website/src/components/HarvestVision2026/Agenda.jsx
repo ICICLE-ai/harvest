@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import '../assets/css/Agenda.css';
+import '../../assets/css/Agenda.css';
 
 // Headshot Import
-import calebHeadshot from '../assets/img/Agenda/CalebHeadshot.jpg';
-import remiHeadshot from '../assets/img/Agenda/RemiHeadshot.jpeg';
+import calebHeadshot from '../../assets/img/HarvestVision2026/HeadShots/CalebHeadshot.jpg';
+import remiHeadshot from '../../assets/img/HarvestVision2026/HeadShots/RemiHeadshot.jpeg';
 
 // PDF Imports (add your actual paths here)
-import dasSlides from '../assets/pdfs/Harvest2026/Presentations/Das_Slides.pdf';
-import islamSlides from '../assets/pdfs/Harvest2026/Presentations/Islam_Slides.pdf';
-import santanaSlides from '../assets/pdfs/Harvest2026/Presentations/Santana_Slides.pdf';
-import hatefSlides from '../assets/pdfs/Harvest2026/Presentations/Hatef_Slides.pdf';
-import megretSlides from '../assets/pdfs/Harvest2026/Presentations/Megret_Slides.pdf';
-import bhavanamSlides from '../assets/pdfs/Harvest2026/Presentations/Bhavanam_Slides.pdf';
-import xuSlides from '../assets/pdfs/Harvest2026/Presentations/Xu_Slides.pdf';
-import stuberSlides from '../assets/pdfs/Harvest2026/Presentations/Stuber_Slides.pdf';
+import dasSlides from '../../assets/pdfs/HarvestVision2026/Presentations/Das_Slides.pdf';
+import islamSlides from '../../assets/pdfs/HarvestVision2026/Presentations/Islam_Slides.pdf';
+import santanaSlides from '../../assets/pdfs/HarvestVision2026/Presentations/Santana_Slides.pdf';
+import hatefSlides from '../../assets/pdfs/HarvestVision2026/Presentations/Hatef_Slides.pdf';
+import megretSlides from '../../assets/pdfs/HarvestVision2026/Presentations/Megret_Slides.pdf';
+import bhavanamSlides from '../../assets/pdfs/HarvestVision2026/Presentations/Bhavanam_Slides.pdf';
+import xuSlides from '../../assets/pdfs/HarvestVision2026/Presentations/Xu_Slides.pdf';
+import stuberSlides from '../../assets/pdfs/HarvestVision2026/Presentations/Stuber_Slides.pdf';
 
 
 const Agenda = () => {

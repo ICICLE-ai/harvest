@@ -1,42 +1,31 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import NavBar from './components/NavBar.jsx';
-import Banner from './components/Banner.jsx';
-import About from './components/CallForPapers.jsx';
 import { Container } from 'react-bootstrap';
 import './assets/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Agenda from './components/Agenda.jsx';
-import Projects from './components/Images.jsx';
-import Contact from './components/Submit.jsx';
+
+// Shared chrome
+import NavBar from './components/NavBar.jsx';
 import Footer from './components/Footer.jsx';
-import Motivation from './components/Motivation.jsx';
-import Organizers from './components/Organizers.jsx';
-import Committee from './components/Committee.jsx';
-import SocialImpact from './components/SocialImpact.jsx';
-import Speakers from './components/Speakers.jsx';
-import Attendees from './components/Attendees.jsx';
-import Journal from './components/Journal.jsx';
-import Exacomm2015Page from './components/Exacomm2015/Page.jsx';
-import Exacomm2016Page from './components/Exacomm2016/Page.jsx';
-import Exacomm2017Page from './components/Exacomm2017/Page.jsx';
-import Exacomm2018Page from './components/Exacomm2018/Page.jsx';
-import Exacomm2019Page from './components/Exacomm2019/Page.jsx';
-import Exacomm2020Page from './components/Exacomm2020/Page.jsx';
-import Exacomm2021Page from './components/Exacomm2021/Page.jsx';
-import Exacomm2022Page from './components/Exacomm2022/Page.jsx';
-import Exacomm2023Page from './components/Exacomm2023/Page.jsx';
-import CallForPapers from './components/CallForPapers.jsx';
-import Harvest2025Page from './components/Harvest2025/Page.jsx';
 import IcicleTraining from './components/IcicleTraining.jsx';
-import TravelGrants from './components/TravelGrants.jsx';
-import MiniBanner from './components/MiniBanner.jsx';
-import CommitteeTab from './components/CommitteeTab.jsx';
-import OrganizersTab from './components/OrganizersTab.jsx';
-import CallForPosters from './components/CallForPosters.jsx';
-import ImageCarousel from './components/ImageCarousel.jsx';
+import PastEvents from './components/PastEvents.jsx';
 
+// Current edition — HARVEST-India 2026 (3rd Edition), HiPC 2026
+import Banner from './components/HarvestIndia2026/Banner.jsx';
+import MiniBanner from './components/HarvestIndia2026/MiniBanner.jsx';
+import Overview from './components/HarvestIndia2026/Overview.jsx';
+import ImportantDates from './components/HarvestIndia2026/ImportantDates.jsx';
+import CallForPapers from './components/HarvestIndia2026/CallForPapers.jsx';
+import CallForPosters from './components/HarvestIndia2026/CallForPosters.jsx';
+import Agenda from './components/HarvestIndia2026/Agenda.jsx';
+import Organizers from './components/HarvestIndia2026/Organizers.jsx';
+import ProgramCommittee from './components/HarvestIndia2026/ProgramCommittee.jsx';
+import TravelGrants from './components/HarvestIndia2026/TravelGrants.jsx';
+import Contact from './components/HarvestIndia2026/Contact.jsx';
 
+// Archived editions
+import HarvestVision2026Page from './components/HarvestVision2026/Page.jsx';
+import Harvest2025Page from './components/Harvest2025/Page.jsx';
 
 function App() {
   const links = [
@@ -46,6 +35,7 @@ function App() {
     { label: 'Agenda', path: '/agenda' },
     { label: 'Committees', path: '/committees' },
     { label: 'Travel Grants', path: '/travel-grants' },
+    { label: 'Contact', path: '/contact' },
     { label: 'Past Events', path: '/past-events' },
   ];
 
@@ -55,7 +45,7 @@ function App() {
         <NavBar links={links} />
 
         <Routes>
-          {/* 🏠 Home Page */}
+          {/* 🏠 Home — current edition */}
           <Route
             path="/"
             element={
@@ -63,14 +53,13 @@ function App() {
                 <Banner />
                 <section className="body">
                   <Container className="box">
-                    <SocialImpact />
-                    <Contact />
+                    <Overview />
+                    <ImportantDates />
                     <Organizers />
-                    <Committee />
+                    <ProgramCommittee />
                     <IcicleTraining />
                   </Container>
                 </section>
-                
                 <Footer />
               </>
             }
@@ -100,58 +89,73 @@ function App() {
             }
           />
 
+          {/* 🗓️ Agenda */}
           <Route
             path="/agenda"
             element={
               <section className="body">
                 <Container>
                   <Agenda />
-                  <ImageCarousel/>
-                </Container>
-              </section>
-            }
-          />
-           <Route
-            path="/committees"
-            element={
-              <section className="body">
-                <Container>
-                  <MiniBanner/>
-                  <OrganizersTab />
-                  <Committee />
                 </Container>
               </section>
             }
           />
 
+          {/* 👥 Committees */}
+          <Route
+            path="/committees"
+            element={
+              <section className="body">
+                <Container>
+                  <MiniBanner />
+                  <Organizers />
+                  <ProgramCommittee />
+                </Container>
+              </section>
+            }
+          />
+
+          {/* ✈️ Travel Grants */}
           <Route
             path="/travel-grants"
             element={
               <section className="body">
                 <Container>
-                  <MiniBanner/>
+                  <MiniBanner />
                   <TravelGrants />
                 </Container>
               </section>
             }
           />
 
-          {/* 📚 Past Events main page */}
+          {/* ✉️ Contact */}
           <Route
-            path="/past-events"
+            path="/contact"
             element={
               <section className="body">
                 <Container>
-                  <Harvest2025Page />
+                  <MiniBanner />
+                  <Contact />
                 </Container>
               </section>
             }
           />
 
-          {/* 📅 Dynamic Past Event pages (2024, 2023, etc.) */}
-          {/* Year-specific ExaComm pages */}
-          <Route path="/past-events/2025" element={<Harvest2025Page />} />
+          {/* 📚 Past Events index */}
+          <Route
+            path="/past-events"
+            element={
+              <section className="body">
+                <Container>
+                  <PastEvents />
+                </Container>
+              </section>
+            }
+          />
 
+          {/* 📅 Archived editions — /past-events/2025 is a published link, keep it */}
+          <Route path="/past-events/harvest-vision-2026" element={<HarvestVision2026Page />} />
+          <Route path="/past-events/2025" element={<Harvest2025Page />} />
 
           {/* 🔁 Redirect all unknown paths to Home */}
           <Route path="*" element={<Navigate to="/" replace />} />

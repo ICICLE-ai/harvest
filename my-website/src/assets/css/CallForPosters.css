@@ -142,6 +142,15 @@
     line-height: 1.5em;
     margin: 0px 0 40px 0;
   }
+
+  /* Intro/lede text sits directly on the dark page background rather than
+     inside a white .section-box card, so it needs light text. */
+  .call-for-posters > p,
+  .call-for-posters > .container > p,
+  .call-for-posters > .container > ul,
+  .call-for-posters > .container > ul li {
+    color: #fff !important;
+  }
   
   /* Image styling */
   .abt-img {

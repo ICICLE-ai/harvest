@@ -1,16 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../assets/css/About.css';
-import data from '../assets/json/chunk-text.json';
-import hari from '../assets/img/lab/Hari.png'
-import scott from '../assets/img/lab/Shearer-Scott2.png'
-
-
-const images = import.meta.glob('../assets/img/lab/*.{png,jpg,jpeg,svg,avif}', { eager: true });
 
 const IcicleTraining = () => {
- 
-
   return (
     <section className="about" id="about">
       <h2>Learn more about ICICLE materials</h2>

@@ -47,7 +47,7 @@ export default function NavBar({ links }) {
           component={RouterLink}
           to="/"
         >
-          <Typography>HARVEST-Vision 2026</Typography>
+          <Typography>HARVEST-India 2026</Typography>
         </Button>
 
         {isMatch ? (
@@ -98,10 +98,24 @@ export default function NavBar({ links }) {
             >
               <MenuItem
                 component={RouterLink}
+                to="/past-events"
+                onClick={handleMenuClose}
+              >
+                All Past Events
+              </MenuItem>
+              <MenuItem
+                component={RouterLink}
+                to="/past-events/harvest-vision-2026"
+                onClick={handleMenuClose}
+              >
+                HARVEST-Vision 2026 (2nd Edition)
+              </MenuItem>
+              <MenuItem
+                component={RouterLink}
                 to="/past-events/2025"
                 onClick={handleMenuClose}
               >
-                Harvest 2025
+                HARVEST 2025 (1st Edition)
               </MenuItem>
             </Menu>
 

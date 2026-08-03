@@ -1,32 +1,32 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import '../assets/css/ImageCarousel.css';
+import '../../assets/css/ImageCarousel.css';
 
 // ─── Conference Images ───
-import conf1798 from '../assets/img/Harvest2026/Conference/IMG_1798.jpg';
-import conf1806 from '../assets/img/Harvest2026/Conference/IMG_1806.jpg';
-import conf1810 from '../assets/img/Harvest2026/Conference/IMG_1810.jpg';
-import conf2127 from '../assets/img/Harvest2026/Conference/IMG_2127.jpg';
-import conf2132 from '../assets/img/Harvest2026/Conference/IMG_2132.jpg';
-import conf2135 from '../assets/img/Harvest2026/Conference/IMG_2135.jpg';
-import conf7846 from '../assets/img/Harvest2026/Conference/IMG_7846.jpg';
-import conf7855 from '../assets/img/Harvest2026/Conference/IMG_7855.jpg';
-import conf7856 from '../assets/img/Harvest2026/Conference/IMG_7856.jpg';
-import conf7859 from '../assets/img/Harvest2026/Conference/IMG_7859.jpg';
-import conf7860 from '../assets/img/Harvest2026/Conference/IMG_7860.jpg';
-import conf7861 from '../assets/img/Harvest2026/Conference/IMG_7861.jpg';
+import conf1798 from '../../assets/img/HarvestVision2026/Conference/IMG_1798.jpg';
+import conf1806 from '../../assets/img/HarvestVision2026/Conference/IMG_1806.jpg';
+import conf1810 from '../../assets/img/HarvestVision2026/Conference/IMG_1810.jpg';
+import conf2127 from '../../assets/img/HarvestVision2026/Conference/IMG_2127.jpg';
+import conf2132 from '../../assets/img/HarvestVision2026/Conference/IMG_2132.jpg';
+import conf2135 from '../../assets/img/HarvestVision2026/Conference/IMG_2135.jpg';
+import conf7846 from '../../assets/img/HarvestVision2026/Conference/IMG_7846.jpg';
+import conf7855 from '../../assets/img/HarvestVision2026/Conference/IMG_7855.jpg';
+import conf7856 from '../../assets/img/HarvestVision2026/Conference/IMG_7856.jpg';
+import conf7859 from '../../assets/img/HarvestVision2026/Conference/IMG_7859.jpg';
+import conf7860 from '../../assets/img/HarvestVision2026/Conference/IMG_7860.jpg';
+import conf7861 from '../../assets/img/HarvestVision2026/Conference/IMG_7861.jpg';
 
 // ─── Tour Images ───
-import tour2136 from '../assets/img/Harvest2026/Tour/IMG_2136.jpg';
-import tour2148 from '../assets/img/Harvest2026/Tour/IMG_2148.jpg';
-import tour2149 from '../assets/img/Harvest2026/Tour/IMG_2149.jpg';
-import tour2172 from '../assets/img/Harvest2026/Tour/IMG_2172.jpg';
-import tour2180 from '../assets/img/Harvest2026/Tour/IMG_2180.jpg';
-import tour2187 from '../assets/img/Harvest2026/Tour/IMG_2187.jpg';
-import tour2192 from '../assets/img/Harvest2026/Tour/IMG_2192.jpg';
-import tour2229 from '../assets/img/Harvest2026/Tour/IMG_2229.jpg';
-import tour2144 from '../assets/img/Harvest2026/Tour/IMG_2144.jpg';
-import tour2195 from '../assets/img/Harvest2026/Tour/IMG_2195.jpg';
-import tour2207 from '../assets/img/Harvest2026/Tour/IMG_2207.jpg';
+import tour2136 from '../../assets/img/HarvestVision2026/Tour/IMG_2136.jpg';
+import tour2148 from '../../assets/img/HarvestVision2026/Tour/IMG_2148.jpg';
+import tour2149 from '../../assets/img/HarvestVision2026/Tour/IMG_2149.jpg';
+import tour2172 from '../../assets/img/HarvestVision2026/Tour/IMG_2172.jpg';
+import tour2180 from '../../assets/img/HarvestVision2026/Tour/IMG_2180.jpg';
+import tour2187 from '../../assets/img/HarvestVision2026/Tour/IMG_2187.jpg';
+import tour2192 from '../../assets/img/HarvestVision2026/Tour/IMG_2192.jpg';
+import tour2229 from '../../assets/img/HarvestVision2026/Tour/IMG_2229.jpg';
+import tour2144 from '../../assets/img/HarvestVision2026/Tour/IMG_2144.jpg';
+import tour2195 from '../../assets/img/HarvestVision2026/Tour/IMG_2195.jpg';
+import tour2207 from '../../assets/img/HarvestVision2026/Tour/IMG_2207.jpg';
 
 
 const conferenceImages = [

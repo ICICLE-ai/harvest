@@ -13,7 +13,7 @@ const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={12} xl={12} className="column">
                         <h1>
-                            {`HARVEST 2025`}
+                            {`HARVEST 2025 (1st Edition)`}
                         </h1>
                         <h2>
                             {`HARVEST: First International Workshop on Applications of HPC and AI in Agriculture`}
