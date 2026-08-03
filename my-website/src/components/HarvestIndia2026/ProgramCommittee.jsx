@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../assets/css/Committee.css';
 
 const ProgramCommittee = () => {
@@ -11,7 +12,7 @@ const ProgramCommittee = () => {
       </p>
       <p>
         Members will be listed here once confirmed. For reference, the{' '}
-        <a href="#/past-events/harvest-vision-2026">HARVEST-Vision 2026</a> committee is preserved
+        <Link to="/past-events/harvest-vision-2026">HARVEST-Vision 2026</Link> committee is preserved
         on the past events page.
       </p>
     </section>

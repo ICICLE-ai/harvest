@@ -14,7 +14,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import PropTypes from 'prop-types';
-import { Link as RouterLink } from 'react-router-dom'; // ✅ Works with HashRouter
+import { Link as RouterLink } from 'react-router-dom';
 
 export default function DrawerComp({ links }) {
   const [open, setOpen] = useState(false);

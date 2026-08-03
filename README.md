@@ -9,15 +9,30 @@ Live at **https://icicle-ai.github.io/harvest/**
 
 | Edition | Workshop | Hosted at | Site section |
 | --- | --- | --- | --- |
-| 3rd (current) | HARVEST-India 2026 | HiPC 2026 (half-day) | Root routes (`#/`, `#/call-for-papers`, …) |
-| 2nd | HARVEST-Vision 2026 | WACV 2026, Tucson, AZ | `#/past-events/harvest-vision-2026` |
-| 1st | HARVEST 2025 | ICPP 2025, San Diego, CA | `#/past-events/2025` |
+| 3rd (current) | HARVEST-India 2026 | HiPC 2026 (half-day) | Root routes (`/`, `/call-for-papers`, …) |
+| 2nd | HARVEST-Vision 2026 | WACV 2026, Tucson, AZ | `/past-events/harvest-vision-2026` |
+| 1st | HARVEST 2025 | ICPP 2025, San Diego, CA | `/past-events/2025` |
 
 ## Stack
 
 A **Vite + React 19** single-page app in [`my-website/`](my-website). Routing is `react-router-dom`
-with `HashRouter`, so all deep links carry a `#` (e.g.
-`https://icicle-ai.github.io/harvest/#/call-for-papers`). Content is authored directly as JSX.
+with `BrowserRouter`, so URLs are clean paths &mdash;
+`https://icicle-ai.github.io/harvest/call-for-papers`. Content is authored directly as JSX.
+
+### Clean URLs on GitHub Pages
+
+Pages has no server-side rewrite, so a direct request for a client route matches no file and Pages
+serves `404.html`. The `github-pages-spa-fallback` plugin in
+[`vite.config.js`](my-website/vite.config.js) writes a copy of `index.html` to `dist/404.html` at
+build time, which lets React Router render the right page. Deep links therefore work on refresh and
+when pasted, though Pages still reports HTTP 404 for them &mdash; a limitation of static hosting, not
+a broken page.
+
+The site used `HashRouter` until August 2026. A shim in [`main.jsx`](my-website/src/main.jsx)
+rewrites any incoming `#/path` URL to `/path` before the router mounts, so previously published
+links such as `.../harvest/#/past-events/2025` keep working. Do not remove it.
+
+Use `<Link to="/foo">` from `react-router-dom` for internal links, never `<a href="#/foo">`.
 
 ## Local development
 

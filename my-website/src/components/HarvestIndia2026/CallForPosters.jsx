@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../../assets/css/CallForPosters.css';
 
 const CallForPosters = () => {
@@ -21,7 +22,7 @@ const CallForPosters = () => {
               dimensions, template, and submission deadline will be posted here.
             </p>
             <p>
-              In the meantime, please see the <a href="#/call-for-papers">Call for Papers</a> for the
+              In the meantime, please see the <Link to="/call-for-papers">Call for Papers</Link> for the
               main submission track.
             </p>
           </Col>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../../assets/css/CallForPosters.css';
 
 const Agenda = () => {
@@ -19,7 +20,7 @@ const Agenda = () => {
             </p>
             <p>
               For a sense of what to expect, see the{' '}
-              <a href="#/past-events/harvest-vision-2026">HARVEST-Vision 2026 agenda</a> from the
+              <Link to="/past-events/harvest-vision-2026">HARVEST-Vision 2026 agenda</Link> from the
               previous edition.
             </p>
           </Col>

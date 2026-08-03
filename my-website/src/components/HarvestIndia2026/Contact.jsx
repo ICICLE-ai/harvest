@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../../assets/css/CallForPosters.css';
 
 const Contact = () => {
@@ -49,7 +50,7 @@ const Contact = () => {
                 </a>
               </li>
               <li>
-                <a href="#/past-events">Past editions of the HARVEST workshop</a>
+                <Link to="/past-events">Past editions of the HARVEST workshop</Link>
               </li>
             </ul>
           </Col>

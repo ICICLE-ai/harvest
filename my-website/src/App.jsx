@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import './assets/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,8 +39,12 @@ function App() {
     { label: 'Past Events', path: '/past-events' },
   ];
 
+  // BASE_URL is '/harvest/' in production and '/' in dev; basename wants no
+  // trailing slash.
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <NavBar links={links} />
 
