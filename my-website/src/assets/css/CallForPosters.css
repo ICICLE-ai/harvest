@@ -151,6 +151,34 @@
   .call-for-posters > .container > ul li {
     color: #fff !important;
   }
+
+  /* An .about section nested inside a call-for-posters page (e.g. the
+     Organizing Committee on the Call for Papers tab) also renders on the dark
+     page background, so it must not inherit the black card text colour. */
+  .call-for-posters .about,
+  .call-for-posters .about p,
+  .call-for-posters .about li,
+  .call-for-posters .about b,
+  .call-for-posters .about strong {
+    color: #fff !important;
+  }
+
+  .call-for-posters .about a,
+  .call-for-posters .about a b,
+  .call-for-posters .about a strong {
+    color: #7ab8ff !important;
+  }
+
+  /* Keep the TBD badge its own colour rather than the card black. Light amber
+     on the dark page background, darker amber inside white .section-box cards. */
+  .call-for-posters .tbd {
+    color: #ffd166 !important;
+  }
+
+  .call-for-posters .section-box .tbd {
+    color: #b45309 !important;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
   
   /* Image styling */
   .abt-img {

@@ -221,3 +221,9 @@
   color: #ffd166;
   white-space: nowrap;
 }
+
+/* Inside a white card the light amber has too little contrast. */
+.section-box .tbd {
+  color: #b45309;
+  border-color: rgba(0, 0, 0, 0.3);
+}
