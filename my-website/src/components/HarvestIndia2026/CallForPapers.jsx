@@ -14,12 +14,12 @@ const CallForPapers = () => {
           <Col xs={12} lg={12}>
             <h3>Important Dates</h3>
             <ul>
+              <li><b>Full paper submission deadline:</b> October 9, 2026</li>
+              <li><b>Author notifications sent:</b> November 5, 2026</li>
+              <li><b>Camera-ready papers due:</b> November 13, 2026</li>
               <li><b>Workshop Date:</b> <span className="tbd">TBD</span></li>
-              <li><b>Paper Submission Deadline:</b> <span className="tbd">TBD</span></li>
-              <li><b>Author Notification:</b> <span className="tbd">TBD</span></li>
-              <li><b>Camera-ready Deadline:</b> <span className="tbd">TBD</span></li>
             </ul>
-            <em>Dates will be confirmed once the HiPC 2026 workshop schedule is finalized.</em>
+            <em>The workshop date will be confirmed once the HiPC 2026 schedule is finalized.</em>
           </Col>
         </Row>
 

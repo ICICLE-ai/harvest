@@ -24,6 +24,13 @@ const TravelGrants = () => {
                   </a>
                   . Awardees each presented a poster on their work.
                 </p>
+                <p>
+                  The same AIVO travel funding also supported the workshop&rsquo;s tour of the{' '}
+                  <a href="https://biosphere2.org/" target="_blank" rel="noreferrer">
+                    Biosphere 2
+                  </a>{' '}
+                  research facility.
+                </p>
               </div>
             </div>
           </div>
