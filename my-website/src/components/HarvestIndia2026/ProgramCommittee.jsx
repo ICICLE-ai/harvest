@@ -12,6 +12,18 @@ const members = [
     { name: 'Upinder Kaur', email: 'kauru@purdue.edu', affiliation: 'Purdue University' },
     { name: 'Ashish Pandey', email: 'ashish.pandey@wr.iitr.ac.in', affiliation: 'IIT Roorkee' }
   ],
+  [
+    { name: 'Pabitra Mitra', email: 'pabitra@gmail.com', affiliation: 'IIT Kharagpur' },
+    { name: 'Manish K Goyal', email: 'mkgoyal@iiti.ac.in', affiliation: 'IIT Indore' }
+  ],
+  [
+    { name: 'Priyanka V', email: 'priyankav@iisc.ac.in', affiliation: 'Indian Institute of Science' },
+    { name: 'Manojkumar Patil', email: 'pmanojkumar@iisc.ac.in', affiliation: 'Indian Institute of Science' }
+  ],
+  [
+    { name: 'Archana R Sathyan', email: 'archana.rs@kau.in', affiliation: 'Kerala Agricultural University' },
+    { name: 'Chen Chen', email: 'chen.chen@crcv.ucf.edu', affiliation: 'University of Central Florida' }
+  ],
 ];
 
 const ProgramCommittee = () => {
