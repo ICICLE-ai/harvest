@@ -24,7 +24,19 @@ const members = [
     { name: 'Archana R Sathyan', email: 'archana.rs@kau.in', affiliation: 'Kerala Agricultural University' },
     { name: 'Chen Chen', email: 'chen.chen@crcv.ucf.edu', affiliation: 'University of Central Florida' }
   ],
+  [
+    { name: 'Sunil Gorantiwar', email: 'sdgorantiwar@gmail.com', affiliation: '' }
+  ],
 ];
+
+// affiliation is optional — omit the separator when we don't have one.
+const Member = ({ member }) =>
+  member ? (
+    <>
+      <a href={`mailto:${member.email}`}>{member.name}</a>
+      {member.affiliation ? `, ${member.affiliation}` : ''}
+    </>
+  ) : null;
 
 const ProgramCommittee = () => {
   return (
@@ -38,16 +50,10 @@ const ProgramCommittee = () => {
             return (
               <tr key={i}>
                 <td>
-                  <a href={`mailto:${left.email}`}>{left.name}</a>, {left.affiliation}
+                  <Member member={left} />
                 </td>
                 <td>
-                  {right ? (
-                    <>
-                      <a href={`mailto:${right.email}`}>{right.name}</a>, {right.affiliation}
-                    </>
-                  ) : (
-                    ''
-                  )}
+                  <Member member={right} />
                 </td>
               </tr>
             );
