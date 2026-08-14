@@ -25,7 +25,7 @@ const members = [
     { name: 'Chen Chen', email: 'chen.chen@crcv.ucf.edu', affiliation: 'University of Central Florida' }
   ],
   [
-    { name: 'Sunil Gorantiwar', email: 'sdgorantiwar@gmail.com', affiliation: '' }
+    { name: 'Sunil Gorantiwar', email: 'sdgorantiwar@gmail.com', affiliation: 'Mahatma Phule Krishi Vidyapeeth' }
   ],
 ];
 
