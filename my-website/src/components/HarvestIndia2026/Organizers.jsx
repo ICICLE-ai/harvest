@@ -20,11 +20,6 @@ const Organizers = () => {
           </p>
         </Col>
       </Row>
-      <Row>
-        <Col xs={12} lg={12}>
-          <p>Additional organizers for this edition: <span className="tbd">TBD</span></p>
-        </Col>
-      </Row>
     </section>
   );
 };
