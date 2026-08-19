@@ -25,18 +25,31 @@ const members = [
     { name: 'Chen Chen', email: 'chen.chen@crcv.ucf.edu', affiliation: 'University of Central Florida' }
   ],
   [
-    { name: 'Sunil Gorantiwar', email: 'sdgorantiwar@gmail.com', affiliation: 'Mahatma Phule Krishi Vidyapeeth' }
+    { name: 'Sunil Gorantiwar', email: 'sdgorantiwar@gmail.com', affiliation: 'Mahatma Phule Krishi Vidyapeeth' },
+    { name: 'Dr. K S Rajan', link: 'https://lsi.iiit.ac.in/ks_rajan/', affiliation: 'IIIT Hyderabad' }
   ],
 ];
 
+// Members link to an email or, where we only have one, a homepage.
 // affiliation is optional — omit the separator when we don't have one.
-const Member = ({ member }) =>
-  member ? (
+const Member = ({ member }) => {
+  if (!member) return null;
+
+  const isExternal = Boolean(member.link);
+  const href = isExternal ? member.link : `mailto:${member.email}`;
+
+  return (
     <>
-      <a href={`mailto:${member.email}`}>{member.name}</a>
+      <a
+        href={href}
+        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      >
+        {member.name}
+      </a>
       {member.affiliation ? `, ${member.affiliation}` : ''}
     </>
-  ) : null;
+  );
+};
 
 const ProgramCommittee = () => {
   return (
