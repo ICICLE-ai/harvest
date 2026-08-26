@@ -31,7 +31,8 @@ const PastEvents = () => {
         <h2>Past Events</h2>
         <p>
           The HARVEST workshop series builds community and cyberinfrastructure at the intersection
-          of AI, HPC, and agriculture. Previous editions are archived below.
+          of AI, HPC, and agriculture. Concluded editions are archived below; the editions that are
+          currently open are listed at the bottom of this page.
         </p>
 
         {editions.map((edition) => (
@@ -56,11 +57,17 @@ const PastEvents = () => {
 
         <Row className="section-box">
           <Col xs={12} lg={12}>
-            <h3>Current Edition</h3>
-            <p>
-              The next workshop is <Link to="/">HARVEST-India 2026 (3rd Edition)</Link>, a half-day
-              workshop at HiPC 2026.
-            </p>
+            <h3>Upcoming Editions</h3>
+            <ul>
+              <li>
+                <Link to="/india-2026">HARVEST-India 2026 (3rd Edition)</Link> &mdash; a half-day
+                workshop in cooperation with HiPC 2026.
+              </li>
+              <li>
+                <Link to="/vision-2027">HARVEST-Vision 2027 (4th Edition)</Link> &mdash; in
+                cooperation with WACV 2027. Dates and venue <span className="tbd">TBD</span>.
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>

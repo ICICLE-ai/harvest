@@ -13,16 +13,17 @@ const CallForPosters = () => {
           <Col xs={12} lg={12}>
             <h3>Poster Track <span className="tbd">TBD</span></h3>
             <p>
-              HARVEST-India 2026 is a half-day workshop at HiPC 2026. Whether a separate poster track
-              will run alongside the paper track is still being decided with the HiPC organizers.
+              Whether a separate poster track will run alongside the paper track at
+              HARVEST-Vision 2027 is still being decided with the WACV organizers.
             </p>
             <p>
               If a poster track is held, details on the extended abstract requirements, poster
               dimensions, template, and submission deadline will be posted here.
             </p>
             <p>
-              In the meantime, please see the <Link to="/india-2026/call-for-papers">Call for Papers</Link> for the
-              main submission track.
+              In the meantime, please see the{' '}
+              <Link to="/vision-2027/call-for-papers">Call for Papers</Link> for the main
+              submission track.
             </p>
           </Col>
         </Row>

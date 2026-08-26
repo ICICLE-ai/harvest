@@ -1,0 +1,190 @@
+/* Series landing page: a masthead over two large edition buttons. */
+
+.landing {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 60px 40px 100px;
+  text-align: center;
+}
+
+.landing-header h1 {
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.landing-tagline {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #b8b8b8;
+}
+
+.landing-prompt {
+  margin: 0 0 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8f8f8f;
+}
+
+/* --- The two big buttons --------------------------------------------- */
+
+.landing-choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-items: stretch;
+}
+
+.landing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 36px 32px;
+  background: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  text-decoration: none !important;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+/* Mirrors the animated gradient on the section cards. The keyframes are
+   redeclared here rather than borrowed from CallForPosters.css so this
+   stylesheet stands on its own. */
+@keyframes landingGradientSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.landing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #00d2ff, #3a47d5);
+  background-size: 200% 100%;
+  animation: landingGradientSlide 3s linear infinite;
+}
+
+.landing-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 210, 255, 0.5);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.landing-card-edition {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #00d2ff;
+}
+
+.landing-card-title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.landing-card-tagline {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #b8b8b8;
+}
+
+.landing-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.landing-card-host {
+  font-size: 15px;
+  color: #8f8f8f;
+}
+
+.landing-card-cta {
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #7ab8ff;
+}
+
+.landing-card:hover .landing-card-cta {
+  color: #00d2ff;
+}
+
+.landing-past {
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.landing-past a {
+  color: #7ab8ff;
+  font-weight: 600;
+}
+
+.landing-past a:hover {
+  color: #00d2ff;
+}
+
+/* --- Responsive ------------------------------------------------------ */
+
+@media screen and (max-width: 991px) {
+  .landing {
+    padding: 40px 0 80px;
+  }
+
+  .landing-header h1 {
+    font-size: 60px;
+  }
+
+  .landing-tagline {
+    font-size: 17px;
+  }
+
+  .landing-choices {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .landing-card {
+    padding: 32px 28px 28px;
+  }
+
+  .landing-card-title {
+    font-size: 30px;
+  }
+
+  .landing-card-cta {
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing-header h1 {
+    font-size: 44px;
+  }
+}

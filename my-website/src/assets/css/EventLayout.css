@@ -1,0 +1,236 @@
+/* Two-column shell shared by every open edition: side tabs on the left, the
+   edition masthead and the selected section on the right. */
+
+.event-shell {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+  /* Full-bleed with its own gutter, so the side tabs sit against the left edge
+     of the viewport instead of being centred with the rest of the page. */
+  padding: 0 40px 60px;
+}
+
+/* The content column is capped so lines stay readable on a wide monitor; the
+   leftover space falls on the right, keeping the tabs anchored left. */
+.event-main {
+  min-width: 0;
+  max-width: 1200px;
+}
+
+/* --- Side tabs ------------------------------------------------------- */
+
+.event-sidebar {
+  position: sticky;
+  /* Clears the fixed AppBar (64px) with a little breathing room. */
+  top: 90px;
+  background: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.event-sidebar-title {
+  margin: 0;
+  padding: 16px 20px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.event-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-sidebar li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.event-sidebar-link {
+  display: block;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #d8d8d8 !important;
+  /* Bootstrap is imported after App.css and underlines every anchor. */
+  text-decoration: none !important;
+  border-left: 3px solid transparent;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.event-sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.event-sidebar-link.active {
+  background-color: rgba(58, 71, 213, 0.18);
+  border-left-color: #00d2ff;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+/* --- Edition masthead ------------------------------------------------ */
+
+.event-header {
+  padding-bottom: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.event-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.event-edition {
+  font-size: 0.5em;
+  font-weight: 500;
+  color: #8f8f8f;
+  white-space: nowrap;
+}
+
+.event-header .event-tagline {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #e0e0e0;
+  margin: 0 0 16px 0;
+}
+
+.event-header .event-meta {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 12px 0;
+}
+
+.event-meta-sep {
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0 12px;
+}
+
+.event-header .event-host {
+  font-size: 16px;
+  color: #b8b8b8;
+  margin: 0;
+}
+
+.event-header .event-host a {
+  color: #7ab8ff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.event-header .event-host a:hover {
+  color: #00d2ff;
+}
+
+/* The section components below the masthead bring their own top margin, so
+   suppress the extra leading gap the first one would otherwise add. */
+.event-main > .about:first-of-type,
+.event-main > .call-for-posters:first-of-type {
+  margin-top: 20px;
+}
+
+.event-main .call-for-posters h2 {
+  margin-top: 20px !important;
+}
+
+/* The stock 100px gap between stacked sections leaves the shorter tabs
+   (Committees especially) looking half-empty inside the narrower column. */
+.event-main .about {
+  margin-bottom: 50px;
+}
+
+.event-main .call-for-posters {
+  margin-bottom: 50px;
+}
+
+/* --- Responsive ------------------------------------------------------ */
+
+@media screen and (max-width: 1200px) {
+  .event-shell {
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 28px;
+    /* .body supplies a 50px gutter of its own at this width — don't double it. */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .event-header h1 {
+    font-size: 36px;
+  }
+
+  .event-header .event-tagline {
+    font-size: 18px;
+  }
+}
+
+/* Below this width the two columns are too cramped, so the side tabs become a
+   horizontally scrollable strip above the content. */
+@media screen and (max-width: 991px) {
+  .event-shell {
+    display: block;
+  }
+
+  .event-sidebar {
+    position: static;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+
+  .event-sidebar-title {
+    padding: 12px 16px 8px;
+  }
+
+  .event-sidebar ul {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .event-sidebar li + li {
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .event-sidebar-link {
+    white-space: nowrap;
+    padding: 12px 16px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .event-sidebar-link.active {
+    border-left-color: transparent;
+    border-bottom-color: #00d2ff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event-header h1 {
+    font-size: 30px;
+  }
+
+  .event-header .event-tagline {
+    font-size: 16px;
+  }
+
+  .event-header .event-meta {
+    font-size: 15px;
+  }
+
+  .event-meta-sep {
+    margin: 0 8px;
+  }
+}

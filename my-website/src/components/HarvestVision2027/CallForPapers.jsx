@@ -13,12 +13,12 @@ const CallForPapers = () => {
           <Col xs={12} lg={12}>
             <h3>Important Dates</h3>
             <ul>
-              <li><b>Full paper submission deadline:</b> October 9, 2026</li>
-              <li><b>Author notifications sent:</b> November 5, 2026</li>
-              <li><b>Camera-ready papers due:</b> November 13, 2026</li>
+              <li><b>Full paper submission deadline:</b> <span className="tbd">TBD</span></li>
+              <li><b>Author notifications sent:</b> <span className="tbd">TBD</span></li>
+              <li><b>Camera-ready papers due:</b> <span className="tbd">TBD</span></li>
               <li><b>Workshop Date:</b> <span className="tbd">TBD</span></li>
             </ul>
-            <em>The workshop date will be confirmed once the HiPC 2026 schedule is finalized.</em>
+            <em>All dates will be confirmed once the WACV 2027 schedule is finalized.</em>
           </Col>
         </Row>
 
@@ -27,11 +27,11 @@ const CallForPapers = () => {
             <h3>Topics</h3>
             <p>
               <em>
-                Draft topic list carried over from the previous edition and re-scoped for an HPC audience.
-                Final topics <span className="tbd">TBD</span>.
+                Draft topic list carried over from the previous edition. Final topics{' '}
+                <span className="tbd">TBD</span>.
               </em>
             </p>
-            HARVEST-India 2026 welcomes original submissions in a range of areas, including but not limited to:
+            HARVEST-Vision 2027 welcomes original submissions in a range of areas, including but not limited to:
             <ul>
               <li>HPC-powered training and inference pipelines for agricultural AI</li>
               <li>Edge-to-HPC data movement, storage, and management for field-collected agricultural data</li>
@@ -51,10 +51,10 @@ const CallForPapers = () => {
             <h3>Submission Instructions</h3>
             <p><span className="tbd">TBD</span></p>
             <p>
-              Submissions will follow the HiPC 2026 workshop guidelines. Page limits, formatting
-              template, and the submission site will be announced here once confirmed with the HiPC
-              organizers. All submissions will be peer-reviewed by the program committee for technical
-              quality and relevance to the workshop.
+              Submissions will follow the WACV 2027 workshop guidelines. Page limits, formatting
+              template, and the submission site will be announced here once confirmed with the WACV
+              organizers. All submissions will be peer-reviewed by the program committee for
+              technical quality and relevance to the workshop.
             </p>
           </Col>
         </Row>
@@ -63,7 +63,7 @@ const CallForPapers = () => {
           <Col xs={12} lg={12}>
             <h3>Proceedings</h3>
             <p><span className="tbd">TBD</span></p>
-            <p>Publication venue and proceedings arrangements for this edition are being finalized with HiPC 2026.</p>
+            <p>Publication venue and proceedings arrangements for this edition are being finalized with WACV 2027.</p>
           </Col>
         </Row>
 
@@ -71,7 +71,7 @@ const CallForPapers = () => {
           <Col xs={12} lg={12}>
             <h3>Workshop Registration</h3>
             There is no separate workshop registration. Please register for the workshops on the
-            main HiPC 2026 conference registration page.
+            main WACV 2027 conference registration page.
           </Col>
         </Row>
 

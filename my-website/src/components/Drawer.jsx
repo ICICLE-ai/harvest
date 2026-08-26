@@ -7,18 +7,20 @@ import {
   List,
   ListItemButton,
   ListItemText,
-  Button,
   Collapse,
 } from '@mui/material';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
+import { events, pastEvents } from '../events.js';
 
-export default function DrawerComp({ links }) {
+// Small-screen counterpart to the navbar tabs. It only carries the top-level
+// choices — the per-edition sections live in the page's own side tabs, which
+// collapse into a scrollable strip at this width.
+export default function DrawerComp() {
   const [open, setOpen] = useState(false);
-  const [openPastEvents, setOpenPastEvents] = useState(false); // ✅ Dropdown state
+  const [openPastEvents, setOpenPastEvents] = useState(false);
 
   // Smoothly close Drawer after navigation
   const handleCloseAfterNav = () => {
@@ -27,7 +29,6 @@ export default function DrawerComp({ links }) {
 
   return (
     <>
-      {/* Drawer Panel */}
       <Drawer
         PaperProps={{
           sx: {
@@ -48,111 +49,55 @@ export default function DrawerComp({ links }) {
             padding: 2,
           }}
         >
-          <Typography variant="h6" sx={{ color: 'white', mb: 2 }}>
-            HARVEST-India 2026
+          <Typography variant="h6" sx={{ color: 'white', mb: 2, letterSpacing: '0.12em' }}>
+            HARVEST
           </Typography>
 
           <List>
-            {/* Internal Route Links */}
-            {links.map((link, index) => {
-              if (link.label === 'Past Events') {
-                return (
-                  <Box key={index}>
-                    <ListItemButton onClick={() => setOpenPastEvents(!openPastEvents)}>
-                      <ListItemText
-                        sx={{ color: 'white', textAlign: 'center' }}
-                        primary="Past Events"
-                      />
-                      {openPastEvents ? (
-                        <ExpandLess sx={{ color: 'white' }} />
-                      ) : (
-                        <ExpandMore sx={{ color: 'white' }} />
-                      )}
-                    </ListItemButton>
-
-                    {/* Dropdown for past Harvest events */}
-                    <Collapse in={openPastEvents} timeout="auto" unmountOnExit>
-                      <List component="div" disablePadding>
-                        <ListItemButton
-                          sx={{ pl: 4 }}
-                          component={RouterLink}
-                          to="/past-events"
-                          onClick={handleCloseAfterNav}
-                        >
-                          <ListItemText
-                            primary="All Past Events"
-                            sx={{ color: 'white', textAlign: 'center' }}
-                          />
-                        </ListItemButton>
-
-                        <ListItemButton
-                          sx={{ pl: 4 }}
-                          component={RouterLink}
-                          to="/past-events/harvest-vision-2026"
-                          onClick={handleCloseAfterNav}
-                        >
-                          <ListItemText
-                            primary="HARVEST-Vision 2026 (2nd Edition)"
-                            sx={{ color: 'white', textAlign: 'center' }}
-                          />
-                        </ListItemButton>
-
-                        <ListItemButton
-                          sx={{ pl: 4 }}
-                          component={RouterLink}
-                          to="/past-events/2025"
-                          onClick={handleCloseAfterNav}
-                        >
-                          <ListItemText
-                            primary="HARVEST 2025 (1st Edition)"
-                            sx={{ color: 'white', textAlign: 'center' }}
-                          />
-                        </ListItemButton>
-                      </List>
-                    </Collapse>
-                  </Box>
-                );
-              }
-
-              // Normal links
-              return (
-                <ListItemButton
-                  key={index}
-                  component={RouterLink}
-                  to={link.path}
-                  onClick={handleCloseAfterNav}
-                >
-                  <ListItemText
-                    sx={{ color: 'white', textAlign: 'center' }}
-                    primary={link.label}
-                  />
-                </ListItemButton>
-              );
-            })}
-
-            {/* External Submit button */}
-            {/* <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
-              <Button
-                onClick={() => {
-                  window.open(
-                    'https://www.computer.org/csdl/proceedings/1000040',
-                    '_blank'
-                  );
-                  setOpen(false);
-                }}
-                sx={{
-                  background: 'white',
-                  color: 'black',
-                  '&:hover': {
-                    background: 'rgba(2,0,36,0.8)',
-                    color: 'white',
-                  },
-                }}
-                variant="contained"
+            {events.map((event) => (
+              <ListItemButton
+                key={event.id}
+                component={RouterLink}
+                to={event.basePath}
+                onClick={handleCloseAfterNav}
               >
-                Submit
-              </Button>
-            </Box> */}
+                <ListItemText
+                  sx={{ color: 'white', textAlign: 'center' }}
+                  primary={event.navLabel}
+                />
+              </ListItemButton>
+            ))}
+
+            <ListItemButton onClick={() => setOpenPastEvents(!openPastEvents)}>
+              <ListItemText
+                sx={{ color: 'white', textAlign: 'center' }}
+                primary="Past Events"
+              />
+              {openPastEvents ? (
+                <ExpandLess sx={{ color: 'white' }} />
+              ) : (
+                <ExpandMore sx={{ color: 'white' }} />
+              )}
+            </ListItemButton>
+
+            <Collapse in={openPastEvents} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                {pastEvents.map((item) => (
+                  <ListItemButton
+                    key={item.path}
+                    sx={{ pl: 4 }}
+                    component={RouterLink}
+                    to={item.path}
+                    onClick={handleCloseAfterNav}
+                  >
+                    <ListItemText
+                      primary={item.label}
+                      sx={{ color: 'white', textAlign: 'center' }}
+                    />
+                  </ListItemButton>
+                ))}
+              </List>
+            </Collapse>
           </List>
         </Box>
       </Drawer>
@@ -172,12 +117,3 @@ export default function DrawerComp({ links }) {
     </>
   );
 }
-
-DrawerComp.propTypes = {
-  links: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      path: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};

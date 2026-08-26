@@ -2,7 +2,6 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  useTheme,
   useMediaQuery,
   Tabs,
   Tab,
@@ -11,27 +10,28 @@ import {
   Menu,
   MenuItem,
 } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import PropTypes from 'prop-types';
-import DrawerComp from './Drawer.jsx'; // ✅ Make sure path is correct
+import DrawerComp from './Drawer.jsx';
+import { events, pastEvents } from '../events.js';
 
-export default function NavBar({ links }) {
-  const theme = useTheme();
+export default function NavBar() {
   const isMatch = useMediaQuery('(max-width:1350px)');
-  const [value, setValue] = useState();
+  const { pathname } = useLocation();
 
-  // --- Dropdown state for "Past Events" ---
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
-  const handleMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
+  const handleMenuClose = () => setAnchorEl(null);
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
+  // Highlight the edition whose section the reader is currently in. MUI wants
+  // `false` rather than -1 when nothing should be selected (e.g. past events).
+  const activeEdition = events.findIndex(
+    (event) => pathname === event.basePath || pathname.startsWith(`${event.basePath}/`)
+  );
+  const tabValue = activeEdition === -1 ? false : activeEdition;
 
   return (
     <AppBar
@@ -41,109 +41,59 @@ export default function NavBar({ links }) {
       }}
     >
       <Toolbar>
-        {/* Logo / Title */}
+        {/* Logo / series name */}
         <Button
-          sx={{ background: 'transparent', color: 'white', width: '250px' }}
+          sx={{ background: 'transparent', color: 'white', flexShrink: 0, mr: 2 }}
           component={RouterLink}
           to="/"
         >
-          <Typography>HARVEST-India 2026</Typography>
+          <Typography sx={{ fontWeight: 700, letterSpacing: '0.12em' }}>HARVEST</Typography>
         </Button>
 
         {isMatch ? (
-          // ✅ Drawer on small screens
-          <DrawerComp links={links} />
+          <DrawerComp />
         ) : (
-          // ✅ Tabs on larger screens
-          <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
-            <Tabs
-              value={value}
-              onChange={(e, val) => setValue(val)}
-              indicatorColor="secondary"
-              textColor="inherit"
-            >
-              {links.map((link, index) => {
-                // Handle "Past Events" as dropdown
-                if (link.label === 'Past Events') {
-                  return (
-                    <Tab
-                      key={index}
-                      label="Past Events ▾"
-                      onClick={handleMenuOpen}
-                    />
-                  );
-                }
-
-                // Normal tabs
-                return (
-                  <Tab
-                    key={index}
-                    label={link.label}
-                    component={RouterLink}
-                    to={link.path}
-                  />
-                );
-              })}
+          <Box sx={{ width: '100%', display: 'flex', alignItems: 'center' }}>
+            <Tabs value={tabValue} indicatorColor="secondary" textColor="inherit">
+              {events.map((event) => (
+                <Tab
+                  key={event.id}
+                  label={event.navLabel}
+                  component={RouterLink}
+                  to={event.basePath}
+                />
+              ))}
             </Tabs>
 
-            {/* --- Dropdown Menu for Past Events --- */}
+            <Button
+              onClick={handleMenuOpen}
+              endIcon={<ExpandMoreIcon />}
+              sx={{ marginLeft: 'auto', color: 'white', textTransform: 'none', fontSize: '0.95rem' }}
+            >
+              Past Events
+            </Button>
+
             <Menu
               anchorEl={anchorEl}
               open={open}
               onClose={handleMenuClose}
               MenuListProps={{ onMouseLeave: handleMenuClose }}
-              PaperProps={{
-                sx: { backgroundColor: 'rgba(255,255,255,0.95)', mt: 1 },
-              }}
+              PaperProps={{ sx: { backgroundColor: 'rgba(255,255,255,0.95)', mt: 1 } }}
             >
-              <MenuItem
-                component={RouterLink}
-                to="/past-events"
-                onClick={handleMenuClose}
-              >
-                All Past Events
-              </MenuItem>
-              <MenuItem
-                component={RouterLink}
-                to="/past-events/harvest-vision-2026"
-                onClick={handleMenuClose}
-              >
-                HARVEST-Vision 2026 (2nd Edition)
-              </MenuItem>
-              <MenuItem
-                component={RouterLink}
-                to="/past-events/2025"
-                onClick={handleMenuClose}
-              >
-                HARVEST 2025 (1st Edition)
-              </MenuItem>
+              {pastEvents.map((item) => (
+                <MenuItem
+                  key={item.path}
+                  component={RouterLink}
+                  to={item.path}
+                  onClick={handleMenuClose}
+                >
+                  {item.label}
+                </MenuItem>
+              ))}
             </Menu>
-
-            {/* Submit button (desktop) */}
-            {/* <Button
-              sx={{ marginLeft: 5, background: 'rgba(2,0,36,1)' }}
-              variant="contained"
-              onClick={() =>
-                window.open(
-                  'https://www.computer.org/csdl/proceedings/1000040',
-                  '_blank'
-                )
-              }
-            >
-              Submit
-            </Button> */}
           </Box>
         )}
       </Toolbar>
     </AppBar>
   );
 }
-
-NavBar.propTypes = {
-  links: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      path: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};
