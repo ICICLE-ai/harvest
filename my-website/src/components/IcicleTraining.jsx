@@ -2,6 +2,8 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../assets/css/About.css';
 
+//trigger rebuild
+
 const IcicleTraining = () => {
   return (
     <section className="about" id="about">
