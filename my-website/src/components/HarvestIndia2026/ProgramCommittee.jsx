@@ -28,6 +28,10 @@ const members = [
     { name: 'Sunil Gorantiwar', email: 'sdgorantiwar@gmail.com', affiliation: 'Mahatma Phule Krishi Vidyapeeth' },
     { name: 'K S Rajan', link: 'https://lsi.iiit.ac.in/ks_rajan/', affiliation: 'IIIT Hyderabad' }
   ],
+  [
+    { name: 'Srinivasu Pappula', email: 'vasu@kalgudi.com', affiliation: 'Kalgudi' },
+    { name: 'Rabi Narayan Sahoo', email: 'rabi.sahoo@icar.org.in', affiliation: 'Indian Council of Agricultural Research' }
+  ],
 ];
 
 // Members link to an email or, where we only have one, a homepage.
