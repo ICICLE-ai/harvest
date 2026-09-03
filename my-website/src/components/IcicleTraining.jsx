@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../assets/css/About.css';
 
-//trigger rebuild
+//trigger build
 
 const IcicleTraining = () => {
   return (
