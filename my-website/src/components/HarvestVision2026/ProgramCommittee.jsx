@@ -9,7 +9,7 @@ const speakers = [
   ],
   [
     { name: "Gregory C Bernard", link: "https://www.linkedin.com/in/gregory-c-bernard-958879a2/", affiliation: "Tuskegee University" },
-    { name: "Paola Pesantez-Gabriela", link: "https://paolapesantez.github.io/", affiliation: "AgAID Institute" }
+    { name: "Paola Pesantez-Cabrera", link: "https://paolapesantez.github.io/", affiliation: "AgAID Institute" }
   ],
   [
     { name: "Rajveer Dhillon", link: "https://www.centralstate.edu/profiles/rajveer-dhillon", affiliation: "Central State University" },

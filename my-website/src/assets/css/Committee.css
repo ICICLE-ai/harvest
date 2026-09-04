@@ -66,6 +66,20 @@
   }
   
 
+  /* Names carry the same weight whether or not the member has a homepage to
+     link to, so the list reads consistently. */
+  .committee-name {
+    font-weight: 600;
+  }
+
+  /* E-mail addresses are deliberately plain text, not mailto: links. */
+  .committee-email {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    color: #b8b8b8;
+    overflow-wrap: anywhere;
+  }
+
   .committee a {
     color: #00b0ff;
     font-weight: 600;

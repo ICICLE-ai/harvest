@@ -6,7 +6,7 @@ import '../../assets/css/Committee.css';
 const members = [
   [
     { name: 'Sudhanshu Panda', email: 'Sudhanshu.Panda@ung.edu', affiliation: 'University of North Georgia' },
-    { name: 'Paola Gabriela', email: 'p.pesantezcabrera@wsu.edu', affiliation: 'Washington State University' }
+    { name: 'Paola Pesantez-Cabrera', email: 'p.pesantezcabrera@wsu.edu', affiliation: 'Washington State University' }
   ],
   [
     { name: 'Upinder Kaur', email: 'kauru@purdue.edu', affiliation: 'Purdue University' },
@@ -34,22 +34,23 @@ const members = [
   ],
 ];
 
-// Members link to an email or, where we only have one, a homepage.
+// Committee members' e-mail addresses are shown as plain text, never as
+// mailto: hyperlinks — requested so the addresses are not trivially harvested
+// by crawlers. A member's own homepage may still be linked.
 // affiliation is optional — omit the separator when we don't have one.
 const Member = ({ member }) => {
   if (!member) return null;
 
-  const isExternal = Boolean(member.link);
-  const href = isExternal ? member.link : `mailto:${member.email}`;
-
   return (
     <>
-      <a
-        href={href}
-        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-      >
-        {member.name}
-      </a>
+      {member.link ? (
+        <a href={member.link} target="_blank" rel="noopener noreferrer">
+          {member.name}
+        </a>
+      ) : (
+        <span className="committee-name">{member.name}</span>
+      )}
+      {member.email ? <> (<span className="committee-email">{member.email}</span>)</> : null}
       {member.affiliation ? `, ${member.affiliation}` : ''}
     </>
   );

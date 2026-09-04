@@ -96,7 +96,7 @@
 //     affiliation: "University of Wisconsin-Madison" 
 //   },
 //   { 
-//     name: "Paola Gabriela Pesántez-Cabrera", 
+//     name: "Paola Pesantez-Cabrera",
 //     link: "https://paolagpesantezc.wixsite.com/paolapesantezcabrera", 
 //     affiliation: "Washington State University" 
 //   },
@@ -187,8 +187,8 @@ const speakers = [
     affiliation: "University of Wisconsin-Madison" 
   },
   { 
-    name: "Paola Gabriela Pesántez-Cabrera", 
-    link: "https://paolagpesantezc.wixsite.com/paolapesantezcabrera", 
+    name: "Paola Pesantez-Cabrera",
+    link: "https://paolagpesantezc.wixsite.com/paolapesantezcabrera",
     affiliation: "Washington State University" 
   },
   { 
