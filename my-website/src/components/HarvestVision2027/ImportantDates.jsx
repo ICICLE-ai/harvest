@@ -11,17 +11,22 @@ const ImportantDates = () => {
                     <Col size={12} md={12}>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Full paper submission deadline:</b> <span className="tbd">TBD</span>
+                                <b>Submission deadline:</b> October 16, 2026
                             </Col>
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Author notifications sent:</b> <span className="tbd">TBD</span>
+                                <b>Author notification deadline (for archival papers):</b> October 30, 2026
                             </Col>
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Camera-ready papers due:</b> <span className="tbd">TBD</span>
+                                <b>Metadata of accepted papers due to IEEE (for archival papers):</b> November 2, 2026
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col size={12} sm={12} className="column">
+                                <b>Camera-ready deadline (for archival papers):</b> November 20, 2026
                             </Col>
                         </Row>
                         <Row>
@@ -36,7 +41,11 @@ const ImportantDates = () => {
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <p><em>The remaining dates will be confirmed once the WACV 2027 schedule is finalized.</em></p>
+                                <p><em>
+                                    The submission deadline for camera-ready papers is November 20, 2026, at 11:59 PM
+                                    Eastern Time. This deadline applies to all accepted papers. Papers that arrive
+                                    after the deadline may not appear in the conference proceedings and in IEEE Xplore.
+                                </em></p>
                             </Col>
                         </Row>
                     </Col>

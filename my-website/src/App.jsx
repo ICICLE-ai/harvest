@@ -11,7 +11,7 @@ import EventLayout from './components/EventLayout.jsx';
 import Landing from './components/Landing.jsx';
 import IcicleTraining from './components/IcicleTraining.jsx';
 import PastEvents from './components/PastEvents.jsx';
-import { harvestIndia2026, harvestVision2027 } from './events.js';
+import { harvestIndia2026, harvestVision2027, sectionsFor } from './events.js';
 
 // Open edition — HARVEST-India 2026 (3rd Edition), HiPC 2026
 import IndiaOverview from './components/HarvestIndia2026/Overview.jsx';
@@ -21,7 +21,6 @@ import IndiaCallForPosters from './components/HarvestIndia2026/CallForPosters.js
 import IndiaAgenda from './components/HarvestIndia2026/Agenda.jsx';
 import IndiaOrganizers from './components/HarvestIndia2026/Organizers.jsx';
 import IndiaProgramCommittee from './components/HarvestIndia2026/ProgramCommittee.jsx';
-import IndiaTravelGrants from './components/HarvestIndia2026/TravelGrants.jsx';
 import IndiaContact from './components/HarvestIndia2026/Contact.jsx';
 
 // Open edition — HARVEST-Vision 2027 (4th Edition), WACV 2027
@@ -39,9 +38,9 @@ import VisionContact from './components/HarvestVision2027/Contact.jsx';
 import HarvestVision2026Page from './components/HarvestVision2026/Page.jsx';
 import Harvest2025Page from './components/Harvest2025/Page.jsx';
 
-// Both open editions expose the same seven sections, so they share one route
-// shape. The slugs here must match EVENT_SECTIONS in src/events.js, which is
-// what draws the side tabs.
+// The two open editions share one route shape, minus any section an edition
+// opts out of via `hiddenSections`. The slugs here must match EVENT_SECTIONS in
+// src/events.js, which is what draws the side tabs.
 const editions = [
   {
     event: harvestIndia2026,
@@ -63,7 +62,6 @@ const editions = [
         <IndiaProgramCommittee />
       </>
     ),
-    'travel-grants': <IndiaTravelGrants />,
     contact: <IndiaContact />,
   },
   {
@@ -91,6 +89,9 @@ const editions = [
   },
 ];
 
+// Pre-restructure top-level paths, kept as redirects. 'travel-grants' is still
+// listed even though HARVEST-India no longer has that section — the redirect
+// below drops anyone who follows it at the edition's overview instead.
 const SECTION_SLUGS = [
   'call-for-papers',
   'call-for-posters',
@@ -99,6 +100,8 @@ const SECTION_SLUGS = [
   'travel-grants',
   'contact',
 ];
+
+const indiaSlugs = sectionsFor(harvestIndia2026).map((section) => section.slug);
 
 function App() {
   // BASE_URL is '/harvest/' in production and '/' in dev; basename wants no
@@ -132,9 +135,11 @@ function App() {
               element={<EventLayout event={edition.event} />}
             >
               <Route index element={edition.overview} />
-              {SECTION_SLUGS.map((slug) => (
-                <Route key={slug} path={slug} element={edition[slug]} />
-              ))}
+              {sectionsFor(edition.event)
+                .filter((section) => section.slug)
+                .map((section) => (
+                  <Route key={section.slug} path={section.slug} element={edition[section.slug]} />
+                ))}
             </Route>
           ))}
 
@@ -164,7 +169,16 @@ function App() {
             <Route
               key={`legacy-${slug}`}
               path={`/${slug}`}
-              element={<Navigate to={`${harvestIndia2026.basePath}/${slug}`} replace />}
+              element={
+                <Navigate
+                  to={
+                    indiaSlugs.includes(slug)
+                      ? `${harvestIndia2026.basePath}/${slug}`
+                      : harvestIndia2026.basePath
+                  }
+                  replace
+                />
+              }
             />
           ))}
 

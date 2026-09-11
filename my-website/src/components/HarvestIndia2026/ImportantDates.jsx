@@ -34,6 +34,11 @@ const ImportantDates = () => {
                                 <b>Venue:</b> Bengaluru, India
                             </Col>
                         </Row>
+                        <Row>
+                            <Col size={12} sm={12} className="column">
+                                <p><em>All deadlines are 11:59 PM Anywhere on Earth (AoE).</em></p>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

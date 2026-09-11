@@ -16,6 +16,11 @@ export const EVENT_SECTIONS = [
   { label: 'Contact', slug: 'contact' },
 ];
 
+// An edition can opt out of sections that don't apply to it by listing their
+// slugs in `hiddenSections`; the tab and its route both disappear.
+export const sectionsFor = (event) =>
+  EVENT_SECTIONS.filter((section) => !(event.hiddenSections ?? []).includes(section.slug));
+
 export const harvestIndia2026 = {
   id: 'india-2026',
   basePath: '/india-2026',
@@ -28,6 +33,8 @@ export const harvestIndia2026 = {
   format: 'Half-Day Workshop',
   date: 'Wednesday, December 16, 2026',
   venue: 'Bengaluru, India',
+  // No travel grant programme for this edition.
+  hiddenSections: ['travel-grants'],
   host: {
     label:
       'HiPC 2026 — the IEEE International Conference on High Performance Computing, Data, and Analytics',

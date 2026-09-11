@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Footer from './Footer.jsx';
-import { EVENT_SECTIONS } from '../events.js';
+import { sectionsFor } from '../events.js';
 import '../assets/css/EventLayout.css';
 
 const Tbd = () => <span className="tbd">TBD</span>;
@@ -16,6 +16,7 @@ const eventShape = PropTypes.shape({
   format: PropTypes.string.isRequired,
   date: PropTypes.string,
   venue: PropTypes.string,
+  hiddenSections: PropTypes.arrayOf(PropTypes.string),
   host: PropTypes.shape({
     label: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
@@ -56,7 +57,7 @@ function SideTabs({ event }) {
     <nav className="event-sidebar" aria-label={`${event.title} sections`}>
       <p className="event-sidebar-title">{event.shortLabel}</p>
       <ul>
-        {EVENT_SECTIONS.map((section) => (
+        {sectionsFor(event).map((section) => (
           <li key={section.slug || 'overview'}>
             <NavLink
               // The Overview tab is the edition's index route, so it must only

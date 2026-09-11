@@ -13,13 +13,18 @@ const CallForPapers = () => {
           <Col xs={12} lg={12}>
             <h3>Important Dates</h3>
             <ul>
-              <li><b>Full paper submission deadline:</b> <span className="tbd">TBD</span></li>
-              <li><b>Author notifications sent:</b> <span className="tbd">TBD</span></li>
-              <li><b>Camera-ready papers due:</b> <span className="tbd">TBD</span></li>
+              <li><b>Submission deadline:</b> October 16, 2026</li>
+              <li><b>Author notification deadline (for archival papers):</b> October 30, 2026</li>
+              <li><b>Metadata of accepted papers due to IEEE (for archival papers):</b> November 2, 2026</li>
+              <li><b>Camera-ready deadline (for archival papers):</b> November 20, 2026</li>
               <li><b>Workshop Date:</b> January 4/5, 2027</li>
               <li><b>Venue:</b> Disney Springs</li>
             </ul>
-            <em>The remaining dates will be confirmed once the WACV 2027 schedule is finalized.</em>
+            <em>
+              The submission deadline for camera-ready papers is November 20, 2026, at 11:59 PM Eastern Time.
+              This deadline applies to all accepted papers. Papers that arrive after the deadline may not appear
+              in the conference proceedings and in IEEE Xplore.
+            </em>
           </Col>
         </Row>
 
