@@ -16,9 +16,10 @@ const CallForPapers = () => {
               <li><b>Full paper submission deadline:</b> <span className="tbd">TBD</span></li>
               <li><b>Author notifications sent:</b> <span className="tbd">TBD</span></li>
               <li><b>Camera-ready papers due:</b> <span className="tbd">TBD</span></li>
-              <li><b>Workshop Date:</b> <span className="tbd">TBD</span></li>
+              <li><b>Workshop Date:</b> January 4/5, 2027</li>
+              <li><b>Venue:</b> Disney Springs</li>
             </ul>
-            <em>All dates will be confirmed once the WACV 2027 schedule is finalized.</em>
+            <em>The remaining dates will be confirmed once the WACV 2027 schedule is finalized.</em>
           </Col>
         </Row>
 

@@ -26,12 +26,12 @@ const ImportantDates = () => {
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Workshop Date:</b> <span className="tbd">TBD</span>
+                                <b>Workshop Date:</b> Wednesday, December 16, 2026
                             </Col>
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <p><em>The workshop date will be confirmed once the HiPC 2026 schedule is finalized.</em></p>
+                                <b>Venue:</b> Bengaluru, India
                             </Col>
                         </Row>
                     </Col>

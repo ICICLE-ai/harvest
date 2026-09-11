@@ -26,8 +26,8 @@ export const harvestIndia2026 = {
   tagline:
     'HARVEST-India: Third International Workshop on Applications of HPC and AI in Agriculture',
   format: 'Half-Day Workshop',
-  date: null,
-  venue: null,
+  date: 'Wednesday, December 16, 2026',
+  venue: 'Bengaluru, India',
   host: {
     label:
       'HiPC 2026 — the IEEE International Conference on High Performance Computing, Data, and Analytics',
@@ -46,8 +46,8 @@ export const harvestVision2027 = {
   tagline:
     'HARVEST-Vision: Fourth International Workshop on Applications of Computer Vision and HPC in Agriculture',
   format: 'Workshop',
-  date: null,
-  venue: null,
+  date: 'January 4/5, 2027',
+  venue: 'Disney Springs',
   host: {
     label:
       'The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2027',

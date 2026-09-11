@@ -65,7 +65,7 @@ const PastEvents = () => {
               </li>
               <li>
                 <Link to="/vision-2027">HARVEST-Vision 2027 (4th Edition)</Link> &mdash; in
-                cooperation with WACV 2027. Dates and venue <span className="tbd">TBD</span>.
+                cooperation with WACV 2027. January 4/5, 2027, Disney Springs.
               </li>
             </ul>
           </Col>

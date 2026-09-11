@@ -20,9 +20,7 @@ const ProgramCommittee = () => {
       <p>
         For reference, the{' '}
         <Link to="/past-events/harvest-vision-2026">HARVEST-Vision 2026</Link> committee is
-        preserved on the past events page, and the{' '}
-        <Link to="/india-2026/committees">HARVEST-India 2026</Link> committee is listed on the
-        current edition&rsquo;s page.
+        preserved on the past events page.
       </p>
     </section>
   );

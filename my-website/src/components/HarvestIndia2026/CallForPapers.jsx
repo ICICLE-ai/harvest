@@ -16,9 +16,9 @@ const CallForPapers = () => {
               <li><b>Full paper submission deadline:</b> October 9, 2026</li>
               <li><b>Author notifications sent:</b> November 5, 2026</li>
               <li><b>Camera-ready papers due:</b> November 13, 2026</li>
-              <li><b>Workshop Date:</b> <span className="tbd">TBD</span></li>
+              <li><b>Workshop Date:</b> Wednesday, December 16, 2026</li>
+              <li><b>Venue:</b> Bengaluru, India</li>
             </ul>
-            <em>The workshop date will be confirmed once the HiPC 2026 schedule is finalized.</em>
           </Col>
         </Row>
 
