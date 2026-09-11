@@ -18,7 +18,7 @@ const members = [
     { name: 'Manish K Goyal', link: 'https://sites.google.com/view/mkg1/home', email: 'mkgoyal@iiti.ac.in', affiliation: 'IIT Indore' }
   ],
   [
-    { name: 'Priyanka V', link: 'https://gtl.csa.iisc.ac.in/hari/group/research-group/', email: 'priyankav@iisc.ac.in', affiliation: 'Indian Institute of Science' },
+    { name: 'Priyanka V', link: 'https://www.linkedin.com/in/dr-priyanka-v-60508113a/', email: 'priyankav@iisc.ac.in', affiliation: 'Indian Institute of Science' },
     { name: 'Manojkumar Patil', link: 'https://gtl.csa.iisc.ac.in/hari/group/research-group/', email: 'pmanojkumar@iisc.ac.in', affiliation: 'Indian Institute of Science' }
   ],
   [
