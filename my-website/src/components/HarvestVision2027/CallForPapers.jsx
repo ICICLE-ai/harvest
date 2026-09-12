@@ -14,9 +14,9 @@ const CallForPapers = () => {
             <h3>Important Dates</h3>
             <ul>
               <li><b>Submission deadline:</b> October 16, 2026</li>
-              <li><b>Author notification deadline (for archival papers):</b> October 30, 2026</li>
-              <li><b>Metadata of accepted papers due to IEEE (for archival papers):</b> November 2, 2026</li>
-              <li><b>Camera-ready deadline (for archival papers):</b> November 20, 2026</li>
+              <li><b>Author notification deadline (hard deadline):</b> October 30, 2026</li>
+              <li><b>Metadata of accepted papers due to IEEE (hard deadline):</b> November 2, 2026</li>
+              <li><b>Camera-ready deadline (hard deadline):</b> November 20, 2026</li>
               <li><b>Workshop Date:</b> January 4/5, 2027</li>
               <li><b>Venue:</b> Disney Springs</li>
             </ul>

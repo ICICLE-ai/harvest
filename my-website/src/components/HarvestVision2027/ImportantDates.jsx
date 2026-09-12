@@ -16,17 +16,17 @@ const ImportantDates = () => {
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Author notification deadline (for archival papers):</b> October 30, 2026
+                                <b>Author notification deadline (hard deadline):</b> October 30, 2026
                             </Col>
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Metadata of accepted papers due to IEEE (for archival papers):</b> November 2, 2026
+                                <b>Metadata of accepted papers due to IEEE (hard deadline):</b> November 2, 2026
                             </Col>
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Camera-ready deadline (for archival papers):</b> November 20, 2026
+                                <b>Camera-ready deadline (hard deadline):</b> November 20, 2026
                             </Col>
                         </Row>
                         <Row>
