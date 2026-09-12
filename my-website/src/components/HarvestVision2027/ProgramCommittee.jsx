@@ -2,23 +2,63 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/css/Committee.css';
 
-// The technical program committee for this edition has not been formed yet.
-// When members are confirmed, mirror the structure used by
-// components/HarvestIndia2026/ProgramCommittee.jsx: an array of two-member
-// rows, each { name, email | link, affiliation }.
+// 🧩 Each entry: [ { name, link, email, affiliation }, { ... } ]
+// link is the member's homepage; email is shown as plain text.
+// The committee is still being formed — add members two per row.
+const members = [
+  [
+    { name: 'Sarath Babu', link: 'https://www.engineering.iastate.edu/people/profile/sarath4/', email: 'sarath4@iastate.edu', affiliation: 'Iowa State University' },
+    null
+  ],
+];
+
+// Committee members' e-mail addresses are shown as plain text, never as
+// mailto: hyperlinks — requested so the addresses are not trivially harvested
+// by crawlers. A member's own homepage may still be linked.
+// affiliation is optional — omit the separator when we don't have one.
+const Member = ({ member }) => {
+  if (!member) return null;
+
+  return (
+    <>
+      {member.link ? (
+        <a href={member.link} target="_blank" rel="noopener noreferrer">
+          {member.name}
+        </a>
+      ) : (
+        <span className="committee-name">{member.name}</span>
+      )}
+      {member.email ? <> (<span className="committee-email">{member.email}</span>)</> : null}
+      {member.affiliation ? `, ${member.affiliation}` : ''}
+    </>
+  );
+};
+
 const ProgramCommittee = () => {
   return (
     <section className="committee" id="committee">
       <h2>Technical Program Committee</h2>
 
-      <p>
-        The technical program committee for HARVEST-Vision 2027 is{' '}
-        <span className="tbd">TBD</span>. Members will be listed here once the committee is
-        formed.
-      </p>
+      <table className="committee-table">
+        <tbody>
+          {members.map((pair, i) => {
+            const [left, right] = pair;
+            return (
+              <tr key={i}>
+                <td>
+                  <Member member={left} />
+                </td>
+                <td>
+                  <Member member={right} />
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
 
       <p>
-        For reference, the{' '}
+        Additional members: <span className="tbd">TBD</span>. For reference, the{' '}
         <Link to="/past-events/harvest-vision-2026">HARVEST-Vision 2026</Link> committee is
         preserved on the past events page.
       </p>
