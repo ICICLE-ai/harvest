@@ -7,8 +7,12 @@ import '../../assets/css/Committee.css';
 // The committee is still being formed — add members two per row.
 const members = [
   [
+    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', email: 'Sudhanshu.Panda@ung.edu', affiliation: 'University of North Georgia' },
+    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', email: 'p.pesantezcabrera@wsu.edu', affiliation: 'Washington State University' }
+  ],
+  [
     { name: 'Sarath Babu', link: 'https://www.engineering.iastate.edu/people/profile/sarath4/', email: 'sarath4@iastate.edu', affiliation: 'Iowa State University' },
-    null
+    { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', email: 'rdhillon@centralstate.edu', affiliation: 'Central State University' }
   ],
 ];
 
