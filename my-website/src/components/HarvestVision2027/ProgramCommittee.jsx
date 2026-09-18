@@ -14,6 +14,10 @@ const members = [
     { name: 'Sarath Babu', link: 'https://www.engineering.iastate.edu/people/profile/sarath4/', email: 'sarath4@iastate.edu', affiliation: 'Iowa State University' },
     { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', email: 'rdhillon@centralstate.edu', affiliation: 'Central State University' }
   ],
+  [
+    { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', email: 'jmearles@ucdavis.edu', affiliation: 'University of California, Davis' },
+    null
+  ],
 ];
 
 // Committee members' e-mail addresses are shown as plain text, never as
