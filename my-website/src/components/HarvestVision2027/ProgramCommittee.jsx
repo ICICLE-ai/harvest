@@ -16,7 +16,7 @@ const members = [
   ],
   [
     { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', email: 'jmearles@ucdavis.edu', affiliation: 'University of California, Davis' },
-    null
+    { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', email: 'yj522@cornell.edu', affiliation: 'Cornell University' }
   ],
 ];
 
