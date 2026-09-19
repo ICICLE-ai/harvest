@@ -18,6 +18,10 @@ const members = [
     { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', email: 'jmearles@ucdavis.edu', affiliation: 'University of California, Davis' },
     { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', email: 'yj522@cornell.edu', affiliation: 'Cornell University' }
   ],
+  [
+    { name: 'Arthur Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', email: 'maccabe@arizona.edu', affiliation: 'University of Arizona' },
+    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', email: 'sierra.young@usu.edu', affiliation: 'Utah State University' }
+  ],
 ];
 
 // Committee members' e-mail addresses are shown as plain text, never as
