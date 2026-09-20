@@ -2,31 +2,35 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/css/Committee.css';
 
-// 🧩 Each entry: [ { name, link, email, affiliation }, { ... } ]
-// link is the member's homepage; email is shown as plain text.
+// 🧩 Each entry: [ { name, link, affiliation }, { ... } ]
+// link is the member's homepage.
 // The committee is still being formed — add members two per row.
 const members = [
   [
-    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', email: 'Sudhanshu.Panda@ung.edu', affiliation: 'University of North Georgia' },
-    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', email: 'p.pesantezcabrera@wsu.edu', affiliation: 'Washington State University' }
+    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' },
+    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' }
   ],
   [
-    { name: 'Sarath Babu', link: 'https://www.engineering.iastate.edu/people/profile/sarath4/', email: 'sarath4@iastate.edu', affiliation: 'Iowa State University' },
-    { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', email: 'rdhillon@centralstate.edu', affiliation: 'Central State University' }
+    { name: 'Sarath Babu', link: 'https://www.engineering.iastate.edu/people/profile/sarath4/', affiliation: 'Iowa State University' },
+    { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', affiliation: 'Central State University' }
   ],
   [
-    { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', email: 'jmearles@ucdavis.edu', affiliation: 'University of California, Davis' },
-    { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', email: 'yj522@cornell.edu', affiliation: 'Cornell University' }
+    { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', affiliation: 'University of California, Davis' },
+    { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', affiliation: 'Cornell University' }
   ],
   [
-    { name: 'Arthur Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', email: 'maccabe@arizona.edu', affiliation: 'University of Arizona' },
-    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', email: 'sierra.young@usu.edu', affiliation: 'Utah State University' }
+    { name: 'Arthur Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' },
+    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', affiliation: 'Utah State University' }
+  ],
+  [
+    { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' },
+    null
   ],
 ];
 
-// Committee members' e-mail addresses are shown as plain text, never as
-// mailto: hyperlinks — requested so the addresses are not trivially harvested
-// by crawlers. A member's own homepage may still be linked.
+// Committee members' e-mail addresses are deliberately not published here, so
+// the addresses are not harvested by crawlers. A member's own homepage may
+// still be linked.
 // affiliation is optional — omit the separator when we don't have one.
 const Member = ({ member }) => {
   if (!member) return null;
@@ -40,7 +44,6 @@ const Member = ({ member }) => {
       ) : (
         <span className="committee-name">{member.name}</span>
       )}
-      {member.email ? <> (<span className="committee-email">{member.email}</span>)</> : null}
       {member.affiliation ? `, ${member.affiliation}` : ''}
     </>
   );
