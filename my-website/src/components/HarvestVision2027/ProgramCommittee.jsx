@@ -24,6 +24,10 @@ const members = [
   ],
   [
     { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' },
+    { name: 'Abhisesh Silwal', link: 'https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/', affiliation: 'Carnegie Mellon University' }
+  ],
+  [
+    { name: 'Rich Wolski', link: 'https://sites.cs.ucsb.edu/~rich/', affiliation: 'University of California, Santa Barbara' },
     null
   ],
 ];
