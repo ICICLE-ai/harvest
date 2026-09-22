@@ -79,11 +79,14 @@ const CallForPosters = () => {
               </li>
             </ul>
             <p>
-              Submissions should be prepared according to the HiPC 2026 formatting requirements and
-              submitted through the same HiPC submission portal used for the paper track:{' '}
+              Submissions should be prepared according to the HiPC 2026 formatting requirements.
+            </p>
+            <p>
+              <b>Submission site:</b> All submissions are made through Linklings, the HiPC submission
+              system, at{' '}
               <a href="https://ssl.linklings.net/conferences/HiPC/" target="_blank" rel="noopener noreferrer">
-                https://ssl.linklings.net/conferences/HiPC/
-              </a>
+                ssl.linklings.net/conferences/HiPC
+              </a>. Please select the HARVEST-India workshop track when submitting.
             </p>
             <p>
               Poster submissions will undergo review by members of the HARVEST-India program committee.

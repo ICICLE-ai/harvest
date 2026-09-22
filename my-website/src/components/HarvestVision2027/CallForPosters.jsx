@@ -30,11 +30,14 @@ const CallForPosters = () => {
             poster prepared using{' '}
             <a href='https://docs.google.com/presentation/d/1CCPhfC5LPnAB2XSyw2CGfJzpDm2HIAjikaxwTwCLw8w/edit?slide=id.p1&pli=1#slide=id.p1' target="_blank" rel="noopener noreferrer">
               this template
-            </a>. Poster submissions use the same{' '}
-            <a href="https://openreview.net/group?id=thecvf.com/WACV/2027/Workshop/HARVEST-Vision" target="_blank" rel="noopener noreferrer">
-              OpenReview
-            </a>{' '}
-            site and review process as the paper track.
+            </a>. Poster submissions go through the same review process as the paper track.
+            <p className="mt-3">
+              <b>Submission site:</b> All submissions are made through OpenReview, the WACV 2027
+              submission system, at{' '}
+              <a href="https://openreview.net/group?id=thecvf.com/WACV/2027/Workshop/HARVEST-Vision" target="_blank" rel="noopener noreferrer">
+                WACV 2027 Workshop HARVEST-Vision
+              </a>.
+            </p>
           </Col>
         </Row>
 

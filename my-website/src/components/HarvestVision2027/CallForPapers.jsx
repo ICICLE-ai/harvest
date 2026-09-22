@@ -51,13 +51,14 @@ const CallForPapers = () => {
               tables, and appendices.
             </p>
             <p>
-              Submit your paper through{' '}
+              <b>Submission site:</b> All submissions are made through OpenReview, the WACV 2027
+              submission system, at{' '}
               <a
                 href="https://openreview.net/group?id=thecvf.com/WACV/2027/Workshop/HARVEST-Vision"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                OpenReview
+                WACV 2027 Workshop HARVEST-Vision
               </a>.
             </p>
             Submissions must:
