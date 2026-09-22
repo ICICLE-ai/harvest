@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import '../../assets/css/CallForPosters.css';
 import Organizers from './Organizers.jsx';
+import topics from './topics.js';
 
 const CallForPapers = () => {
   return (
@@ -12,6 +13,7 @@ const CallForPapers = () => {
         <Row className="section-box">
           <Col xs={12} lg={12}>
             <h3>Important Dates</h3>
+            <p><b>All deadlines are US Eastern Time.</b></p>
             <ul>
               <li><b>Submission deadline:</b> October 16, 2026</li>
               <li><b>Author notification deadline (hard deadline):</b> October 30, 2026</li>
@@ -21,7 +23,7 @@ const CallForPapers = () => {
               <li><b>Venue:</b> Disney Springs</li>
             </ul>
             <em>
-              The submission deadline for camera-ready papers is November 20, 2026, at 11:59 PM Eastern Time.
+              The submission deadline for camera-ready papers is November 20, 2026, at 11:59 PM US Eastern Time.
               This deadline applies to all accepted papers. Papers that arrive after the deadline may not appear
               in the conference proceedings and in IEEE Xplore.
             </em>
@@ -33,20 +35,9 @@ const CallForPapers = () => {
             <h3>Topics of Interest</h3>
             Topics include, but are not limited to:
             <ul>
-              <li>HPC-enabled AI training and inference for agricultural applications</li>
-              <li>Large-scale agricultural data analytics and scientific workflows</li>
-              <li>Edge computing, Internet of Things (IoT), and precision agriculture</li>
-              <li>Digital agriculture platforms, data hubs, and cyberinfrastructure</li>
-              <li>AI-enabled robotics and autonomous agricultural systems</li>
-              <li>Climate, soil, hydrological, and crop modeling using HPC</li>
-              <li>Geospatial, remote-sensing, and multimodal agricultural AI</li>
-              <li>Federated learning, privacy-aware AI, and secure agricultural data sharing</li>
-              <li>Resource-efficient and sustainable computing for agricultural workloads</li>
-              <li>AI pipelines across cloud, HPC, edge, and far-edge computing environments</li>
-              <li>Data management, interoperability, metadata, and FAIR agricultural data practices</li>
-              <li>Reproducibility, benchmarking, open science, and evaluation methodologies</li>
-              <li>Decision-support systems for producers, extension professionals, researchers, and policymakers</li>
-              <li>Real-world deployments, lessons learned, and community-engaged agricultural computing</li>
+              {topics.map((topic) => (
+                <li key={topic}>{topic}</li>
+              ))}
             </ul>
             Papers should present original research and should provide sufficient background material to make them accessible to the broader community.
           </Col>
@@ -60,7 +51,14 @@ const CallForPapers = () => {
               tables, and appendices.
             </p>
             <p>
-              Submit your paper through OpenReview (<span className="tbd">link coming soon</span>).
+              Submit your paper through{' '}
+              <a
+                href="https://openreview.net/group?id=thecvf.com/WACV/2027/Workshop/HARVEST-Vision"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                OpenReview
+              </a>.
             </p>
             Submissions must:
             <ul>

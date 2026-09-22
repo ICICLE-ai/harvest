@@ -1,15 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../../assets/css/Committee.css';
 
 // 🧩 Each entry: [ { name, link, affiliation }, { ... } ]
 // link is the member's homepage.
 // The committee is still being formed — add members two per row.
 const members = [
-  [
-    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' },
-    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' }
-  ],
   [
     { name: 'Sarath Babu', link: 'https://www.engineering.iastate.edu/people/profile/sarath4/', affiliation: 'Iowa State University' },
     { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', affiliation: 'Central State University' }
@@ -20,14 +15,18 @@ const members = [
   ],
   [
     { name: 'Barney Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' },
-    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', affiliation: 'Utah State University' }
+    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' }
   ],
   [
-    { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' },
-    { name: 'Abhisesh Silwal', link: 'https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/', affiliation: 'Carnegie Mellon University' }
+    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' },
+    { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' }
   ],
   [
-    { name: 'Rich Wolski', link: 'https://sites.cs.ucsb.edu/~rich/', affiliation: 'University of California, Santa Barbara' },
+    { name: 'Abhisesh Silwal', link: 'https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/', affiliation: 'Carnegie Mellon University' },
+    { name: 'Rich Wolski', link: 'https://sites.cs.ucsb.edu/~rich/', affiliation: 'University of California, Santa Barbara' }
+  ],
+  [
+    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', affiliation: 'Utah State University' },
     null
   ],
 ];
@@ -75,12 +74,6 @@ const ProgramCommittee = () => {
           })}
         </tbody>
       </table>
-
-      <p>
-        Additional members: <span className="tbd">TBD</span>. For reference, the{' '}
-        <Link to="/past-events/harvest-vision-2026">HARVEST-Vision 2026</Link> committee is
-        preserved on the past events page.
-      </p>
     </section>
   );
 };

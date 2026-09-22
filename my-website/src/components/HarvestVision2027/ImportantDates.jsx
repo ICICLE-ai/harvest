@@ -11,6 +11,11 @@ const ImportantDates = () => {
                     <Col size={12} md={12}>
                         <Row>
                             <Col size={12} sm={12} className="column">
+                                <b>All deadlines are US Eastern Time.</b>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col size={12} sm={12} className="column">
                                 <b>Submission deadline:</b> October 16, 2026
                             </Col>
                         </Row>
@@ -43,7 +48,7 @@ const ImportantDates = () => {
                             <Col size={12} sm={12} className="column">
                                 <p><em>
                                     The submission deadline for camera-ready papers is November 20, 2026, at 11:59 PM
-                                    Eastern Time. This deadline applies to all accepted papers. Papers that arrive
+                                    US Eastern Time. This deadline applies to all accepted papers. Papers that arrive
                                     after the deadline may not appear in the conference proceedings and in IEEE Xplore.
                                 </em></p>
                             </Col>
