@@ -25,7 +25,7 @@ const Contact = () => {
                 <a href="mailto:subramoni.1@osu.edu">subramoni.1@osu.edu</a>
               </li>
               <li>
-                <a href="https://fabe.osu.edu/our-people/scott-shearer" target="_blank" rel="noopener noreferrer">
+                <a href="https://engineering.osu.edu/people/shearer.95" target="_blank" rel="noopener noreferrer">
                   Scott Shearer
                 </a>
                 , The Ohio State University &mdash;{' '}

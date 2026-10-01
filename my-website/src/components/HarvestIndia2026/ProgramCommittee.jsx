@@ -13,7 +13,7 @@ const members = [
     { name: 'Upinder Kaur', link: 'https://engineering.purdue.edu/ABE/people/ptProfile?resource_id=287656', affiliation: 'Purdue University' }
   ],
   [
-    { name: 'Pabitra Mitra', link: 'https://cse.iitkgp.ac.in/~pabitra/', affiliation: 'IIT Kharagpur' },
+    { name: 'Pabitra Mitra', link: 'https://www.iitkgp.ac.in/department/CS/faculty/cs-pabitra', affiliation: 'IIT Kharagpur' },
     { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' }
   ],
   [

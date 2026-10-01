@@ -15,7 +15,7 @@ const Organizers = () => {
         </Col>
         <Col xs={12} lg={6}>
           <p>
-            <a href="https://fabe.osu.edu/our-people/scott-shearer" target="_blank" rel="noopener noreferrer"><strong>Scott Shearer</strong></a>
+            <a href="https://engineering.osu.edu/people/shearer.95" target="_blank" rel="noopener noreferrer"><strong>Scott Shearer</strong></a>
             , The Ohio State University. <code>shearer.95@osu.edu</code>
           </p>
         </Col>

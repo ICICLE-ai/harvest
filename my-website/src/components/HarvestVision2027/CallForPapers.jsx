@@ -101,7 +101,8 @@ const CallForPapers = () => {
           <Col xs={12} lg={12}>
             <h3>Workshop Registration</h3>
             There is no separate workshop registration. Please register for the workshops on the
-            main WACV 2027 conference registration page.
+            main{" "}
+            <a href="https://wacv.thecvf.com/Conferences/2027" target="_blank" rel="noopener noreferrer">WACV 2027 conference registration page</a>.
           </Col>
         </Row>
 

@@ -28,7 +28,7 @@
 // //     { name: "George A. Kantor", link: "https://www.ri.cmu.edu/ri-faculty/george-a-kantor/", affiliation: "CMU" }
 // //   ],
 // //   [
-// //     { name: "Nirav Merchant", link: "https://superfund.arizona.edu/person/nirav-c-merchant", affiliation: "University of Arizona" },
+// //     { name: "Nirav Merchant", link: "https://cyverse.org/person/nirav-merchant", affiliation: "University of Arizona" },
 // //     { name: "Michelle S. Segovia", link: "https://www.udel.edu/academics/colleges/canr/departments/applied-economics-and-statistics/faculty-staff/michelle-segovia/", affiliation: "University of Delaware" }
 // //   ],
 // //   [
@@ -72,7 +72,7 @@
 //   },
 //   { 
 //     name: "Christopher Dean", 
-//     link: "https://fabe.osu.edu/our-people/christopher-dean", 
+//     link: "https://archive-fabe.cfaes.osu.edu/our-people/christopher-dean", 
 //     affiliation: "The Ohio State University" 
 //   },
 //   { 
@@ -163,7 +163,7 @@ const speakers = [
   },
   { 
     name: "Christopher Dean", 
-    link: "https://fabe.osu.edu/our-people/christopher-dean", 
+    link: "https://archive-fabe.cfaes.osu.edu/our-people/christopher-dean", 
     affiliation: "The Ohio State University" 
   },
   { 
