@@ -7,27 +7,27 @@ import '../../assets/css/Committee.css';
 const members = [
   [
     { name: 'Sarath Babu', link: 'https://www.engineering.iastate.edu/people/profile/sarath4/', affiliation: 'Iowa State University' },
-    { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', affiliation: 'Central State University' }
+    { name: 'Gregory Bernard', link: 'https://www.tuskegee.edu/academics/colleges-schools/caens/Faculty-Staff/Bernard-Gregory.html', affiliation: 'Tuskegee University' }
   ],
   [
-    { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', affiliation: 'University of California, Davis' },
-    { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', affiliation: 'Cornell University' }
+    { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', affiliation: 'Central State University' },
+    { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', affiliation: 'University of California, Davis' }
   ],
   [
-    { name: 'Barney Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' },
-    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' }
+    { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', affiliation: 'Cornell University' },
+    { name: 'Barney Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' }
   ],
   [
-    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' },
-    { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' }
+    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' },
+    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' }
   ],
   [
-    { name: 'Abhisesh Silwal', link: 'https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/', affiliation: 'Carnegie Mellon University' },
-    { name: 'Rich Wolski', link: 'https://sites.cs.ucsb.edu/~rich/', affiliation: 'University of California, Santa Barbara' }
+    { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' },
+    { name: 'Abhisesh Silwal', link: 'https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/', affiliation: 'Carnegie Mellon University' }
   ],
   [
-    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', affiliation: 'Utah State University' },
-    null
+    { name: 'Rich Wolski', link: 'https://sites.cs.ucsb.edu/~rich/', affiliation: 'University of California, Santa Barbara' },
+    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', affiliation: 'Utah State University' }
   ],
 ];
 
