@@ -14,20 +14,24 @@ const members = [
     { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', affiliation: 'University of California, Davis' }
   ],
   [
-    { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', affiliation: 'Cornell University' },
-    { name: 'Barney Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' }
+    { name: 'Arpan Jain', link: 'https://www.linkedin.com/in/aj-prime/', affiliation: 'Microsoft' },
+    { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', affiliation: 'Cornell University' }
   ],
   [
-    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' },
-    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' }
+    { name: 'Barney Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' },
+    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' }
   ],
   [
-    { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' },
-    { name: 'Abhisesh Silwal', link: 'https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/', affiliation: 'Carnegie Mellon University' }
+    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' },
+    { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' }
   ],
   [
-    { name: 'Rich Wolski', link: 'https://sites.cs.ucsb.edu/~rich/', affiliation: 'University of California, Santa Barbara' },
-    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', affiliation: 'Utah State University' }
+    { name: 'Abhisesh Silwal', link: 'https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/', affiliation: 'Carnegie Mellon University' },
+    { name: 'Rich Wolski', link: 'https://sites.cs.ucsb.edu/~rich/', affiliation: 'University of California, Santa Barbara' }
+  ],
+  [
+    { name: 'Sierra Young', link: 'https://www.thedaisylab.com/', affiliation: 'Utah State University' },
+    null
   ],
 ];
 
