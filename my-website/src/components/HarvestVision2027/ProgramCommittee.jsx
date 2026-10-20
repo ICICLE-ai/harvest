@@ -6,24 +6,40 @@ import '../../assets/css/Committee.css';
 // The committee is still being formed — add members two per row.
 const members = [
   [
-    { name: 'Sarath Babu', link: 'https://www.engineering.iastate.edu/people/profile/sarath4/', affiliation: 'Iowa State University' },
+    { name: 'Sarath Babu', link: 'https://4sarathbabu.github.io/', affiliation: 'Iowa State University' },
     { name: 'Gregory Bernard', link: 'https://www.tuskegee.edu/academics/colleges-schools/caens/Faculty-Staff/Bernard-Gregory.html', affiliation: 'Tuskegee University' }
   ],
   [
-    { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', affiliation: 'Central State University' },
-    { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', affiliation: 'University of California, Davis' }
+    { name: 'Chris Dean', link: 'https://archive-fabe.cfaes.osu.edu/our-people/christopher-dean', affiliation: 'The Ohio State University' },
+    { name: 'Rajveer Dhillon', link: 'https://www.centralstate.edu/profiles/rajveer-dhillon', affiliation: 'Central State University' }
+  ],
+  [
+    { name: 'Mason Earles', link: 'https://pabgap.ucdavis.edu/people/mason-earles', affiliation: 'University of California, Davis' },
+    { name: 'Wei Guo', link: 'https://park.itc.u-tokyo.ac.jp/Field-Phenomics/', affiliation: 'The University of Tokyo, Japan' }
   ],
   [
     { name: 'Arpan Jain', link: 'https://www.linkedin.com/in/aj-prime/', affiliation: 'Microsoft' },
     { name: 'Yu Jiang', link: 'https://cals.cornell.edu/people/yu-jiang', affiliation: 'Cornell University' }
   ],
   [
-    { name: 'Barney Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' },
-    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' }
+    { name: 'Konstantinos Karydis', link: 'https://sites.google.com/view/arcs-lab', affiliation: 'University of California, Riverside' },
+    { name: 'Jenna Kline', link: 'https://jennamk14.github.io/', affiliation: 'Massachusetts Institute of Technology' }
   ],
   [
-    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' },
-    { name: 'Soumik Sarkar', link: 'https://www.engineering.iastate.edu/people/profile/soumiks/', affiliation: 'Iowa State University' }
+    { name: 'Jiating Li', link: 'https://umanitoba.ca/engineering/faculty-staff/biosystems-engineering/jiating-li', affiliation: 'University of Manitoba, Canada' },
+    { name: 'Barney Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' }
+  ],
+  [
+    { name: 'Sudhanshu Panda', link: 'https://ung.edu/institute-environmental-spatial-analysis/faculty-staff-bio/sudhanshu-panda.php', affiliation: 'University of North Georgia' },
+    { name: 'Paola Pesantez-Cabrera', link: 'https://paolapesantez.github.io/', affiliation: 'Washington State University' }
+  ],
+  [
+    { name: 'Marija Popović', link: 'https://www.tudelft.nl/en/staff/m.popovic/', affiliation: 'TU Delft, Netherlands' },
+    { name: 'Aswathnarayan Radhakrishnan', link: 'https://www.linkedin.com/in/radhakrishnan97/', affiliation: 'The Ohio State University' }
+  ],
+  [
+    { name: 'Tanzeel Rehman', link: 'https://www.eng.auburn.edu/bsen/people/rehmantanzeel-webpage/index.html', affiliation: 'Auburn University' },
+    { name: 'Soumik Sarkar', link: 'https://ctre.iastate.edu/people/soumik-sarkar/', affiliation: 'Iowa State University' }
   ],
   [
     { name: 'Abhisesh Silwal', link: 'https://www.ri.cmu.edu/ri-faculty/abhisesh-silwal/', affiliation: 'Carnegie Mellon University' },
