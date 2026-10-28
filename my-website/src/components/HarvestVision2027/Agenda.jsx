@@ -11,6 +11,23 @@ const Agenda = () => {
 
         <Row className="section-box">
           <Col xs={12} lg={12}>
+            <h3>Keynote Talk</h3>
+            <ul>
+              <li><b>Speaker:</b> Charles, Google</li>
+              <li><b>Title:</b> <span className="tbd">TBD</span></li>
+              <li><b>When:</b> January 4, 2027 (Afternoon), 1 hour</li>
+              <li><b>Where:</b> Edelweiss Room, Hilton Orlando Lake Buena Vista, Disney Springs, Florida</li>
+            </ul>
+            <p>
+              The keynote explores the intersection of high-performance computing, AI, and
+              agriculture, drawing on Google&rsquo;s perspective on the opportunities and
+              challenges across these fields.
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="section-box">
+          <Col xs={12} lg={12}>
             <h3>Program <span className="tbd">TBD</span></h3>
             <p>
               The HARVEST-Vision 2027 schedule &mdash; invited talks, accepted paper

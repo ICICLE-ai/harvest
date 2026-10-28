@@ -11,6 +11,23 @@ const Agenda = () => {
 
         <Row className="section-box">
           <Col xs={12} lg={12}>
+            <h3>Keynote Talk</h3>
+            <ul>
+              <li><b>Speaker:</b> Dr. Namboodiri, Google</li>
+              <li><b>Title:</b> <span className="tbd">TBD</span></li>
+              <li><b>When:</b> Wednesday, December 16, 2026, 9:05 AM &ndash; 10:00 AM</li>
+              <li><b>Where:</b> Bengaluru, India</li>
+            </ul>
+            <p>
+              The keynote explores the intersection of high-performance computing, AI, and
+              agriculture, drawing on Google&rsquo;s perspective on the opportunities and
+              challenges across these fields.
+            </p>
+          </Col>
+        </Row>
+
+        <Row className="section-box">
+          <Col xs={12} lg={12}>
             <h3>Program <span className="tbd">TBD</span></h3>
             <p>
               HARVEST-India 2026 is a half-day workshop. The program &mdash; invited talks, accepted
