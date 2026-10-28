@@ -53,8 +53,8 @@ export const harvestVision2027 = {
   tagline:
     'HARVEST-Vision: Fourth International Workshop on Applications of Computer Vision and HPC in Agriculture',
   format: 'Workshop',
-  date: 'January 4/5, 2027',
-  venue: 'Disney Springs',
+  date: 'January 4, 2027 (Afternoon)',
+  venue: 'Edelweiss Room, Disney Springs',
   host: {
     label:
       'The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2027',

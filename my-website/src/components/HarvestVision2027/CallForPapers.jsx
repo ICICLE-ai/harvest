@@ -19,8 +19,8 @@ const CallForPapers = () => {
               <li><b>Author notification deadline (hard deadline):</b> October 30, 2026</li>
               <li><b>Metadata of accepted papers due to IEEE (hard deadline):</b> November 2, 2026</li>
               <li><b>Camera-ready deadline (hard deadline):</b> November 20, 2026</li>
-              <li><b>Workshop Date:</b> January 4/5, 2027</li>
-              <li><b>Venue:</b> Disney Springs</li>
+              <li><b>Workshop Date:</b> January 4, 2027 (Afternoon)</li>
+              <li><b>Venue:</b> Edelweiss Room, Disney Springs</li>
             </ul>
             <em>
               The submission deadline for camera-ready papers is November 20, 2026, at 11:59 PM US Eastern Time.

@@ -36,12 +36,12 @@ const ImportantDates = () => {
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Workshop Date:</b> January 4/5, 2027
+                                <b>Workshop Date:</b> January 4, 2027 (Afternoon)
                             </Col>
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Venue:</b> Disney Springs
+                                <b>Venue:</b> Edelweiss Room, Disney Springs
                             </Col>
                         </Row>
                         <Row>

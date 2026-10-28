@@ -26,7 +26,7 @@ const members = [
     { name: 'Jenna Kline', link: 'https://jennamk14.github.io/', affiliation: 'Massachusetts Institute of Technology' }
   ],
   [
-    { name: 'Jiating Li', link: 'https://umanitoba.ca/engineering/faculty-staff/biosystems-engineering/jiating-li', affiliation: 'University of Manitoba, Canada' },
+    { name: 'Jiating Li', link: 'https://www.linkedin.com/in/jiating-li-ba4291235/', affiliation: 'University of Manitoba, Canada' },
     { name: 'Barney Maccabe', link: 'https://infosci.arizona.edu/person/barney-maccabe', affiliation: 'University of Arizona' }
   ],
   [
