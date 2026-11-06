@@ -33,7 +33,8 @@ const CallForPosters = () => {
             <p>Poster submissions follow the same dates as the paper track:</p>
             <ul>
               <li><b>Poster submission deadline:</b> October 9, 2026</li>
-              <li><b>Author notifications sent:</b> November 5, 2026</li>
+              <li><b>Author notifications sent:</b> November 6, 2026</li>
+              <li><b>Early registration deadline:</b> November 7, 2026</li>
               <li><b>Workshop Date:</b> Wednesday, December 16, 2026</li>
               <li><b>Venue:</b> Bengaluru, India</li>
             </ul>

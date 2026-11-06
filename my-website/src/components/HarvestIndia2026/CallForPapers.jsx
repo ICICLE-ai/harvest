@@ -14,7 +14,8 @@ const CallForPapers = () => {
             <h3>Important Dates</h3>
             <ul>
               <li><b>Full paper submission deadline:</b> October 9, 2026</li>
-              <li><b>Author notifications sent:</b> November 5, 2026</li>
+              <li><b>Author notifications sent:</b> November 6, 2026</li>
+              <li><b>Early registration deadline:</b> November 7, 2026</li>
               <li><b>Camera-ready papers due:</b> November 13, 2026</li>
               <li><b>Workshop Date:</b> Wednesday, December 16, 2026</li>
               <li><b>Venue:</b> Bengaluru, India</li>

@@ -16,7 +16,12 @@ const ImportantDates = () => {
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
-                                <b>Author notifications sent:</b> November 5, 2026
+                                <b>Author notifications sent:</b> November 6, 2026
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col size={12} sm={12} className="column">
+                                <b>Early registration deadline:</b> November 7, 2026
                             </Col>
                         </Row>
                         <Row>
