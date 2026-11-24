@@ -180,6 +180,48 @@
     border-color: rgba(0, 0, 0, 0.3);
   }
   
+  /* Accepted papers list (Agenda tab) */
+  .call-for-posters .accepted-papers {
+    padding-left: 1.4em;
+    margin: 0;
+  }
+
+  .call-for-posters .accepted-paper {
+    padding: 16px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .call-for-posters .accepted-paper:last-child {
+    border-bottom: none;
+  }
+
+  .call-for-posters .accepted-paper-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .call-for-posters .accepted-paper-authors {
+    font-size: 16px;
+  }
+
+  .call-for-posters .accepted-paper-affiliations {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .call-for-posters .accepted-paper-abstract summary {
+    cursor: pointer;
+    font-size: 14px;
+    color: #3a47d5;
+    margin-top: 6px;
+  }
+
+  .call-for-posters .accepted-paper-abstract p {
+    font-size: 15px;
+    margin: 8px 0 0 0;
+  }
+
   /* Image styling */
   .abt-img {
     width: 300px;

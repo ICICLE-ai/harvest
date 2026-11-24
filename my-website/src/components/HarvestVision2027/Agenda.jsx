@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { acceptedPapers, affiliationsOf } from './acceptedPapers.js';
 import '../../assets/css/CallForPosters.css';
 
 const Agenda = () => {
@@ -28,11 +29,34 @@ const Agenda = () => {
 
         <Row className="section-box">
           <Col xs={12} lg={12}>
+            <h3>Accepted Papers</h3>
+            <ol className="accepted-papers">
+              {acceptedPapers.map((paper) => (
+                <li key={paper.title} className="accepted-paper">
+                  <h4 className="accepted-paper-title">{paper.title}</h4>
+                  <div className="accepted-paper-authors">
+                    {paper.authors.map((a) => a.name).join(', ')}
+                  </div>
+                  <div className="accepted-paper-affiliations">
+                    {affiliationsOf(paper).join(' · ')}
+                  </div>
+                  <details className="accepted-paper-abstract">
+                    <summary>Abstract</summary>
+                    <p>{paper.abstract}</p>
+                  </details>
+                </li>
+              ))}
+            </ol>
+          </Col>
+        </Row>
+
+        <Row className="section-box">
+          <Col xs={12} lg={12}>
             <h3>Program <span className="tbd">TBD</span></h3>
             <p>
               The HARVEST-Vision 2027 schedule &mdash; invited talks, accepted paper
-              presentations, and discussion sessions &mdash; will be posted here once the review
-              process concludes and the WACV 2027 schedule is finalized.
+              presentations, and discussion sessions &mdash; will be posted here once the WACV
+              2027 schedule is finalized.
             </p>
             <p>
               For a sense of what to expect, see the{' '}
