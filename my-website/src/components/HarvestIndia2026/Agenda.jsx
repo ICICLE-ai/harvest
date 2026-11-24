@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+import { acceptedPapers, affiliationsOf } from './acceptedPapers.js';
 import '../../assets/css/CallForPosters.css';
 
 const schedule = [
@@ -50,6 +51,25 @@ const Agenda = () => {
               agriculture, drawing on Google&rsquo;s perspective on the opportunities and
               challenges across these fields.
             </p>
+          </Col>
+        </Row>
+
+        <Row className="section-box">
+          <Col xs={12} lg={12}>
+            <h3>Accepted Papers</h3>
+            <ol className="accepted-papers">
+              {acceptedPapers.map((paper) => (
+                <li key={paper.title} className="accepted-paper">
+                  <h4 className="accepted-paper-title">{paper.title}</h4>
+                  <div className="accepted-paper-authors">
+                    {paper.authors.map((a) => a.name).join(', ')}
+                  </div>
+                  <div className="accepted-paper-affiliations">
+                    {affiliationsOf(paper).join(' · ')}
+                  </div>
+                </li>
+              ))}
+            </ol>
           </Col>
         </Row>
       </Container>
