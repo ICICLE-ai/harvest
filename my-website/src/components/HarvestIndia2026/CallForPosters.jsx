@@ -35,6 +35,7 @@ const CallForPosters = () => {
               <li><b>Poster submission deadline:</b> October 9, 2026</li>
               <li><b>Author notifications sent:</b> November 6, 2026</li>
               <li><b>Early registration deadline:</b> November 7, 2026</li>
+              <li><b>Author registration deadline:</b> November 28, 2026</li>
               <li><b>Workshop Date:</b> Wednesday, December 16, 2026</li>
               <li><b>Venue:</b> Bengaluru, India</li>
             </ul>
@@ -101,7 +102,9 @@ const CallForPosters = () => {
           <Col xs={12} lg={12}>
             <h3>Presentation Expectations</h3>
             <p>
-              At least one author of each accepted poster is expected to register for HiPC 2026 and attend
+              At least one author of each accepted poster must register for HiPC 2026 by{' '}
+              <b>Saturday, November 28, 2026</b>{' '}
+              (<a href="https://hipc.org/registration/" target="_blank" rel="noopener noreferrer">registration page</a>) and attend
               the HARVEST-India workshop to present the poster in person.
             </p>
             <p>

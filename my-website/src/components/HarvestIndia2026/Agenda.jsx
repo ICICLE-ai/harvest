@@ -3,13 +3,19 @@ import { Row, Col, Container } from 'react-bootstrap';
 import { acceptedPapers, affiliationsOf } from './acceptedPapers.js';
 import '../../assets/css/CallForPosters.css';
 
+const paper = (i) => ({
+  title: acceptedPapers[i].title,
+  authors: acceptedPapers[i].authors.map((a) => a.name).join(', '),
+});
+
+// Matches the official HiPC 2026 AM workshop slot (9:00 - 13:00) and conference breaks.
 const schedule = [
-  { time: '08:00 - 09:00', title: 'Registration' },
+  { time: '08:00 - 08:30', title: 'Registration' },
   { time: '09:00 - 09:05', title: 'Opening Remarks' },
   { time: '09:05 - 10:00', title: 'Keynote Talk: Dr. Namboodiri, Google' },
-  { time: '10:00 - 10:30', title: 'Session', tbd: true },
+  { time: '10:00 - 10:30', title: 'Paper Session 1', papers: [paper(0)] },
   { time: '10:30 - 11:00', title: 'Break' },
-  { time: '11:00 - 13:00', title: 'Session', tbd: true },
+  { time: '11:00 - 13:00', title: 'Paper Session 2', papers: [paper(1), paper(2), paper(3), paper(4)] },
   { time: '13:00 - 14:00', title: 'Lunch' },
 ];
 
@@ -30,7 +36,15 @@ const Agenda = () => {
               {schedule.map((item) => (
                 <li key={item.time}>
                   <b>{item.time}:</b> {item.title}
-                  {item.tbd && <> <span className="tbd">TBD</span></>}
+                  {item.papers && (
+                    <ul>
+                      {item.papers.map((p) => (
+                        <li key={p.title}>
+                          <i>{p.title}</i> &mdash; {p.authors}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
               ))}
             </ul>

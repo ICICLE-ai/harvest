@@ -31,6 +31,11 @@ const ImportantDates = () => {
                         </Row>
                         <Row>
                             <Col size={12} sm={12} className="column">
+                                <b>Author registration deadline:</b> November 28, 2026 (at least one author per accepted paper)
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col size={12} sm={12} className="column">
                                 <b>Workshop Date:</b> Wednesday, December 16, 2026
                             </Col>
                         </Row>

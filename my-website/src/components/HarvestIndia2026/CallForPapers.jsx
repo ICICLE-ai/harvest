@@ -17,6 +17,7 @@ const CallForPapers = () => {
               <li><b>Author notifications sent:</b> November 6, 2026</li>
               <li><b>Early registration deadline:</b> November 7, 2026</li>
               <li><b>Camera-ready papers due:</b> November 13, 2026</li>
+              <li><b>Author registration deadline:</b> November 28, 2026</li>
               <li><b>Workshop Date:</b> Wednesday, December 16, 2026</li>
               <li><b>Venue:</b> Bengaluru, India</li>
             </ul>
@@ -92,8 +93,11 @@ const CallForPapers = () => {
               subject to the conference&rsquo;s publication policies and final approval processes.
             </p>
             <p>
-              At least one author of each accepted paper is expected to register for HiPC 2026 and present
-              the work at the HARVEST-India workshop in Bengaluru.
+              At least one author of each accepted paper must register for HiPC 2026 by{' '}
+              <b>Saturday, November 28, 2026</b> for the paper to be included in the HiPC-W 2026
+              proceedings, and present the work at the HARVEST-India workshop in Bengaluru. Registration
+              rates and the registration form are available on the{' '}
+              <a href="https://hipc.org/registration/" target="_blank" rel="noopener noreferrer">HiPC 2026 registration page</a>.
             </p>
           </Col>
         </Row>
@@ -103,7 +107,7 @@ const CallForPapers = () => {
             <h3>Workshop Registration</h3>
             There is no separate workshop registration. Please register for the workshops on the
             main{" "}
-            <a href="https://hipc.org/attendee-registration/" target="_blank" rel="noopener noreferrer">HiPC 2026 conference registration page</a>.
+            <a href="https://hipc.org/registration/" target="_blank" rel="noopener noreferrer">HiPC 2026 conference registration page</a>.
           </Col>
         </Row>
 
